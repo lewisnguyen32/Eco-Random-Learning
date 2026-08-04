@@ -314,3 +314,79 @@ Nêu từ 2 đến 4 khái niệm có liên quan mà bài học hôm nay giúp m
 Tóm tắt một đến ba ý cốt lõi, tập trung vào cơ chế thay vì chỉ nhắc lại định nghĩa.
 
 Không đặt câu hỏi kiểm tra, không giao bài tập và không yêu cầu tôi trả lời. Mục tiêu của nội dung hằng ngày là để tôi đọc, hiểu và tích lũy kiến thức lâu dài.
+
+---
+
+## 4. Giao thức Chống Bịa Thông tin & Chống Sửa Tung
+
+### A. Giao thức Chống Bịa Thông tin (Anti-Fabrication Protocol)
+
+Trước khi ghi bất kỳ nội dung nào vào bài học, Agent PHẢI tuân thủ:
+
+#### 1. Phân loại thông tin theo độ rủi ro
+- **Định tính / cơ chế** (công thức, logic nhân-quả, định nghĩa) → độ tin cậy cao, có thể viết từ kiến thức nền mà không cần xác minh thêm.
+- **Định lượng / thời sự** (số liệu CPI, lãi suất, tỷ giá, GDP theo năm cụ thể, tên báo cáo...) → độ rủi ro cao, **PHẢI** gắn nhãn nguồn + thời điểm rõ ràng.
+
+#### 2. Không bịa số liệu để "cho tròn ví dụ"
+- Cần ví dụ minh họa → dùng số liệu **giả định, gắn nhãn rõ** ("giả sử doanh nghiệp X có doanh thu...") thay vì trình bày như số liệu thực tế không nguồn.
+- Dùng số liệu thực tế → phải nêu năm/quý + nguồn cụ thể (NHNN, GSO, IMF, World Bank, BCTC công ty...).
+- Không chắc chắn về độ chính xác của một số liệu → đánh dấu ngay trong file bằng `[CẦN XÁC MINH LẠI]` thay vì bỏ qua hoặc đoán đại.
+
+#### 3. Không tự tạo nguồn tham khảo giả
+- Mục "Nguồn tham khảo" chỉ liệt kê tổ chức/loại báo cáo mà Agent có cơ sở hợp lý để tin là tồn tại, **không** bịa tên báo cáo cụ thể, số liệu, hay đường link không xác thực được.
+- Nếu có công cụ tra cứu (web search), ưu tiên xác minh trước khi ghi số liệu định lượng quan trọng vào bài.
+
+#### 4. Không chắc chắn — nói rõ, không đoán
+- Ưu tiên diễn đạt kiểu "cơ chế này thường được minh họa qua ví dụ như..." thay vì khẳng định một sự kiện/số liệu cụ thể mà Agent không chắc.
+
+---
+
+### B. Giao thức Chống Sửa Tung (Scope Control Protocol)
+
+#### 1. Giới hạn phạm vi file mỗi phiên
+Mỗi phiên biên soạn chỉ được tạo/sửa đúng 4 loại file:
+- 1 file bài học mới: `topics/<category>/<lesson>.md`
+- 1 file README nhóm: `topics/<category>/README.md`
+- `LEARNED.md`
+- `RELATE.md`
+
+Không tự ý sửa file ngoài danh sách này trong cùng phiên, kể cả khi "tiện thể" phát hiện lỗi ở nơi khác.
+
+#### 2. Chỉ ghi thêm (append-only) vào log
+- `LEARNED.md` và `RELATE.md`: chỉ **thêm dòng mới**, không sửa/xóa dòng cũ — trừ khi người dùng yêu cầu rõ ràng (ví dụ: "sửa lại dòng về bài CCC").
+- Cấm Agent tự ý "dọn dẹp" hay viết lại các dòng cũ để "gọn hơn" nếu không được yêu cầu.
+
+#### 3. Phát hiện lỗi ở bài cũ → không tự sửa, chỉ ghi nhận
+Nếu trong lúc soạn bài mới phát hiện bài cũ có sai sót, Agent **không** tự sửa file cũ. Thay vào đó, ghi một dòng vào `ISSUES.md` (tạo mới nếu chưa có), theo định dạng:
+
+```
+[Ngày] - [Tên bài] - [Mô tả lỗi nghi ngờ] - [Cần người dùng xác nhận]
+```
+
+#### 4. Xác nhận trước khi hoàn tất (diff summary)
+Trước khi kết thúc phiên, Agent liệt kê tóm tắt:
+- File nào được tạo mới
+- File nào được sửa, và sửa đúng những dòng nào (không phải mô tả chung chung "đã cập nhật")
+
+---
+
+### C. Prompt mẫu — dùng đầu mỗi phiên biên soạn bài học
+
+```
+Bạn là AI Agent quản trị kho tri thức Eco Learning. Trước khi biên soạn bài học mới, hãy:
+
+1. Đọc LEARNED.md và RELATE.md để chọn chủ đề (ưu tiên breadth-first,
+   xen kẽ 1 bài củng cố sau mỗi 3-4 bài mới).
+2. Biên soạn bài học theo đúng 9 mục chuẩn trong AGENTS.md.
+3. Tuân thủ NGHIÊM NGẶT Giao thức Chống Bịa Thông tin (Mục A) —
+   không bịa số liệu, không bịa nguồn, đánh dấu rõ [CẦN XÁC MINH LẠI]
+   nếu không chắc chắn.
+4. Tuân thủ NGHIÊM NGẶT Giao thức Chống Sửa Tung (Mục B) —
+   chỉ sửa đúng 4 file được phép, chỉ append vào LEARNED.md/RELATE.md,
+   không tự sửa bài cũ, ghi lỗi nghi ngờ vào ISSUES.md.
+5. Trước khi kết thúc, in ra bảng tóm tắt:
+   - File đã tạo mới: ...
+   - File đã sửa và dòng cụ thể: ...
+   - Các điểm [CẦN XÁC MINH LẠI] (nếu có): ...
+```
+
