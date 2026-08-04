@@ -1,6 +1,6 @@
 # Eco Learning - Kho lưu trữ & Lộ trình Tích lũy Kiến thức Kinh tế
 
-> 🚀 **Lối tắt nhanh:** 🎓 [**Nhật ký Bài học**](LEARNED.md) | 🔗 [**Khái niệm liên quan**](RELATE.md) | 📖 [**Thuật ngữ**](GLOSSARY.md)
+[![Nhật ký Bài học](https://img.shields.io/badge/🎓_Nhật_ký_bài_học-blue?style=for-the-badge)](LEARNED.md) [![Khái niệm liên quan](https://img.shields.io/badge/🔗_Khái_niệm_liên_quan-2e7d32?style=for-the-badge)](RELATE.md) [![Thuật ngữ](https://img.shields.io/badge/📖_Thuật_ngữ-ed6c02?style=for-the-badge)](GLOSSARY.md) [![Quy định Agent](https://img.shields.io/badge/🤖_Quy_định_Agent-9c27b0?style=for-the-badge)](AGENTS.md)
 
 Chào mừng bạn đến với **Eco Learning** — hệ thống tích lũy kiến thức kinh tế, tài chính, ngân hàng và đầu tư dài hạn cá nhân hóa.
 
