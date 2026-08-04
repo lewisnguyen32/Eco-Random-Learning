@@ -44,7 +44,7 @@ Mỗi khi người dùng yêu cầu bài học mới, Agent phải thực hiện
 3. **Lưu file bài học:** Lưu vào `topics/<category-B>/<lesson-name-in-english>.md`.
 4. **Cập nhật README của Thư mục B:** Thêm Mã ID, tiêu đề, đường dẫn và tóm tắt cơ chế (3-5 câu).
 5. **Cập nhật nhật ký LEARNED.md & GLOSSARY.md:**
-   - Append dòng mới vào [`LEARNED.md`](LEARNED.md) với Mã ID và đường dẫn tương đối (Relative Path, ví dụ: `[Tên bài](topics/<category-B>/<lesson-name>.md)`). **BẮT BUỘC KHÔNG DÙNG `file:///`** để đảm bảo nhấp chuyển bài trực tiếp trên GitHub.
+   - Append dòng mới vào [`LEARNED.md`](LEARNED.md) với Mã ID và đường dẫn tương đối. **Chỉ đặt Markdown Link nhấp được ở cột "Đường dẫn (File Path)"**, các cột Mã ID và Tên bài học giữ định dạng chữ/mã thuần túy. **BẮT BUỘC KHÔNG DÙNG `file:///`** để đảm bảo nhấp chuyển bài trực tiếp trên GitHub.
    - Append thuật ngữ mới vào [`GLOSSARY.md`](GLOSSARY.md) với đường dẫn tương đối đến bài học.
 6. **Cập nhật RELATE.md & Checklist kiểm tra nhất quán (Consistency Checklist):**
    - Đánh dấu `✅ Đã học` hoặc thêm `⏳ Chưa học` vào [`RELATE.md`](RELATE.md).
