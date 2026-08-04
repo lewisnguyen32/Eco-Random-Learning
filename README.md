@@ -1,6 +1,6 @@
 # Eco Learning - Kho lưu trữ & Lộ trình Tích lũy Kiến thức Kinh tế
 
-> 🚀 **Lối tắt nhanh:** 🎓 [**LEARNED.md (Nhật ký Bài học)**](LEARNED.md) | 🔗 [**RELATE.md (Khái niệm liên quan)**](RELATE.md) | 📖 [**GLOSSARY.md (Thuật ngữ)**](GLOSSARY.md)
+> 🚀 **Lối tắt nhanh:** 🎓 [**Nhật ký Bài học**](LEARNED.md) | 🔗 [**Khái niệm liên quan**](RELATE.md) | 📖 [**Thuật ngữ**](GLOSSARY.md)
 
 Chào mừng bạn đến với **Eco Learning** — hệ thống tích lũy kiến thức kinh tế, tài chính, ngân hàng và đầu tư dài hạn cá nhân hóa.
 
