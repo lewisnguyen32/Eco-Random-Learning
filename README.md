@@ -18,21 +18,25 @@ Hệ thống được tổ chức phân cấp linh hoạt:
 Eco Learning (GEMINI)/
 ├── README.md               # File tổng quan dự án (File này)
 ├── AGENTS.md               # Prompt chỉ dẫn & Quy định vận hành dành cho AI Agent
-├── LEARNED.md              # Bảng nhật ký học tập (Lịch sử các bài học đã hoàn thành)
+├── LEARNED.md              # Bảng nhật ký học tập (Lịch sử & Mã ID bài học)
 ├── RELATE.md               # Hàng chờ các khái niệm liên quan (Dùng để củng cố kiến thức theo định kỳ)
+├── GLOSSARY.md             # Chỉ mục thuật ngữ tra cứu nhanh
 └── topics/                 # Thư mục Nhánh A duy nhất chứa toàn bộ các chủ đề
     └── <category-B>/       # Thư mục chủ đề B (tiếng Anh không dấu, ví dụ: corporate-and-markets)
         ├── README.md       # Danh mục & tóm tắt các bài học trong chủ đề B này
-        └── <lesson-name>.md # Bài học .md chi tiết
+        └── <lesson-name>.md # Bài học .md chi tiết (chứa YAML Frontmatter chuẩn)
 ```
 
 ---
 
-## 🔍 Chiến lược Học tập & Cách Tra cứu
+## 🔍 Chiến lược Học tập & Hệ thống Tích lũy
 
-Dự án áp dụng chiến lược **Bao phủ chiều rộng trước (Breadth-First)** kết hợp với **Củng cố định kỳ chiều sâu (Spaced Reinforcement)**:
+Dự án áp dụng mô hình học tập **Xoắn ốc (Spiral Learning Model)** kết hợp **Ghi nhớ Chủ động (Active Recall)**:
 
-1. **Bao phủ chiều rộng:** Ưu tiên luân phiên các bài học nền tảng thuộc nhiều nhóm chủ đề chính khác nhau để tạo bức tranh toàn cảnh về nền kinh tế.
-2. **Củng cố chiều sâu:** File [`RELATE.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/RELATE.md) lưu trữ các khái niệm mở ra từ mục *Liên kết kiến thức* của các bài trước. Sau một số bài mở rộng chiều rộng, Agent sẽ thỉnh thoảng quay lại chọn 1 khái niệm trong `RELATE.md` để củng cố và đào sâu kiến thức.
-3. **Lịch sử bài đã học:** Mở file [`LEARNED.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/LEARNED.md) để xem danh sách toàn bộ các bài học đã hoàn thành.
-4. **Tóm tắt theo chủ đề:** Mở file `README.md` trong thư mục `topics/<category-B>/` để xem tóm tắt các bài học thuộc chủ đề đó.
+1. **Tập trung Khái niệm Hạt nhân (Core Anchors):** Ưu tiên đào sâu các khái niệm nền có độ kết nối cao nhất (Lãi suất, Lạm phát, Cung tiền, Thanh khoản) để làm móng trước khi xoay rộng sang các chủ đề ứng dụng.
+2. **Mở rộng theo mô hình Xoắn ốc:** Xoay quanh móng hạt nhân sang các mảng thực tế tại Việt Nam (Bất động sản, Tỷ giá VND, Thuế & Quy hoạch TCCN, Tâm lý đầu tư, Ngân hàng, Doanh nghiệp...).
+3. **Củng cố định kỳ (Spaced Reinforcement):** Thỉnh thoảng lấy khái niệm từ [`RELATE.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/RELATE.md) để kết nối lại các bài học đã qua.
+4. **Ghi nhớ Chủ động (Active Recall):** Cuối mỗi bài học có mục *Góc Phản xạ* gợi mở 1 câu hỏi tự tóm tắt/liên hệ thực tế nhẹ nhàng (không áp lực bài tập).
+5. **Tra cứu & Metadata chuẩn:**
+   - [Mã ID bài học & Nhật ký](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/LEARNED.md): Ghi nhận toàn bộ tiến trình theo ID (`CORP-001`, `MACRO-001`...).
+   - [Chỉ mục Thuật ngữ GLOSSARY.md](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/GLOSSARY.md): Tra cứu nhanh thuật ngữ A-Z và đường dẫn bài học gốc.

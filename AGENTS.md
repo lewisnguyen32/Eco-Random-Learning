@@ -12,12 +12,13 @@ Dự án được tổ chức theo cấu trúc như sau:
 Eco Learning (GEMINI)/
 ├── README.md               # Tổng quan kho lưu trữ
 ├── AGENTS.md               # Quy định & Prompt chỉ dẫn cho Agent (File này)
-├── LEARNED.md              # Bảng nhật ký tổng quan các bài học đã hoàn thành
+├── LEARNED.md              # Bảng nhật ký tổng quan các bài học đã hoàn thành (Có Mã ID)
 ├── RELATE.md               # Hàng chờ các khái niệm liên quan (Dùng để tham khảo & củng cố kiến thức)
+├── GLOSSARY.md             # Bảng chỉ mục thuật ngữ tra cứu nhanh
 └── topics/                 # Thư mục Nhánh A duy nhất chứa toàn bộ các chủ đề
     └── <category-B>/       # Thư mục Nhánh B (Tên tiếng Anh kebab-case, ví dụ: corporate-and-markets)
         ├── README.md       # Tóm tắt danh mục các bài học thuộc chủ đề B này
-        └── <lesson-name>.md # Bài học .md chi tiết nằm trực tiếp trong B
+        └── <lesson-name>.md # Bài học .md chi tiết (Có chứa YAML frontmatter ở đầu)
 ```
 
 ### ⚠️ QUY TẮC TIẾT KIỆM TOKEN CHO AGENT:
@@ -33,22 +34,25 @@ Eco Learning (GEMINI)/
 
 Mỗi khi người dùng yêu cầu bài học mới, Agent phải thực hiện đúng 6 bước sau:
 
-1. **Lựa chọn chủ đề (Cân bằng giữa Chiều rộng và Chiều sâu):** 
+1. **Lựa chọn chủ đề (Phân tầng Mô hình Xoắn ốc & Khóa Prerequisite):** 
    - Đọc [`LEARNED.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/LEARNED.md) và [`RELATE.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/RELATE.md).
-   - **ƯU TIÊN HÀNG ĐẦU (Chiều rộng):** Ưu tiên bao phủ các khái niệm nền tảng thuộc các nhóm chủ đề chính chưa học hoặc lâu chưa quay lại (vi mô, vĩ mô, ngân hàng, lạm phát/lãi suất, tài chính cá nhân, đầu tư, doanh nghiệp, lịch sử kinh tế...) để xây dựng bức tranh toàn cảnh rộng.
-   - **THỈNH THOẢNG CỦNG CỐ (Chiều sâu - Reinforcement):** Không chọn chủ đề liên tục theo dạng DFS (đi quá sâu vào một nhánh ngay lập tức). Sau một khoảng thời gian mở rộng kiến thức rộng, thỉnh thoảng mới quay lại chọn 1 khái niệm trong `RELATE.md` để đi sâu hơn và củng cố (reinforce) bài học trước đó.
-2. **Soạn bài học:** Biên soạn nội dung chuẩn xác, sâu sắc theo đúng tiêu chuẩn nội dung và prompt quy định tại Mục 3 bên dưới.
-3. **Lưu file bài học:**
-   - Xác định tên thư mục Nhánh B dạng tiếng Anh không dấu `kebab-case` (ví dụ: `corporate-and-markets`, `monetary-and-banking`, `macroeconomics`).
-   - Nếu thư mục B chưa tồn tại trong `topics/`, tạo thư mục mới.
-   - Lưu bài học vào `topics/<category-B>/<lesson-name-in-english>.md`.
-4. **Cập nhật README của Thư mục B:**
-   - Tạo mới hoặc cập nhật file `topics/<category-B>/README.md` để thêm tiêu đề bài học mới, ngày tạo, đường dẫn và đoạn tóm tắt cơ chế (3-5 câu).
-5. **Cập nhật nhật ký LEARNED.md:**
-   - Thêm một dòng mới vào bảng trong [`LEARNED.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/LEARNED.md) với thông tin: Ngày, Category (Folder B), Tên bài học, Đường dẫn file và Ý chính cốt lõi.
-6. **Cập nhật Hàng chờ RELATE.md:**
-   - Nếu bài học vừa viết nằm trong danh sách `RELATE.md`, đánh dấu trạng thái thành `✅ Đã học` và điền đường dẫn bài mới.
-   - Trích xuất 2 đến 4 khái niệm từ mục **"### Liên kết kiến thức"** của bài học mới và thêm vào bảng trong `RELATE.md` với trạng thái `⏳ Chưa học` để tích lũy cho việc củng cố chiều sâu trong tương lai.
+   - **TẦNG 1 - CORE ANCHORS (Nền tảng):** Lãi suất, Lạm phát, Cung tiền, Thanh khoản. Ưu tiên xây móng vững trước.
+   - **TẦNG 2 - HÀNH VI (Song song):** *Behavioral Finance* (Tâm lý học hành vi) có thể học sớm/song song vì thiên về yếu tố tâm lý con người phản ứng với kinh tế.
+   - **TẦNG 3 - APPLICATION LAYER (Ứng dụng):** BĐS VN, Tỷ giá VND, Thuế & Quy hoạch TCCN... **BẮT BUỘC KHOÁ PREREQUISITES**: AI chỉ được mở bài Tầng 3 nếu bài nền thuộc Tầng 1 tương ứng ĐÃ CÓ TRONG `LEARNED.md`. Nếu chưa có, AI không được nhảy cóc.
+   - **THỈNH THOẢNG CỦNG CỐ (Delayed Recall):** Chọn 1 khái niệm cũ từ `RELATE.md` để ôn tập ngắt quãng.
+2. **Soạn bài học:** Biên soạn nội dung chuẩn xác theo 9 mục chuẩn. Bắt buộc có **YAML Frontmatter** ở đầu file. Đối với bài Thuế/Pháp luật VN, bắt buộc có field `applicable_year: YYYY` hoặc `last_verified: YYYY-MM-DD`.
+3. **Lưu file bài học:** Lưu vào `topics/<category-B>/<lesson-name-in-english>.md`.
+4. **Cập nhật README của Thư mục B:** Thêm Mã ID, tiêu đề, đường dẫn và tóm tắt cơ chế (3-5 câu).
+5. **Cập nhật nhật ký LEARNED.md & GLOSSARY.md:**
+   - Append dòng mới vào [`LEARNED.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/LEARNED.md) với Mã ID.
+   - Append thuật ngữ mới vào [`GLOSSARY.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/GLOSSARY.md).
+6. **Cập nhật RELATE.md & Checklist kiểm tra nhất quán (Consistency Checklist):**
+   - Đánh dấu `✅ Đã học` hoặc thêm `⏳ Chưa học` vào [`RELATE.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/RELATE.md).
+   - **Chạy Checklist kiểm tra tự động:**
+     * [ ] Mã ID mới đúng chuẩn (`CORP-xxx`, `MACRO-xxx`, `VIET-xxx`, `BEHAV-xxx`...)?
+     * [ ] Tất cả `prerequisites` có thực sự tồn tại trong `LEARNED.md` chưa?
+     * [ ] `LEARNED.md` và `GLOSSARY.md` đã được cập nhật đủ chưa?
+     * [ ] Bài viết về Thuế/Pháp luật đã có `applicable_year` chưa?
 
 ---
 
@@ -70,31 +74,27 @@ Tôi đã có kiến thức cơ bản về tiền tệ, lãi suất, cung cầu 
 
 ## Cách lựa chọn chủ đề
 
-Mỗi ngày chọn một chủ đề chính thuộc một trong các nhóm sau:
+Mỗi ngày chọn một chủ đề chính thuộc một trong các nhóm sau (Ưu tiên mô hình Xoắn ốc - Spiral Learning Model):
 
-* Kinh tế vi mô.
-* Kinh tế vĩ mô.
-* Tiền tệ và ngân hàng.
-* Lạm phát, lãi suất và tỷ giá.
-* Tài chính cá nhân.
-* Chứng khoán và đầu tư.
-* Doanh nghiệp và thị trường.
-* Kinh tế Việt Nam.
-* Kinh tế thế giới.
-* Lịch sử kinh tế.
-* Kinh tế hành vi.
-* Các cuộc khủng hoảng kinh tế và tài chính.
+* **Nhóm Hạt nhân (Core Anchors - Ưu tiên xây móng):** Lãi suất, Lạm phát, Cung tiền & Thanh khoản.
+* Kinh tế vĩ mô & Kinh tế vi mô.
+* Tiền tệ, Ngân hàng và Thị trường vốn.
+* **Thị trường Bất động sản Việt Nam** (chu kỳ, đòn bẩy, tín dụng ngân hàng).
+* **Tỷ giá VND & Lãi suất toàn cầu** (kênh truyền dẫn vĩ mô).
+* **Thuế & Quy hoạch tài chính cá nhân theo pháp luật Việt Nam**.
+* **Tâm lý học hành vi trong đầu tư** (Behavioral Finance).
+* Tài chính cá nhân & Quản trị dòng tiền.
+* Chứng khoán, Doanh nghiệp và Thị trường.
+* Kinh tế thế giới & Lịch sử kinh tế / Khủng hoảng tài chính.
 * Những cơ chế kinh tế đứng sau các sự kiện đời sống thường ngày.
 
-Hạn chế các bài tập trung chủ yếu vào chính sách công.
+Hạn chế các bài tập trung chủ yếu vào chính sách công thuần túy.
 
-Việc chọn chủ đề cần có yếu tố ngẫu nhiên để tạo sự đa dạng, nhưng không được hoàn toàn rời rạc. Hãy duy trì một lộ trình ngầm:
-
-* Thỉnh thoảng nối bài mới với kiến thức đã trình bày trước đó.
+Việc chọn chủ đề duy trì **Mô hình Xoắn ốc (Spiral Model)**:
+* Xoay quanh các khái niệm hạt nhân kết nối cao trước (Lãi suất, Lạm phát, Cung tiền, Thanh khoản) để làm điểm tựa vững chắc.
+* Thỉnh thoại kết nối bài mới với bài cũ thông qua hàng chờ `RELATE.md`.
 * Tránh lặp lại cùng một nội dung trong thời gian ngắn.
-* Dần mở rộng từ khái niệm nền tảng sang các cơ chế phức tạp hơn.
-* Có thể quay lại một chủ đề cũ ở mức sâu hơn hoặc dưới một góc nhìn khác.
-* Luân phiên hợp lý giữa vi mô, vĩ mô, tài chính cá nhân, ngân hàng, đầu tư, doanh nghiệp và lịch sử kinh tế.
+* Mở rộng từ khái niệm nền tảng sang các mảng ứng dụng thực tế phức tạp hơn.
 
 ## Yêu cầu về chiều sâu
 
@@ -120,6 +120,21 @@ Ví dụ, thay vì chỉ nói “lãi suất tăng làm giá cổ phiếu giảm
 ## Cách trình bày
 
 Mỗi bài có thể dài hoặc ngắn tùy theo độ phức tạp của chủ đề. Không cần ép mọi bài vào cùng một độ dài.
+
+**Mọi bài học BẮT BUỘC có phần YAML Frontmatter ở đầu file:**
+```yaml
+---
+id: CORP-001             # Mã ID bài học (MACRO-xxx, MICRO-xxx, MONEY-xxx, CORP-xxx, INVEST-xxx, INDIV-xxx, VIET-xxx, BEHAV-xxx)
+title: "Tên bài học"
+category: category-name  # Tên folder B
+tags: [tag1, tag2, tag3]
+prerequisites: [ID-1, ID-2] # BẮT BUỘC: Mã ID bài học nền tảng phải tồn tại trong LEARNED.md
+difficulty: Fundamental | Intermediate | Advanced
+date: YYYY-MM-DD
+applicable_year: 2026       # Bắt buộc với chủ đề Thuế, Quy định, Pháp luật VN
+last_verified: 2026-08-04   # Tránh trôi dữ liệu khi luật thay đổi
+---
+```
 
 Bố cục ưu tiên:
 
@@ -301,9 +316,17 @@ Nếu không tìm được nguồn đủ đáng tin cậy cho một thông tin, 
 * Không dùng các câu sáo rỗng như “hãy đa dạng hóa đầu tư” nếu không giải thích cơ chế và điều kiện áp dụng.
 * Không trình bày định nghĩa qua loa rồi chuyển ngay sang chủ đề khác.
 
+## Mở đầu bài học (Dành cho bài Củng cố / Delayed Active Recall)
+
+Nếu bài học mới là một bài củng cố (Spaced Reinforcement) trích ra từ `RELATE.md`, ngay sau mục **1. Chủ đề hôm nay**, hãy thêm một khung nhỏ:
+
+> 🔄 **Ôn tập Ngắt quãng (Delayed Active Recall):** *"Trước khi vào bài mới, bạn còn nhớ cơ chế [X] trong bài học [ID-XXX] cách đây 1-2 tuần không? Hãy thử nhớ lại 1 ý cốt lõi trước khi đọc tiếp nhé!"*
+
+---
+
 ## Kết thúc bài
 
-Cuối mỗi bài, thêm hai phần ngắn:
+Cuối mỗi bài, thêm ba phần ngắn:
 
 ### Liên kết kiến thức
 
@@ -313,7 +336,14 @@ Nêu từ 2 đến 4 khái niệm có liên quan mà bài học hôm nay giúp m
 
 Tóm tắt một đến ba ý cốt lõi, tập trung vào cơ chế thay vì chỉ nhắc lại định nghĩa.
 
-Không đặt câu hỏi kiểm tra, không giao bài tập và không yêu cầu tôi trả lời. Mục tiêu của nội dung hằng ngày là để tôi đọc, hiểu và tích lũy kiến thức lâu dài.
+### Góc Phản xạ & Active Recall (Dành cho bạn)
+
+Đưa ra 1 câu hỏi gợi mở phản xạ tự nhiên (không bắt buộc trả lời, không chấm điểm, không áp lực bài tập). Chọn 1 trong 3 dạng:
+- **Dạng 1 (Tóm tắt lại):** *"Hãy thử tự giải thích lại cơ chế X này cho một người bạn chưa biết bằng 2-3 câu ngắn gọn."*
+- **Dạng 2 (Kết nối ngẫu nhiên):** *"Cơ chế X hôm nay có liên quan gì đến khái niệm [ID-XXX] mà bạn đã học trước đó?"*
+- **Dạng 3 (Liên hệ thực tế):** *"Với thông tin X hôm nay, bạn có nhận ra hiện tượng tương tự nào trong bản tin tài chính hoặc quyết định chi tiêu gần đây của mình không?"*
+
+*Gợi ý nhẹ cuối mục:* **Thang tự đánh giá (1-5):** Bạn tự thấy mức độ hiểu/nhớ cơ chế hôm nay ở mức nào (1 = Cần đọc lại sớm / 3 = Nắm vững / 5 = Rất tự tin)? (Nếu bạn chọn 1-2, hệ thống sẽ ưu tiên quay lại củng cố sớm hơn).
 
 ---
 

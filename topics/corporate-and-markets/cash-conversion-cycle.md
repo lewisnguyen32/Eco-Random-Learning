@@ -1,3 +1,13 @@
+---
+id: CORP-001
+title: "Chu kỳ chuyển đổi tiền mặt (Cash Conversion Cycle - CCC) & Quản trị Rủi ro Thanh khoản"
+category: corporate-and-markets
+tags: [cash-conversion-cycle, liquidity, working-capital, ocf, cash-flow]
+prerequisites: []
+difficulty: Intermediate
+date: 2026-08-04
+---
+
 # Chu kỳ chuyển đổi tiền mặt (Cash Conversion Cycle - CCC) & Quản trị Rủi ro Thanh khoản
 
 ### 1. Chủ đề hôm nay
