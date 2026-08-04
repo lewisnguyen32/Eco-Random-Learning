@@ -15,17 +15,24 @@ Eco Learning (GEMINI)/
 ├── LEARNED.md              # Bảng nhật ký tổng quan các bài học đã hoàn thành (Có Mã ID)
 ├── RELATE.md               # Hàng chờ các khái niệm liên quan (Dùng để tham khảo & củng cố kiến thức)
 ├── GLOSSARY.md             # Bảng chỉ mục thuật ngữ tra cứu nhanh
+├── .memory/                # Thư mục lưu trữ bộ nhớ làm việc tạm thời của từng AI Agent
+│   ├── README.md           # Giới thiệu các file bộ nhớ
+│   ├── antigravity_memory.md # Bộ nhớ tạm cho Antigravity (Gemini)
+│   └── codex_memory.md     # Bộ nhớ tạm cho Codex
 └── topics/                 # Thư mục Nhánh A duy nhất chứa toàn bộ các chủ đề
     └── <category-B>/       # Thư mục Nhánh B (Tên tiếng Anh kebab-case, ví dụ: corporate-and-markets)
         ├── README.md       # Tóm tắt danh mục các bài học thuộc chủ đề B này
         └── <lesson-name>.md # Bài học .md chi tiết (Có chứa YAML frontmatter ở đầu)
 ```
 
+### 🧠 QUY TẮC BỘ NHỚ TẠM THỜI (TEMPORARY WORKING MEMORY):
+* Khi người dùng yêu cầu trích xuất, cập nhật hoặc xem bộ nhớ tạm, AI Agent hãy truy cập đúng file trong `.memory/` tương ứng với model/agent đang vận hành (ví dụ: `.memory/antigravity_memory.md` đối với Antigravity, `.memory/codex_memory.md` đối với Codex).
+
 ### ⚠️ QUY TẮC TIẾT KIỆM TOKEN CHO AGENT:
 1. **TRÁNH đọc trực tiếp các file bài học `.md` chi tiết** trừ khi thực sự cần thiết (ví dụ: cần trích dẫn chính xác công thức hoặc nội dung cụ thể từ bài đó).
 2. Khi cần kiểm tra lịch sử các bài đã học và chọn chủ đề tiếp theo:
-   - **Bước 1:** Đọc file [`RELATE.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/RELATE.md) để kiểm tra các khái niệm liên quan chưa học (đã được mở ra từ các bài trước).
-   - **Bước 2:** Đọc file [`LEARNED.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/LEARNED.md) ở thư mục gốc (nơi chứa tóm tắt 1 dòng siêu gọn cho mỗi bài).
+   - **Bước 1:** Đọc file [`RELATE.md`](RELATE.md) để kiểm tra các khái niệm liên quan chưa học (đã được mở ra từ các bài trước).
+   - **Bước 2:** Đọc file [`LEARNED.md`](LEARNED.md) ở thư mục gốc (nơi chứa tóm tắt 1 dòng siêu gọn cho mỗi bài).
    - **Bước 3 (nếu cần xem sâu hơn về một nhóm chủ đề):** Đọc file `README.md` nằm bên trong thư mục `topics/<category-B>/` tương ứng (nơi chứa tóm tắt 3-5 câu cho các bài học trong nhóm đó).
 
 ---
