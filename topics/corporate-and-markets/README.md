@@ -8,7 +8,7 @@ Thư mục này chứa các bài học thuộc nhóm **Doanh nghiệp & Thị tr
 
 ## 📚 Danh mục Bài học
 
-### 1. [Chu kỳ chuyển đổi tiền mặt (Cash Conversion Cycle - CCC) & Quản trị Rủi ro Thanh khoản](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/topics/corporate-and-markets/cash-conversion-cycle.md)
+### 1. `CORP-001` - [Chu kỳ chuyển đổi tiền mặt (Cash Conversion Cycle - CCC) & Quản trị Rủi ro Thanh khoản](cash-conversion-cycle.md)
 * **Ngày khởi tạo:** 2026-08-04
 * **Tóm tắt cơ chế:** 
   Giải thích nguyên nhân vì sao một doanh nghiệp có lợi nhuận kế toán (Accrual Profit) tăng trưởng mạnh nhưng vẫn có thể rơi vào vỡ nợ kỹ thuật (Technical Insolvency) và phá sản do kiệt hụt tiền mặt thực tế. Bài học phân tích sâu công thức định lượng $\text{CCC} = \text{DIO} + \text{DSO} - \text{DPO}$, trong đó:
