@@ -35,8 +35,8 @@ Dự án áp dụng mô hình học tập **Xoắn ốc (Spiral Learning Model)*
 
 1. **Tập trung Khái niệm Hạt nhân (Core Anchors):** Ưu tiên đào sâu các khái niệm nền có độ kết nối cao nhất (Lãi suất, Lạm phát, Cung tiền, Thanh khoản) để làm móng trước khi xoay rộng sang các chủ đề ứng dụng.
 2. **Mở rộng theo mô hình Xoắn ốc:** Xoay quanh móng hạt nhân sang các mảng thực tế tại Việt Nam (Bất động sản, Tỷ giá VND, Thuế & Quy hoạch TCCN, Tâm lý đầu tư, Ngân hàng, Doanh nghiệp...).
-3. **Củng cố định kỳ (Spaced Reinforcement):** Thỉnh thoảng lấy khái niệm từ [`RELATE.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/RELATE.md) để kết nối lại các bài học đã qua.
+3. **Củng cố định kỳ (Spaced Reinforcement):** Thỉnh thoảng lấy khái niệm từ [RELATE.md](RELATE.md) để kết nối lại các bài học đã qua.
 4. **Ghi nhớ Chủ động (Active Recall):** Cuối mỗi bài học có mục *Góc Phản xạ* gợi mở 1 câu hỏi tự tóm tắt/liên hệ thực tế nhẹ nhàng (không áp lực bài tập).
 5. **Tra cứu & Metadata chuẩn:**
-   - [Mã ID bài học & Nhật ký](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/LEARNED.md): Ghi nhận toàn bộ tiến trình theo ID (`CORP-001`, `MACRO-001`...).
-   - [Chỉ mục Thuật ngữ GLOSSARY.md](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/GLOSSARY.md): Tra cứu nhanh thuật ngữ A-Z và đường dẫn bài học gốc.
+   - [Mã ID bài học & Nhật ký](LEARNED.md): Ghi nhận toàn bộ tiến trình theo ID (`CORP-001`, `MACRO-001`...).
+   - [Chỉ mục Thuật ngữ GLOSSARY.md](GLOSSARY.md): Tra cứu nhanh thuật ngữ A-Z và đường dẫn bài học gốc.

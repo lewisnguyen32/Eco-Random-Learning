@@ -13,7 +13,7 @@ Tài liệu này ghi lại tất cả các khái niệm kinh tế được gợi
 
 | Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
 | :--- | :--- | :--- | :--- |
-| [`cash-conversion-cycle.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/topics/corporate-and-markets/cash-conversion-cycle.md) | Báo cáo lưu chuyển tiền tệ (Cash Flow Statement - OCF) | ⏳ Chưa học | - |
-| [`cash-conversion-cycle.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/topics/corporate-and-markets/cash-conversion-cycle.md) | Rủi ro mất khả năng thanh toán kỹ thuật (Technical Insolvency) | ⏳ Chưa học | - |
-| [`cash-conversion-cycle.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/topics/corporate-and-markets/cash-conversion-cycle.md) | Quản trị tồn kho Tinh gọn (Just-In-Time - JIT) | ⏳ Chưa học | - |
-| [`cash-conversion-cycle.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/topics/corporate-and-markets/cash-conversion-cycle.md) | Tín dụng thương mại và Chiết khấu thanh toán (Trade Credit & Cash Discounts) | ⏳ Chưa học | - |
+| [`cash-conversion-cycle.md`](topics/corporate-and-markets/cash-conversion-cycle.md) | Báo cáo lưu chuyển tiền tệ (Cash Flow Statement - OCF) | ⏳ Chưa học | - |
+| [`cash-conversion-cycle.md`](topics/corporate-and-markets/cash-conversion-cycle.md) | Rủi ro mất khả năng thanh toán kỹ thuật (Technical Insolvency) | ⏳ Chưa học | - |
+| [`cash-conversion-cycle.md`](topics/corporate-and-markets/cash-conversion-cycle.md) | Quản trị tồn kho Tinh gọn (Just-In-Time - JIT) | ⏳ Chưa học | - |
+| [`cash-conversion-cycle.md`](topics/corporate-and-markets/cash-conversion-cycle.md) | Tín dụng thương mại và Chiết khấu thanh toán (Trade Credit & Cash Discounts) | ⏳ Chưa học | - |

@@ -44,12 +44,13 @@ Mỗi khi người dùng yêu cầu bài học mới, Agent phải thực hiện
 3. **Lưu file bài học:** Lưu vào `topics/<category-B>/<lesson-name-in-english>.md`.
 4. **Cập nhật README của Thư mục B:** Thêm Mã ID, tiêu đề, đường dẫn và tóm tắt cơ chế (3-5 câu).
 5. **Cập nhật nhật ký LEARNED.md & GLOSSARY.md:**
-   - Append dòng mới vào [`LEARNED.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/LEARNED.md) với Mã ID.
-   - Append thuật ngữ mới vào [`GLOSSARY.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/GLOSSARY.md).
+   - Append dòng mới vào [`LEARNED.md`](LEARNED.md) với Mã ID và đường dẫn tương đối (Relative Path, ví dụ: `[Tên bài](topics/<category-B>/<lesson-name>.md)`). **BẮT BUỘC KHÔNG DÙNG `file:///`** để đảm bảo nhấp chuyển bài trực tiếp trên GitHub.
+   - Append thuật ngữ mới vào [`GLOSSARY.md`](GLOSSARY.md) với đường dẫn tương đối đến bài học.
 6. **Cập nhật RELATE.md & Checklist kiểm tra nhất quán (Consistency Checklist):**
-   - Đánh dấu `✅ Đã học` hoặc thêm `⏳ Chưa học` vào [`RELATE.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/RELATE.md).
+   - Đánh dấu `✅ Đã học` hoặc thêm `⏳ Chưa học` vào [`RELATE.md`](RELATE.md).
    - **Chạy Checklist kiểm tra tự động:**
      * [ ] Mã ID mới đúng chuẩn (`CORP-xxx`, `MACRO-xxx`, `VIET-xxx`, `BEHAV-xxx`...)?
+     * [ ] Tất cả đường dẫn liên kết bài học có dạng đường dẫn tương đối (Relative Path) nhấp được trên GitHub chưa?
      * [ ] Tất cả `prerequisites` có thực sự tồn tại trong `LEARNED.md` chưa?
      * [ ] `LEARNED.md` và `GLOSSARY.md` đã được cập nhật đủ chưa?
      * [ ] Bài viết về Thuế/Pháp luật đã có `applicable_year` chưa?
