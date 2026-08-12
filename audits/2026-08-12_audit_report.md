@@ -95,22 +95,32 @@ Hệ thống kiến trúc hiện tại đã đạt độ chín rất cao. Các t
 
 ## 🛠️ 5. Danh mục Chỉnh sửa Đề xuất (Recommended Fixes)
 
-| STT | Vấn đề (Problem) | Lý do cần sửa (Why it matters) | Đề xuất sửa đổi (Recommended Fix) | Ưu tiên (Priority) |
-| :---: | :--- | :--- | :--- | :---: |
-| 1 | `AGENTS.md` dùng từ `agent_memory.md` thay vì file cụ thể. | Tránh mơ hồ cho Agent khi tìm file nạp bộ nhớ. | Đổi thành `.memory/<agent>_memory.md` (hoặc nêu rõ `antigravity_memory.md` / `codex_memory.md`). | **P2** |
-| 2 | `AGENTS.md` nhắc tới `ISSUES.md`. | Loại bỏ file rác ngoài workflow 5 file chuẩn. | Xóa câu nhắc tới `ISSUES.md`, duy trì ghi lỗi vào `knowledge_corrections.md`. | **P2** |
-| 3 | Link bài chưa học trong `MONEY-001` trỏ đến folder chưa tạo. | Tránh broken relative links. | Để dạng text kèm `(⏳ Chưa học)` thay vì chèn link file chưa tồn tại. | **P2** |
+| STT | Vấn đề (Problem) | Lý do cần sửa (Why it matters) | Đề xuất sửa đổi (Recommended Fix) | Ưu tiên | Trạng thái |
+| :---: | :--- | :--- | :--- | :---: | :---: |
+| 1 | `AGENTS.md` dùng từ `agent_memory.md` thay vì file cụ thể. | Tránh mơ hồ cho Agent khi tìm file nạp bộ nhớ. | Đổi thành `.memory/<agent>_memory.md` (hoặc nêu rõ `antigravity_memory.md` / `codex_memory.md`). | **P2** | ✅ **Đã xử lý** (`4061853`) |
+| 2 | `AGENTS.md` nhắc tới `ISSUES.md`. | Loại bỏ file rác ngoài workflow 5 file chuẩn. | Xóa câu nhắc tới `ISSUES.md`, duy trì ghi lỗi vào `knowledge_corrections.md`. | **P2** | ✅ **Đã xử lý** (`4061853`) |
+| 3 | Link bài chưa học trong `MONEY-001` trỏ đến folder chưa tạo. | Tránh broken relative links. | Để dạng text kèm `(⏳ Chưa học)` thay vì chèn link file chưa tồn tại. | **P2** | ✅ **Đã xử lý** (`4061853`) |
 
 ---
 
 ## 🏁 6. Kết luận Cuối cùng (Final Decision)
 
-# 🟢 READY WITH MINOR FIXES
+# 🟢 READY
 
 ### Rationale:
 Repository **Eco Learning** đã đạt cấu trúc cực kỳ mạch lạc, chặt chẽ, chính xác về tri thức kinh tế và tối ưu cho AI Agent vận hành dài hạn.
 
-Các vấn đề tìm thấy chỉ là những điểm chưa nhất quán nhỏ về mặt ký hiệu/tài liệu (P2), **hoàn toàn KHÔNG có lỗi kiến trúc hay lỗi factual (P0/P1)**.
+Toàn bộ **3/3 vấn đề P2 đã được xử lý hoàn tất** và được kiểm tra kỹ lưỡng qua `git diff`. Repository không còn tồn tại bất kỳ vấn đề mở nào.
 
 ### Khuyến nghị Hành động:
-Dự án nên **chính thức kết thúc Giai đoạn Thiết kế Kiến trúc (Architecture Design Phase)** và **chuyển sang Giai đoạn Vận hành Thực tế & Tích lũy Tri thức (Real-World Usage & Iterative Learning Phase)**.
+Dự án **chính thức kết thúc Giai đoạn Thiết kế Kiến trúc (Architecture Design Phase)** và **chuyển sang Giai đoạn Vận hành Thực tế & Tích lũy Tri thức (Real-World Usage & Iterative Learning Phase)**.
+
+---
+
+## 🔄 7. Nhật ký Xử lý Sau Audit (Post-Audit Resolution Log)
+
+**Thời gian xử lý:** 12/08/2026 (Commit: `4061853`)
+
+1. **P2-1 (Memory Filename Mismatch):** Đã sửa toàn bộ các tham chiếu `agent_memory.md` trong `AGENTS.md` và `.memory/README.md` thành tên file bộ nhớ cụ thể (`antigravity_memory.md` / `codex_memory.md`).
+2. **P2-2 (Missing `ISSUES.md` Reference):** Đã loại bỏ dòng nhắc tới `ISSUES.md` trong `AGENTS.md`, giữ quy trình ghi nhận lỗi tập trung hoàn toàn ở `.memory/knowledge_corrections.md`.
+3. **P2-3 (Hypothetical Lesson Link):** Đã chuyển các link markdown tới `MACRO-001` và `MACRO-002` trong bài `MONEY-001` thành plain-text code identifier kèm `(⏳ Chưa học)`.
