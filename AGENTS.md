@@ -18,8 +18,8 @@ Eco Learning (GEMINI)/
 ├── .memory/                # Hệ thống Agent Memory & Learning System (Kiến trúc 3 tầng)
 │   ├── README.md           # Hướng dẫn quy trình & phân định vai trò hệ thống bộ nhớ
 │   ├── knowledge_corrections.md # Tầng 1: Nhật ký Lỗi & Bài học Tổng quát hóa (Error Memory)
-│   ├── antigravity_memory.md # Tầng 2: Quy tắc vận hành tinh chế cho Antigravity (Operational Memory)
-│   └── codex_memory.md     # Tầng 2: Quy tắc vận hành tinh chế cho Codex (Operational Memory)
+│   ├── antigravity_memory.md # Tầng 2: Quy tắc vận hành tinh chế cho Antigravity Agent
+│   └── codex_memory.md     # Tầng 2: Quy tắc vận hành tinh chế cho Codex Agent
 └── topics/                 # Thư mục Nhánh A duy nhất chứa toàn bộ các chủ đề
     └── <category-B>/       # Thư mục Nhánh B (Tên tiếng Anh kebab-case, ví dụ: corporate-and-markets)
         ├── README.md       # Tóm tắt danh mục các bài học thuộc chủ đề B này
@@ -27,7 +27,7 @@ Eco Learning (GEMINI)/
 ```
 
 ### 🧠 QUY TẮC BỘ NHỚ VẬN HÀNH (OPERATIONAL MEMORY RULE):
-* Khi vận hành, AI Agent **bắt buộc phải đọc file memory tinh chế tương ứng với model/agent của mình** trong `.memory/` (ví dụ: `.memory/antigravity_memory.md` đối với Antigravity, `.memory/codex_memory.md` đối với Codex) để nạp các quy tắc vận hành trước khi biên soạn.
+* Khi vận hành, AI Agent **bắt buộc phải đọc file memory tinh chế tương ứng với model/agent của mình** trong `.memory/` (ví dụ: `.memory/antigravity_memory.md` đối với Antigravity, `.memory/codex_memory.md` đối với Codex Agent khi được sử dụng) để nạp các quy tắc vận hành trước khi biên soạn.
 
 ### ⚠️ QUY TẮC TIẾT KIỆM TOKEN CHO AGENT:
 1. **TRÁNH đọc trực tiếp các file bài học `.md` chi tiết** trừ khi thực sự cần thiết (ví dụ: cần trích dẫn chính xác công thức hoặc nội dung cụ thể từ bài đó).
@@ -40,7 +40,7 @@ Eco Learning (GEMINI)/
 
 ## 🧠 Agent Memory Retrieval & Learning Protocol
 
-Đây là giao thức bắt buộc để Agent chủ động truy xuất, áp dụng bộ nhớ và học hỏi từ các sai sót cũ trước và trong khi biên soạn bài học mới.
+Đây là giao thức bắt buộc để Agent chủ động tra cứu, áp dụng bộ nhớ và học hỏi từ các sai sót cũ trước và trong khi biên soạn bài học mới.
 
 ```text
 Correction is recorded → Failure pattern abstracted → General rule distilled → Relevant rule retrieved → Applied before writing
@@ -60,8 +60,10 @@ Trước khi viết nội dung, Agent tự đánh giá chủ đề bài học c�
 * **Khẳng định Định lượng (Quantitative / Empirical Claim):** Có sử dụng số liệu, mốc thời gian hay quy định pháp lý không?
 * **Thuật ngữ Dễ nhầm lẫn (Terminology Ambiguity):** Có các khái niệm hay đi cùng nhau nhưng khác bản chất không?
 
-### Step 2 — Retrieve Relevant Corrections (Truy xuất bài học lịch sử phù hợp)
-Agent KHÔNG cần đọc toàn bộ `.memory/knowledge_corrections.md` cho mọi task. Hãy truy xuất ngữ nghĩa dựa trên:
+### Step 2 — Agent-Guided Retrieval (Tra cứu bài học lịch sử có định hướng)
+> 💡 *Lưu ý về Hạ tầng:* Dự án sử dụng quy trình **Agent-Guided Retrieval / Deliberate Inspection** (Agent tự giác chủ động tìm kiếm và đọc tài liệu liên quan), **KHÔNG phải** hạ tầng tự động dựa trên Vector Database hay Embeddings/RAG.
+
+Agent KHÔNG cần đọc toàn bộ `.memory/knowledge_corrections.md` cho mọi task. Thay vào đó, Agent chủ động tìm và tra cứu các mục liên quan dựa trên:
 1. **Exact Topic Match:** Khớp chủ đề trực tiếp (ví dụ: `money supply`, `interest rates`).
 2. **Conceptual Match:** Khớp khái niệm rộng (ví dụ: banking, monetary policy, accounting).
 3. **Failure Pattern Match:** Khớp dạng lỗi tư duy (ví dụ: *textbook model vs reality*, *balance sheet confusion*, *deterministic macro claim*, *empirical timing overclaim*).
@@ -92,7 +94,7 @@ Khi người dùng hoặc reviewer sửa một lỗi sai kiến thức / tư duy
 3. **Trích xuất Bài học Tổng quát hóa (Generalizable Lesson):** Chuyển từ lỗi sai cụ thể thành nguyên tắc tư duy tổng quát có thể áp dụng cho nhiều chủ đề khác.
 4. **Quyết định đưa vào Operational Memory:**
    - Nếu là sự thật một lần (*one-off fact*) $\rightarrow$ Chỉ lưu ở `knowledge_corrections.md`.
-   - Nếu là nguyên tắc tư duy tái sử dụng được (*reusable reasoning rule*) $\rightarrow$ Tinh chế và cập nhật vào `agent_memory.md`.
+   - Nếu là nguyên tắc tư duy tái sử dụng được (*reusable reasoning rule*) $\rightarrow$ Tinh chế và cập nhật vào file `agent_memory.md` tương ứng.
 5. **Hợp nhất quy tắc (Merge & Refactor):** Nếu quy tắc đã tồn tại hoặc nhiều lỗi cùng chỉ ra một failure mode, hợp nhất thành một quy tắc cấp cao hơn thay vì tạo quy tắc trùng lặp.
 
 ---
@@ -129,39 +131,50 @@ Trước khi viết các nhận định quan trọng trong bài học, Agent ph�
 
 ---
 
-## ⚖️ Memory Hierarchy & Anti-Memory-Poisoning Rules
+## ⚖️ Phân tách Thẩm quyền Bộ nhớ (Behavioral Authority vs Epistemic Authority)
 
-### 1. Phân cấp Ưu tiên Bộ nhớ (Memory Hierarchy)
-Khi xử lý thông tin và giải quyết tranh chấp tư duy, Agent tuân theo thứ tự ưu tiên:
+> 💡 **Cốt lõi:** **Memory controls reasoning behavior, not factual truth.**  
+> (Bộ nhớ Agent định hướng quy trình làm việc và thói quen tư duy, nhưng bản thân bộ nhớ không tự coi mình là nguồn sự thật tuyệt đối).
+
+Thẩm quyền trong hệ thống được phân tách thành hai chiều độc lập:
+
+### A. Behavioral Authority (Thẩm quyền Vận hành & Quy trình)
+Xác định **Agent phải hành xử và thực hiện task như thế nào**:
 
 ```text
-Ưu tiên 1 (Cao nhất): AGENTS.md (Operational rules & Protocols)
+AGENTS.md (Master Instructions & Protocols)
        ↓
-Ưu tiên 2: Agent-specific distilled memory (antigravity_memory.md / codex_memory.md)
-       ↓
-Ưu tiên 3: Relevant correction logs (knowledge_corrections.md)
-       ↓
-Ưu tiên 4: Lesson knowledge (topics/)
-       ↓
-Ưu tiên 5: General model assumptions
+Agent-specific operational memory (antigravity_memory.md / codex_memory.md)
 ```
 
-### 2. Giao thức Chống "Memory Poisoning" (Anti-Memory-Poisoning Protocol)
-* **Memory $\neq$ Unquestionable Source of Truth:** Bộ nhớ đóng vai trò là **hệ thống định hướng tư duy và ngăn ngừa lỗi (reasoning prior / error prevention)**, không thay thế cho việc xác minh dữ liệu thực tế.
-* **Xử lý Xung đột (Conflict Resolution):** Khi bộ nhớ cũ xung đột với nguồn sơ cấp uy tín đã được xác minh (hoặc số liệu/luật pháp mới), Agent **KHÔNG được âm thầm chọn một bên**. Agent phải:
-  1. Nhận diện xung đột.
-  2. Kiểm tra nguồn sơ cấp uy tín.
-  3. Giải quyết xung đột dựa trên bằng chứng sơ cấp.
-  4. Cập nhật lại bộ nhớ (`knowledge_corrections.md` & `agent_memory.md`) để điều chỉnh thông tin cũ.
+### B. Knowledge / Epistemic Authority (Thẩm quyền Tri thức & Tính Xác thực Dữ liệu)
+Xác định **Dữ liệu / Sự thật nào đáng tin cậy**:
+
+```text
+Nguồn sơ cấp & uy tín được xác minh (NHTW, GSO, IMF, BIS, BCTC, Văn bản luật)
+       ↓
+Tri thức bài học trong kho (topics/)
+       ↓
+Nhật ký sửa lỗi lịch sử (knowledge_corrections.md)
+       ↓
+Các giả định mô hình lý thuyết chung
+```
+
+### Giao thức Chống "Memory Poisoning" (Anti-Memory-Poisoning Protocol)
+* **Xử lý Xung đột Dữ liệu (Conflict Resolution):** Khi nội dung trong bộ nhớ mâu thuẫn với nguồn sơ cấp uy tín đã được xác minh (hoặc quy định/số liệu thực tế mới), Agent **KHÔNG ĐƯỢC** ưu tiên bộ nhớ chỉ vì nó thuộc tầng cao hơn về mặt hành vi. Agent phải:
+  1. Nhận diện xung đột (*detect conflict*).
+  2. Kiểm tra nguồn sơ cấp uy tín (*verify source*).
+  3. Giải quyết xung đột dựa trên bằng chứng sơ cấp (*resolve conflict*).
+  4. Cập nhật lại bộ nhớ (`knowledge_corrections.md` & `agent_memory.md`) nếu bộ nhớ bị lạc hậu hoặc sai lệch (*update memory*).
 
 ---
 
-## 3. Quy trình 6 bước Biên soạn Bài học Mới
+## 2. Quy trình 6 bước Biên soạn Bài học Mới
 
 Mỗi khi người dùng yêu cầu bài học mới, Agent phải thực hiện đúng 6 bước sau:
 
 1. **Lựa chọn chủ đề & Nạp Bộ nhớ (Memory Retrieval & Spiral Model):** 
-   - **Thực hiện Step 0 & Step 1 of Memory Protocol:** Nạp `agent_memory.md`, nhận diện risk patterns và truy xuất các quy tắc liên quan.
+   - **Thực hiện Step 0 & Step 1 of Memory Protocol:** Nạp `agent_memory.md`, nhận diện risk patterns và chủ động tra cứu các quy tắc liên quan.
    - Đọc [`LEARNED.md`](LEARNED.md) và [`RELATE.md`](RELATE.md).
    - **TẦNG 1 - CORE ANCHORS (Nền tảng):** Lãi suất, Lạm phát, Cung tiền, Thanh khoản. Ưu tiên xây móng vững trước.
    - **TẦNG 2 - HÀNH VI (Song song):** *Behavioral Finance* có thể học sớm/song song.
@@ -181,7 +194,7 @@ Mỗi khi người dùng yêu cầu bài học mới, Agent phải thực hiện
 
 ---
 
-## 4. Prompt Yêu cầu Biên soạn Bài học Kinh tế (Prompt Gốc)
+## 3. Prompt Yêu cầu Biên soạn Bài học Kinh tế (Prompt Gốc)
 
 Hãy gửi cho tôi một bài học về kinh tế, tài chính hoặc cách nền kinh tế vận hành.
 
@@ -325,7 +338,7 @@ Phần này cần giải thích cách kiến thức có thể giúp tôi:
 * Tránh những kết luận kinh tế trực giác nhưng sai.
 * Nhìn một hiện tượng tại Việt Nam trong bối cảnh kinh tế quốc tế.
 
-Không được cố biến mọi bài học thành lời khuyên đầu tư. Nếu kiến thức không trực tiếp dẫn đến một hành động tài chính, hãy giải thích nó giúp cải thiện cách tư tư tư tư như thế nào.
+Không được cố biến mọi bài học thành lời khuyên đầu tư. Nếu kiến thức không trực tiếp dẫn đến một hành động tài chính, hãy giải thích nó giúp cải thiện cách tư duy như thế nào.
 
 ## Thuật ngữ
 
@@ -472,7 +485,7 @@ Tóm tắt một đến ba ý cốt lõi, tập trung vào cơ chế thay vì ch
 
 ---
 
-## 5. Giao thức Chống Bịa Thông tin & Chống Sửa Tung
+## 4. Giao thức Chống Bịa Thông tin & Chống Sửa Tung
 
 ### A. Giao thức Chống Bịa Thông tin (Anti-Fabrication Protocol)
 
@@ -531,7 +544,7 @@ Trước khi kết thúc phiên, Agent liệt kê tóm tắt:
 Bạn là AI Agent quản trị kho tri thức Eco Learning. Trước khi biên soạn bài học mới, hãy:
 
 1. Thực hiện Step 0 & Step 1 of Agent Memory Protocol (Đọc agent_memory.md,
-   nhận diện risk patterns và truy xuất các quy tắc tương ứng).
+   nhận diện risk patterns và chủ động tra cứu các quy tắc tương ứng).
 2. Đọc LEARNED.md và RELATE.md để chọn chủ đề (ưu tiên breadth-first,
    xen kẽ 1 bài củng cố sau mỗi 3-4 bài mới).
 3. Biên soạn bài học theo đúng 9 mục chuẩn trong AGENTS.md, dán nhãn phân biệt

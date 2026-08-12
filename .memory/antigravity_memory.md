@@ -15,7 +15,7 @@ Tài liệu này chứa các quy tắc vận hành tinh chế (*Distilled Operat
 
 ### 2. Rule G-002 — Balance-Sheet Accounting Isolation
 * **Rule:** Maintain strict accounting identities and isolate balance sheets across different entities.
-* **Application:** When a central bank purchases securities directly from a commercial bank, the immediate balance-sheet change is in securities and reserves; do not infer a new customer deposit from that transaction. Distinguish this from purchases from non-bank sellers, where the seller's bank deposit can increase. Always verify:
+* **Application:** When a central bank purchases securities directly from a commercial bank, the immediate balance-sheet change is in securities and reserves; do not infer a new customer deposit from that transaction. Distinguish this from purchases from non-bank sellers, where the transaction typically increases the seller's bank deposit and the banking system's reserve balance. Always verify:
   $$\text{Central-bank reserves} \neq \text{Commercial-bank deposits}$$
 
 ### 3. Rule G-003 — Non-Deterministic Macro Relationships
@@ -24,11 +24,17 @@ Tài liệu này chứa các quy tắc vận hành tinh chế (*Distilled Operat
 
 ### 4. Rule G-004 — Concept Distinction & Causality Prevention
 * **Rule:** Distinguish closely related macro concepts and avoid assuming direct causality merely because they co-occur.
-* **Application:** Differentiate Credit Crunch (commercial bank credit supply contraction) from Liquidity Trap (near-zero interest rate with extreme liquidity preference). Do not present one as automatically causing the other.
+* **Application:** Differentiate Credit Crunch (commercial bank credit supply contraction) from Liquidity Trap (low short-term interest rates combined with heightened liquidity preference, where conventional monetary policy loses traction; a fixed 0% numerical threshold is not the sole defining condition). Do not present one as automatically causing the other.
 
 ### 5. Rule G-005 — Scope & Quantitative Verification
 * **Rule:** Definitions, numbers, and legal regulations vary by statistical framework and country; do not present localized or simplified data as universal facts.
 * **Application:** Specify the governing central bank, country, or statistical framework (e.g., Fed vs SBV vs ECB) when discussing M1/M2 definitions, interest rate tools, or legal tax rules. Always include `applicable_year` or `last_verified` for legal/tax topics.
+
+---
+
+## ⚖️ Authority Separation Reminder
+> **"Memory controls reasoning behavior, not factual truth."**  
+> Operational memory defines procedural steps and error prevention rules. If memory conflicts with verified primary source data, verify primary sources and update memory.
 
 ---
 

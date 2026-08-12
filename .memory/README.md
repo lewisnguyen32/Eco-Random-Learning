@@ -17,8 +17,8 @@ Khác với các tài liệu lưu trữ tri thức bài học dành cho người
 │
 ├── knowledge_corrections.md # Tầng 1: Nhật ký Lỗi & Bài học Tổng quát hóa (Long-Term Error Memory)
 │
-├── antigravity_memory.md   # Tầng 2: Bộ nhớ Vận hành Tinh chế cho Antigravity Agent (Operational Memory)
-└── codex_memory.md        # Tầng 2: Bộ nhớ Vận hành Tinh chế cho Codex Agent (Operational Memory)
+├── antigravity_memory.md   # Tầng 2: Quy tắc Vận hành Tinh chế cho Antigravity Agent
+└── codex_memory.md        # Tầng 2: Quy tắc Vận hành Tinh chế cho Codex Agent (khi Codex được sử dụng)
 ```
 
 ---
@@ -35,42 +35,27 @@ Khác với các tài liệu lưu trữ tri thức bài học dành cho người
   - **Bài học Tổng quát hóa (Generalizable Lesson)** (ví dụ: `G-001`, `G-002`...)
   - **Dấu hiệu Kích hoạt (Trigger Patterns)**
   - **Nguồn đối chiếu (Verification Source)**
-* **Quy tắc cốt lõi:** Một correction entry tốt không chỉ sửa một câu chữ cụ thể, mà phải trích xuất ra bài học tư duy có khả năng tổng quát hóa cho nhiều chủ đề khác nhau (kinh tế vĩ mô, kế toán, ngân hàng, thị trường...).
 
 ### 2. `antigravity_memory.md` & `codex_memory.md` (Distilled Operational Memory)
-* **Bản chất:** Chứa các quy tắc vận hành tinh chế (*distilled operational rules*) được rút gọn từ các bài học tổng quát.
+* **Bản chất:** Chứa các quy tắc vận hành tinh chế (*distilled operational rules*) dành riêng cho từng Agent (Antigravity hoặc Codex khi được dùng).
 * **Đặc điểm:**
   - Không sao chép nguyên văn toàn bộ nhật ký lỗi chi tiết.
   - Ngắn gọn, súc tích, tối ưu token.
-  - Viết dưới dạng các chỉ dẫn có điều kiện ngữ cảnh (*context-dependent rules*), tránh phát biểu tuyệt đối thiếu căn cứ.
-  - Được Agent nạp ở **Step 0** mỗi khi bắt đầu một phiên làm việc.
+  - Trình bày dạng các chỉ dẫn có điều kiện ngữ cảnh (*context-dependent rules*), tránh phát biểu tuyệt đối thiếu căn cứ.
 
-### 3. `AGENTS.md` (Retrieval & Application Protocol)
-* Chứa quy trình 5 bước bắt buộc (**Memory Retrieval & Learning Protocol**) để Agent truy xuất bộ nhớ, tự đánh giá nguy cơ, áp dụng quy tắc làm ràng buộc tư duy, và chạy bảng kiểm tra (*Memory Check*) trước khi hoàn tất bài học.
-
----
-
-## 🔄 Vòng lặp Học tập của Agent (Correction-to-Rule Loop)
-
-```text
-Agent makes mistake / Reviewer corrects error
-                    ↓
-Correction is recorded in knowledge_corrections.md
-                    ↓
-Failure pattern is abstracted & General lesson extracted (G-xxx)
-                    ↓
-Distilled operational rule is updated in agent_memory.md
-                    ↓
-Relevant rules retrieved on future tasks via AGENTS.md Protocol
-                    ↓
-Agent applies rules as constraints before writing content
-                    ↓
-Future mistakes of the same class are prevented
-```
+### 3. `AGENTS.md` (Protocol Master & Authority Framework)
+* **Agent-Guided Retrieval:** Chứa quy trình tra cứu có định hướng (deliberate agent-guided retrieval, KHÔNG phải tự động bằng vector DB / RAG code).
+* **Phân tách Thẩm quyền (Authority Separation):** Phân định rõ *Behavioral Authority* (bộ nhớ chỉ đạo quy trình làm việc) vs *Epistemic Authority* (nguồn sơ cấp/uy tín chỉ đạo sự thật dữ liệu).
 
 ---
 
-## ⚠️ Phân định Ranh giới Quan trọng
+## ⚖️ Phân tách Thẩm quyền: Behavioral vs Epistemic Authority
 
-1. **Memory $\neq$ Repository Knowledge:** `.memory/` lưu trữ quy tắc tư duy phía Agent, không thay thế hoặc duplicate nội dung bài học chính thức trong `topics/`.
-2. **Memory $\neq$ Unquestionable Source of Truth:** Bộ nhớ đóng vai trò là **hệ thống hướng dẫn tư duy và phòng ngừa lỗi (reasoning prior / error prevention)**, không thay thế cho việc xác minh nguồn sơ cấp khi có dữ liệu thời sự hay quy định pháp lý mới.
+> **"Memory controls reasoning behavior, not factual truth."**
+
+1. **Behavioral Authority (Quy trình Vận hành):**
+   `AGENTS.md` $\rightarrow$ `agent_memory.md` định hướng Agent phải thực hiện task như thế nào (phải kiểm tra balance sheet, phải dán nhãn model vs reality, phải self-check).
+2. **Epistemic Authority (Nguồn Sự thật Dữ liệu):**
+   Nguồn sơ cấp uy tín (NHNN, GSO, Fed, IMF, BIS, BCTC) $\rightarrow$ Nội dung bài học (`topics/`) $\rightarrow$ Nhật ký lỗi (`knowledge_corrections.md`).
+
+Khi bộ nhớ mâu thuẫn với bằng chứng sơ cấp uy tín, Agent **không** ưu tiên bộ nhớ chỉ vì vị trí tầng. Agent phải nhận diện xung đột $\rightarrow$ kiểm tra nguồn $\rightarrow$ giải quyết xung đột $\rightarrow$ cập nhật lại bộ nhớ.

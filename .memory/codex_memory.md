@@ -1,6 +1,6 @@
 # Codex Operational Memory (Distilled Agent Rules)
 
-Tài liệu này chứa các quy tắc vận hành tinh chế (*Distilled Operational Rules*) dành riêng cho AI Agent **Codex**. Các quy tắc này được trích xuất từ nhật ký sửa lỗi dài hạn (`.memory/knowledge_corrections.md`) và phải được áp dụng làm ràng buộc tư duy trước khi tạo hoặc sửa bài học.
+Tài liệu này chứa các quy tắc vận hành tinh chế (*Distilled Operational Rules*) dành riêng cho AI Agent **Codex** (khi Codex Agent được sử dụng trong repository). Các quy tắc này được trích xuất từ nhật ký sửa lỗi dài hạn (`.memory/knowledge_corrections.md`) và phải được áp dụng làm ràng buộc tư duy trước khi tạo hoặc sửa bài học.
 
 ---
 
@@ -14,7 +14,7 @@ Tài liệu này chứa các quy tắc vận hành tinh chế (*Distilled Operat
 
 ### 2. Rule G-002 — Balance-Sheet Accounting Isolation
 * **Rule:** Maintain strict accounting identities and isolate balance sheets across different entities.
-* **Application:** Always distinguish central-bank reserves from commercial-bank deposits ($\text{Reserves} \neq \text{Deposits}$). Verify balance-sheet entries for each entity separately.
+* **Application:** Always distinguish central-bank reserves from commercial-bank deposits ($\text{Reserves} \neq \text{Deposits}$). When central bank buys assets from non-bank sellers, the transaction typically increases the seller's bank deposit and reserve balance.
 
 ### 3. Rule G-003 — Non-Deterministic Macro Relationships
 * **Rule:** Do not turn conditional macroeconomic relationships into universal or deterministic causal laws.
@@ -22,11 +22,17 @@ Tài liệu này chứa các quy tắc vận hành tinh chế (*Distilled Operat
 
 ### 4. Rule G-004 — Concept Distinction & Causality Prevention
 * **Rule:** Distinguish closely related macro concepts and avoid assuming direct causality merely because they co-occur.
-* **Application:** Differentiate Credit Crunch from Liquidity Trap. Do not present one as automatically causing the other.
+* **Application:** Differentiate Credit Crunch from Liquidity Trap (low short-term interest rates with heightened liquidity preference; a fixed 0% threshold is not the sole defining condition). Do not present one as automatically causing the other.
 
 ### 5. Rule G-005 — Scope & Quantitative Verification
 * **Rule:** Definitions and regulations vary by statistical framework and country; do not present localized data as universal facts.
 * **Application:** Specify the governing central bank, country, or statistical framework (e.g., Fed vs SBV vs ECB). Always include `applicable_year` or `last_verified` for legal/tax topics.
+
+---
+
+## ⚖️ Authority Separation Reminder
+> **"Memory controls reasoning behavior, not factual truth."**  
+> Operational memory defines procedural steps and error prevention rules. If memory conflicts with verified primary source data, verify primary sources and update memory.
 
 ---
 
