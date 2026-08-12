@@ -202,8 +202,8 @@ Trong giai đoạn 1929 – 1933 tại Mỹ, lượng cung tiền $M2$ đã sụ
 
 ### Liên kết kiến thức
 
-* [`MACRO-001`](topics/macroeconomics-and-monetary/interest-rates-and-monetary-policy-transmission.md) *(⏳ Chưa học)*: Lãi suất điều hành & Kênh truyền dẫn chính sách tiền tệ.
-* [`MACRO-002`](topics/macroeconomics-and-monetary/inflation-types-and-cpi-measurement.md) *(⏳ Chưa học)*: Lạm phát: Bản chất, Đo lường CPI và Mối liên hệ với Cung tiền $M2$.
+* `MACRO-001` *(⏳ Chưa học)*: Lãi suất điều hành & Kênh truyền dẫn chính sách tiền tệ.
+* `MACRO-002` *(⏳ Chưa học)*: Lạm phát: Bản chất, Đo lường CPI và Mối liên hệ với Cung tiền $M2$.
 * [`CORP-001`](topics/corporate-and-markets/cash-conversion-cycle.md) *(✅ Đã học)*: Chu kỳ chuyển đổi tiền mặt & Rủi ro Thanh khoản Doanh nghiệp.
 
 ---

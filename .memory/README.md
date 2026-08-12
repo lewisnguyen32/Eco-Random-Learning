@@ -54,7 +54,7 @@ Khác với các tài liệu lưu trữ tri thức bài học dành cho người
 > **"Memory controls reasoning behavior, not factual truth."**
 
 1. **Behavioral Authority (Quy trình Vận hành):**
-   `AGENTS.md` $\rightarrow$ `agent_memory.md` định hướng Agent phải thực hiện task như thế nào (phải kiểm tra balance sheet, phải dán nhãn model vs reality, phải self-check).
+   `AGENTS.md` $\rightarrow$ `antigravity_memory.md` / `codex_memory.md` định hướng Agent phải thực hiện task như thế nào (phải kiểm tra balance sheet, phải dán nhãn model vs reality, phải self-check).
 2. **Epistemic Authority (Nguồn Sự thật Dữ liệu):**
    Nguồn sơ cấp uy tín (NHNN, GSO, Fed, IMF, BIS, BCTC) $\rightarrow$ Nội dung bài học (`topics/`) $\rightarrow$ Nhật ký lỗi (`knowledge_corrections.md`).
 

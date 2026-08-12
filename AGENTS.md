@@ -94,7 +94,7 @@ Khi người dùng hoặc reviewer sửa một lỗi sai kiến thức / tư duy
 3. **Trích xuất Bài học Tổng quát hóa (Generalizable Lesson):** Chuyển từ lỗi sai cụ thể thành nguyên tắc tư duy tổng quát có thể áp dụng cho nhiều chủ đề khác.
 4. **Quyết định đưa vào Operational Memory:**
    - Nếu là sự thật một lần (*one-off fact*) $\rightarrow$ Chỉ lưu ở `knowledge_corrections.md`.
-   - Nếu là nguyên tắc tư duy tái sử dụng được (*reusable reasoning rule*) $\rightarrow$ Tinh chế và cập nhật vào file `agent_memory.md` tương ứng.
+   - Nếu là nguyên tắc tư duy tái sử dụng được (*reusable reasoning rule*) $\rightarrow$ Tinh chế và cập nhật vào file bộ nhớ vận hành của agent tương ứng trong `.memory/` (ví dụ: `antigravity_memory.md` hoặc `codex_memory.md`).
 5. **Hợp nhất quy tắc (Merge & Refactor):** Nếu quy tắc đã tồn tại hoặc nhiều lỗi cùng chỉ ra một failure mode, hợp nhất thành một quy tắc cấp cao hơn thay vì tạo quy tắc trùng lặp.
 
 ---
@@ -165,7 +165,7 @@ Các giả định mô hình lý thuyết chung
   1. Nhận diện xung đột (*detect conflict*).
   2. Kiểm tra nguồn sơ cấp uy tín (*verify source*).
   3. Giải quyết xung đột dựa trên bằng chứng sơ cấp (*resolve conflict*).
-  4. Cập nhật lại bộ nhớ (`knowledge_corrections.md` & `agent_memory.md`) nếu bộ nhớ bị lạc hậu hoặc sai lệch (*update memory*).
+  4. Cập nhật lại bộ nhớ (`knowledge_corrections.md` & file bộ nhớ agent tương ứng như `antigravity_memory.md` / `codex_memory.md`) nếu bộ nhớ bị lạc hậu hoặc sai lệch (*update memory*).
 
 ---
 
@@ -174,7 +174,7 @@ Các giả định mô hình lý thuyết chung
 Mỗi khi người dùng yêu cầu bài học mới, Agent phải thực hiện đúng 6 bước sau:
 
 1. **Lựa chọn chủ đề & Nạp Bộ nhớ (Memory Retrieval & Spiral Model):** 
-   - **Thực hiện Step 0 & Step 1 of Memory Protocol:** Nạp `agent_memory.md`, nhận diện risk patterns và chủ động tra cứu các quy tắc liên quan.
+   - **Thực hiện Step 0 & Step 1 of Memory Protocol:** Nạp file bộ nhớ vận hành tương ứng trong `.memory/` (`antigravity_memory.md` hoặc `codex_memory.md`), nhận diện risk patterns và chủ động tra cứu các quy tắc liên quan.
    - Đọc [`LEARNED.md`](LEARNED.md) và [`RELATE.md`](RELATE.md).
    - **TẦNG 1 - CORE ANCHORS (Nền tảng):** Lãi suất, Lạm phát, Cung tiền, Thanh khoản. Ưu tiên xây móng vững trước.
    - **TẦNG 2 - HÀNH VI (Song song):** *Behavioral Finance* có thể học sớm/song song.
@@ -525,10 +525,9 @@ Mỗi phiên biên soạn chỉ được tạo/sửa đúng 5 loại file:
 - `LEARNED.md`, `RELATE.md` và `GLOSSARY.md`: chỉ **thêm dòng mới**, không sửa/xóa dòng cũ — trừ khi người dùng yêu cầu rõ ràng.
 - Cấm Agent tự ý "dọn dẹp" hay viết lại các dòng cũ để "gọn hơn" nếu không được yêu cầu.
 
-#### 3. Phát hiện lỗi ở bài cũ → Ghi nhận vào Memory Protocol & ISSUES.md
+#### 3. Phát hiện lỗi ở bài cũ → Ghi nhận vào Memory Protocol
 Nếu trong lúc soạn bài mới phát hiện bài cũ có sai sót:
 - Ghi nhận sự cố vào `.memory/knowledge_corrections.md` và trích xuất bài học tổng quát theo **Step 5 of Memory Protocol**.
-- Ghi một dòng vào `ISSUES.md` (tạo mới nếu chưa có) để theo dõi.
 
 #### 4. Xác nhận trước khi hoàn tất (diff summary)
 Trước khi kết thúc phiên, Agent liệt kê tóm tắt:
@@ -543,8 +542,9 @@ Trước khi kết thúc phiên, Agent liệt kê tóm tắt:
 ```
 Bạn là AI Agent quản trị kho tri thức Eco Learning. Trước khi biên soạn bài học mới, hãy:
 
-1. Thực hiện Step 0 & Step 1 of Agent Memory Protocol (Đọc agent_memory.md,
-   nhận diện risk patterns và chủ động tra cứu các quy tắc tương ứng).
+1. Thực hiện Step 0 & Step 1 of Agent Memory Protocol (Đọc file bộ nhớ tương ứng
+   như antigravity_memory.md / codex_memory.md trong .memory/, nhận diện risk patterns
+   và chủ động tra cứu các quy tắc tương ứng).
 2. Đọc LEARNED.md và RELATE.md để chọn chủ đề (ưu tiên breadth-first,
    xen kẽ 1 bài củng cố sau mỗi 3-4 bài mới).
 3. Biên soạn bài học theo đúng 9 mục chuẩn trong AGENTS.md, dán nhãn phân biệt
