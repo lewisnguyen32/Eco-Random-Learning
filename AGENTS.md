@@ -1,70 +1,187 @@
 # Hướng dẫn Vận hành và Quy tắc Biên soạn cho AI Agent (AGENTS.md)
 
-Tài liệu này chứa toàn bộ quy định, tiêu chuẩn nội dung và quy trình làm việc dành cho AI Agent khi biên soạn các bài học kinh tế, tài chính và đầu tư trong dự án **Eco Learning**.
+Tài liệu này chứa toàn bộ quy định, tiêu chuẩn nội dung, kiến trúc bộ nhớ và quy trình làm việc dành cho AI Agent khi biên soạn các bài học kinh tế, tài chính và đầu tư trong dự án **Eco Learning**.
 
 ---
 
-## 1. Cấu trúc Kho lưu trữ & Tối ưu hóa Token
+## 1. Cấu trúc Kho lưu trữ & Hệ thống Agent Memory
 
 Dự án được tổ chức theo cấu trúc như sau:
 
 ```
 Eco Learning (GEMINI)/
 ├── README.md               # Tổng quan kho lưu trữ
-├── AGENTS.md               # Quy định & Prompt chỉ dẫn cho Agent (File này)
+├── AGENTS.md               # Quy định master & Protocol cho Agent (File này)
 ├── LEARNED.md              # Bảng nhật ký tổng quan các bài học đã hoàn thành (Có Mã ID)
 ├── RELATE.md               # Hàng chờ các khái niệm liên quan (Dùng để tham khảo & củng cố kiến thức)
 ├── GLOSSARY.md             # Bảng chỉ mục thuật ngữ tra cứu nhanh
-├── .memory/                # Thư mục lưu trữ bộ nhớ làm việc tạm thời của từng AI Agent
-│   ├── README.md           # Giới thiệu các file bộ nhớ
-│   ├── antigravity_memory.md # Bộ nhớ tạm cho Antigravity (Gemini)
-│   └── codex_memory.md     # Bộ nhớ tạm cho Codex
+├── .memory/                # Hệ thống Agent Memory & Learning System (Kiến trúc 3 tầng)
+│   ├── README.md           # Hướng dẫn quy trình & phân định vai trò hệ thống bộ nhớ
+│   ├── knowledge_corrections.md # Tầng 1: Nhật ký Lỗi & Bài học Tổng quát hóa (Error Memory)
+│   ├── antigravity_memory.md # Tầng 2: Quy tắc vận hành tinh chế cho Antigravity (Operational Memory)
+│   └── codex_memory.md     # Tầng 2: Quy tắc vận hành tinh chế cho Codex (Operational Memory)
 └── topics/                 # Thư mục Nhánh A duy nhất chứa toàn bộ các chủ đề
     └── <category-B>/       # Thư mục Nhánh B (Tên tiếng Anh kebab-case, ví dụ: corporate-and-markets)
         ├── README.md       # Tóm tắt danh mục các bài học thuộc chủ đề B này
         └── <lesson-name>.md # Bài học .md chi tiết (Có chứa YAML frontmatter ở đầu)
 ```
 
-### 🧠 QUY TẮC BỘ NHỚ TẠM THỜI (TEMPORARY WORKING MEMORY):
-* Khi người dùng yêu cầu trích xuất, cập nhật hoặc xem bộ nhớ tạm, AI Agent hãy truy cập đúng file trong `.memory/` tương ứng với model/agent đang vận hành (ví dụ: `.memory/antigravity_memory.md` đối với Antigravity, `.memory/codex_memory.md` đối với Codex).
+### 🧠 QUY TẮC BỘ NHỚ VẬN HÀNH (OPERATIONAL MEMORY RULE):
+* Khi vận hành, AI Agent **bắt buộc phải đọc file memory tinh chế tương ứng với model/agent của mình** trong `.memory/` (ví dụ: `.memory/antigravity_memory.md` đối với Antigravity, `.memory/codex_memory.md` đối với Codex) để nạp các quy tắc vận hành trước khi biên soạn.
 
 ### ⚠️ QUY TẮC TIẾT KIỆM TOKEN CHO AGENT:
 1. **TRÁNH đọc trực tiếp các file bài học `.md` chi tiết** trừ khi thực sự cần thiết (ví dụ: cần trích dẫn chính xác công thức hoặc nội dung cụ thể từ bài đó).
 2. Khi cần kiểm tra lịch sử các bài đã học và chọn chủ đề tiếp theo:
-   - **Bước 1:** Đọc file [`RELATE.md`](RELATE.md) để kiểm tra các khái niệm liên quan chưa học (đã được mở ra từ các bài trước).
-   - **Bước 2:** Đọc file [`LEARNED.md`](LEARNED.md) ở thư mục gốc (nơi chứa tóm tắt 1 dòng siêu gọn cho mỗi bài).
-   - **Bước 3 (nếu cần xem sâu hơn về một nhóm chủ đề):** Đọc file `README.md` nằm bên trong thư mục `topics/<category-B>/` tương ứng (nơi chứa tóm tắt 3-5 câu cho các bài học trong nhóm đó).
+   - **Bước 1:** Đọc file [`RELATE.md`](RELATE.md) để kiểm tra các khái niệm liên quan chưa học.
+   - **Bước 2:** Đọc file [`LEARNED.md`](LEARNED.md) ở thư mục gốc.
+   - **Bước 3 (nếu cần xem sâu hơn về một nhóm chủ đề):** Đọc file `README.md` nằm bên trong thư mục `topics/<category-B>/` tương ứng.
 
 ---
 
-## 2. Quy trình 6 bước Biên soạn Bài học Mới
+## 🧠 Agent Memory Retrieval & Learning Protocol
+
+Đây là giao thức bắt buộc để Agent chủ động truy xuất, áp dụng bộ nhớ và học hỏi từ các sai sót cũ trước và trong khi biên soạn bài học mới.
+
+```text
+Correction is recorded → Failure pattern abstracted → General rule distilled → Relevant rule retrieved → Applied before writing
+```
+
+### Step 0 — Load Operational Memory (Nạp bộ nhớ vận hành)
+Trước khi bắt đầu bất kỳ task tạo hoặc sửa bài học nào:
+1. Đọc file memory tinh chế của agent hiện tại (`.memory/antigravity_memory.md` hoặc `.memory/codex_memory.md`).
+2. Xác định các quy tắc vận hành tinh chế (*distilled operational rules*) liên quan trực tiếp đến task.
+
+### Step 1 — Identify Risk Patterns (Nhận diện nguy cơ tiềm ẩn)
+Trước khi viết nội dung, Agent tự đánh giá chủ đề bài học có chứa các dấu hiệu nguy cơ sau không:
+* **Mô hình Giáo trình Dễ bị Rập khuôn (Textbook Oversimplification):** Có dùng công thức lý thuyết hay mô hình giảng dạy không?
+* **Cơ chế Thể chế (Institutional Mechanism):** Có liên quan đến cách ngân hàng, thị trường hay cơ quan quản lý vận hành thực tế không?
+* **Đồng nhất thức Kế toán (Balance-Sheet Accounting Identity):** Có liên quan đến dòng tiền, nợ/tài sản hay hạch toán kế toán giữa nhiều chủ thể không?
+* **Phát biểu Nhân quả Vĩ mô (Causal Claim):** Có phát biểu mối quan hệ giữa các biến số vĩ mô không?
+* **Khẳng định Định lượng (Quantitative / Empirical Claim):** Có sử dụng số liệu, mốc thời gian hay quy định pháp lý không?
+* **Thuật ngữ Dễ nhầm lẫn (Terminology Ambiguity):** Có các khái niệm hay đi cùng nhau nhưng khác bản chất không?
+
+### Step 2 — Retrieve Relevant Corrections (Truy xuất bài học lịch sử phù hợp)
+Agent KHÔNG cần đọc toàn bộ `.memory/knowledge_corrections.md` cho mọi task. Hãy truy xuất ngữ nghĩa dựa trên:
+1. **Exact Topic Match:** Khớp chủ đề trực tiếp (ví dụ: `money supply`, `interest rates`).
+2. **Conceptual Match:** Khớp khái niệm rộng (ví dụ: banking, monetary policy, accounting).
+3. **Failure Pattern Match:** Khớp dạng lỗi tư duy (ví dụ: *textbook model vs reality*, *balance sheet confusion*, *deterministic macro claim*, *empirical timing overclaim*).
+
+### Step 3 — Apply Retrieved Rules as Constraints (Áp dụng làm ràng buộc tư duy)
+Coi các quy tắc đã truy xuất là các **ràng buộc tư duy cứng (hard constraints)**. 
+* *Ví dụ:* Nếu quy tắc truy xuất ghi `Central-bank reserves ≠ Commercial-bank deposits`, bất kỳ ví dụ ngân hàng nào cũng phải kiểm tra hạch toán Bảng cân đối kế toán trước khi hoàn tất.
+
+### Step 4 — Pre-Finalization Memory Self-Check (Bảng tự kiểm tra bộ nhớ)
+Trước khi hoàn thiện một bài học, Agent bắt buộc chạy bảng tự kiểm tra:
+
+```text
+MEMORY CHECK
+[ ] Đã áp dụng các bài học lịch sử và distilled rules phù hợp chưa?
+[ ] Có vô tình lặp lại hiểu lầm đã từng được sửa đổi không?
+[ ] Đã phân biệt rõ Mô hình Giáo trình (Textbook Model) vs Cơ chế Thực tế (Real-World Mechanism) chưa?
+[ ] Có biến mối quan hệ có điều kiện thành khẳng định định mệnh / tuyệt đối không?
+[ ] Có số liệu định lượng nào thiếu phạm vi bối cảnh / nguồn xác minh không?
+[ ] Đã kiểm tra tính cân đối và phân tách Bảng cân đối kế toán (Reserves vs Deposits) chưa?
+[ ] Đã dán nhãn phân loại các khẳng định quan trọng (Definition / Identity / Model / Causal Claim) chưa?
+```
+*Nếu fail bất kỳ mục quan trọng nào, Agent phải chỉnh sửa nội dung trước khi finalize.*
+
+### Step 5 — Correction-to-General-Rule Protocol (Quy trình Học tập khi có Lỗi mới)
+Khi người dùng hoặc reviewer sửa một lỗi sai kiến thức / tư duy:
+1. **Sửa bài học gốc** trong `topics/`.
+2. **Ghi nhận sự cố** vào `.memory/knowledge_corrections.md` theo chuẩn format (Error, Corrected Understanding, Root Cause, Generalizable Lesson, Trigger Patterns).
+3. **Trích xuất Bài học Tổng quát hóa (Generalizable Lesson):** Chuyển từ lỗi sai cụ thể thành nguyên tắc tư duy tổng quát có thể áp dụng cho nhiều chủ đề khác.
+4. **Quyết định đưa vào Operational Memory:**
+   - Nếu là sự thật một lần (*one-off fact*) $\rightarrow$ Chỉ lưu ở `knowledge_corrections.md`.
+   - Nếu là nguyên tắc tư duy tái sử dụng được (*reusable reasoning rule*) $\rightarrow$ Tinh chế và cập nhật vào `agent_memory.md`.
+5. **Hợp nhất quy tắc (Merge & Refactor):** Nếu quy tắc đã tồn tại hoặc nhiều lỗi cùng chỉ ra một failure mode, hợp nhất thành một quy tắc cấp cao hơn thay vì tạo quy tắc trùng lặp.
+
+---
+
+## 🏛️ Model-vs-Reality Rule (Quy tắc Mô hình vs Thực tế)
+
+Bất kỳ bài học nào chứa cả mô hình giáo trình và cơ chế vận hành thực tế BẮT BUỘC phải phân tách rõ ràng:
+
+```text
+TEXTBOOK MODEL (Mô hình Giáo trình)
+→ Các giả định (Assumptions)
+→ Mô hình chứng minh điều gì (What it demonstrates)
+
+REAL-WORLD MECHANISM (Cơ chế Thực tế)
+→ Quy trình vận hành thể chế thực tế (Actual institutional process)
+→ Các rào cản và điều kiện biên thực tế (Additional constraints)
+```
+*Cấm tuyệt đối việc âm thầm chuyển từ mô hình lý thuyết sang mô tả thực tế vận hành mà không dán nhãn phân biệt.*
+
+---
+
+## 🏷️ Claim Classification Protocol (Giao thức Phân loại Khẳng định)
+
+Trước khi viết các nhận định quan trọng trong bài học, Agent phải dán nhãn / xác định bản chất của phát biểu:
+
+- `[Definition]`: Định nghĩa khái niệm.
+- `[Accounting Identity]`: Đồng nhất thức kế toán / hạch toán (bắt buộc đúng theo định nghĩa).
+- `[Theoretical Model]`: Mô hình lý thuyết với các giả định kèm theo.
+- `[Empirical Relationship]`: Mối quan hệ thực nghiệm (có tính biến động, phụ thuộc bối cảnh).
+- `[Causal Mechanism]`: Cơ chế nhân quả (cần giải thích chuỗi truyền dẫn chi tiết).
+- `[Historical Claim]`: Khẳng định sự kiện lịch sử (cần nguồn và bối cảnh).
+- `[Current Fact]`: Số liệu / quy định hiện tại (cần `applicable_year` hoặc nguồn).
+- `[Prediction]`: Dự báo / nhận định tương lai (cần nêu rõ giả định).
+
+---
+
+## ⚖️ Memory Hierarchy & Anti-Memory-Poisoning Rules
+
+### 1. Phân cấp Ưu tiên Bộ nhớ (Memory Hierarchy)
+Khi xử lý thông tin và giải quyết tranh chấp tư duy, Agent tuân theo thứ tự ưu tiên:
+
+```text
+Ưu tiên 1 (Cao nhất): AGENTS.md (Operational rules & Protocols)
+       ↓
+Ưu tiên 2: Agent-specific distilled memory (antigravity_memory.md / codex_memory.md)
+       ↓
+Ưu tiên 3: Relevant correction logs (knowledge_corrections.md)
+       ↓
+Ưu tiên 4: Lesson knowledge (topics/)
+       ↓
+Ưu tiên 5: General model assumptions
+```
+
+### 2. Giao thức Chống "Memory Poisoning" (Anti-Memory-Poisoning Protocol)
+* **Memory $\neq$ Unquestionable Source of Truth:** Bộ nhớ đóng vai trò là **hệ thống định hướng tư duy và ngăn ngừa lỗi (reasoning prior / error prevention)**, không thay thế cho việc xác minh dữ liệu thực tế.
+* **Xử lý Xung đột (Conflict Resolution):** Khi bộ nhớ cũ xung đột với nguồn sơ cấp uy tín đã được xác minh (hoặc số liệu/luật pháp mới), Agent **KHÔNG được âm thầm chọn một bên**. Agent phải:
+  1. Nhận diện xung đột.
+  2. Kiểm tra nguồn sơ cấp uy tín.
+  3. Giải quyết xung đột dựa trên bằng chứng sơ cấp.
+  4. Cập nhật lại bộ nhớ (`knowledge_corrections.md` & `agent_memory.md`) để điều chỉnh thông tin cũ.
+
+---
+
+## 3. Quy trình 6 bước Biên soạn Bài học Mới
 
 Mỗi khi người dùng yêu cầu bài học mới, Agent phải thực hiện đúng 6 bước sau:
 
-1. **Lựa chọn chủ đề (Phân tầng Mô hình Xoắn ốc & Khóa Prerequisite):** 
-   - Đọc [`LEARNED.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/LEARNED.md) và [`RELATE.md`](file:///d:/Projects/Clone/Eco%20Learning%20(GEMINI)/RELATE.md).
+1. **Lựa chọn chủ đề & Nạp Bộ nhớ (Memory Retrieval & Spiral Model):** 
+   - **Thực hiện Step 0 & Step 1 of Memory Protocol:** Nạp `agent_memory.md`, nhận diện risk patterns và truy xuất các quy tắc liên quan.
+   - Đọc [`LEARNED.md`](LEARNED.md) và [`RELATE.md`](RELATE.md).
    - **TẦNG 1 - CORE ANCHORS (Nền tảng):** Lãi suất, Lạm phát, Cung tiền, Thanh khoản. Ưu tiên xây móng vững trước.
-   - **TẦNG 2 - HÀNH VI (Song song):** *Behavioral Finance* (Tâm lý học hành vi) có thể học sớm/song song vì thiên về yếu tố tâm lý con người phản ứng với kinh tế.
-   - **TẦNG 3 - APPLICATION LAYER (Ứng dụng):** BĐS VN, Tỷ giá VND, Thuế & Quy hoạch TCCN... **BẮT BUỘC KHOÁ PREREQUISITES**: AI chỉ được mở bài Tầng 3 nếu bài nền thuộc Tầng 1 tương ứng ĐÃ CÓ TRONG `LEARNED.md`. Nếu chưa có, AI không được nhảy cóc.
-   - **THỈNH THOẢNG CỦNG CỐ (Delayed Recall):** Chọn 1 khái niệm cũ từ `RELATE.md` để ôn tập ngắt quãng.
-2. **Soạn bài học:** Biên soạn nội dung chuẩn xác theo 9 mục chuẩn. Bắt buộc có **YAML Frontmatter** ở đầu file. Đối với bài Thuế/Pháp luật VN, bắt buộc có field `applicable_year: YYYY` hoặc `last_verified: YYYY-MM-DD`.
+   - **TẦNG 2 - HÀNH VI (Song song):** *Behavioral Finance* có thể học sớm/song song.
+   - **TẦNG 3 - APPLICATION LAYER (Ứng dụng):** BĐS VN, Tỷ giá VND, Thuế & Quy hoạch TCCN... **BẮT BUỘC KHOÁ PREREQUISITES**: AI chỉ được mở bài Tầng 3 nếu bài nền thuộc Tầng 1 tương ứng ĐÃ CÓ TRONG `LEARNED.md`.
+2. **Soạn bài học (Áp dụng Memory Constraints & Claim Classification):** 
+   - Biên soạn nội dung chuẩn xác theo 9 mục chuẩn. 
+   - Phân tách rõ `Textbook Model vs Real-World Mechanism`.
+   - Bắt buộc có **YAML Frontmatter** ở đầu file (`applicable_year` với luật/thuế).
 3. **Lưu file bài học:** Lưu vào `topics/<category-B>/<lesson-name-in-english>.md`.
 4. **Cập nhật README của Thư mục B:** Thêm Mã ID, tiêu đề, đường dẫn và tóm tắt cơ chế (3-5 câu).
 5. **Cập nhật nhật ký LEARNED.md & GLOSSARY.md:**
-   - Append dòng mới vào [`LEARNED.md`](LEARNED.md) với Mã ID và đường dẫn tương đối. **Chỉ đặt Markdown Link nhấp được ở cột "Đường dẫn (File Path)"**, các cột Mã ID và Tên bài học giữ định dạng chữ/mã thuần túy. **BẮT BUỘC KHÔNG DÙNG `file:///`** để đảm bảo nhấp chuyển bài trực tiếp trên GitHub.
-   - Append thuật ngữ mới vào [`GLOSSARY.md`](GLOSSARY.md) với đường dẫn tương đối đến bài học.
-6. **Cập nhật RELATE.md & Checklist kiểm tra nhất quán (Consistency Checklist):**
+   - Append dòng mới vào [`LEARNED.md`](LEARNED.md) với Mã ID và đường dẫn tương đối (chỉ đặt link nhấp được ở cột "Đường dẫn", KHÔNG dùng `file:///`).
+   - Append thuật ngữ mới vào [`GLOSSARY.md`](GLOSSARY.md).
+6. **Cập nhật RELATE.md & Chạy Memory Checklist:**
    - Đánh dấu `✅ Đã học` hoặc thêm `⏳ Chưa học` vào [`RELATE.md`](RELATE.md).
-   - **Chạy Checklist kiểm tra tự động:**
-     * [ ] Mã ID mới đúng chuẩn (`CORP-xxx`, `MACRO-xxx`, `VIET-xxx`, `BEHAV-xxx`...)?
-     * [ ] Tất cả đường dẫn liên kết bài học có dạng đường dẫn tương đối (Relative Path) nhấp được trên GitHub chưa?
-     * [ ] Tất cả `prerequisites` có thực sự tồn tại trong `LEARNED.md` chưa?
-     * [ ] `LEARNED.md` và `GLOSSARY.md` đã được cập nhật đủ chưa?
-     * [ ] Bài viết về Thuế/Pháp luật đã có `applicable_year` chưa?
+   - **Chạy Pre-Finalization Memory Self-Check (Step 4)** cùng Checklist nhất quán repository.
 
 ---
 
-## 3. Prompt Yêu cầu Biên soạn Bài học Kinh tế (Prompt Gốc)
+## 4. Prompt Yêu cầu Biên soạn Bài học Kinh tế (Prompt Gốc)
 
 Hãy gửi cho tôi một bài học về kinh tế, tài chính hoặc cách nền kinh tế vận hành.
 
@@ -100,7 +217,7 @@ Hạn chế các bài tập trung chủ yếu vào chính sách công thuần t�
 
 Việc chọn chủ đề duy trì **Mô hình Xoắn ốc (Spiral Model)**:
 * Xoay quanh các khái niệm hạt nhân kết nối cao trước (Lãi suất, Lạm phát, Cung tiền, Thanh khoản) để làm điểm tựa vững chắc.
-* Thỉnh thoại kết nối bài mới với bài cũ thông qua hàng chờ `RELATE.md`.
+* Thỉnh thoảng kết nối bài mới với bài cũ thông qua hàng chờ `RELATE.md`.
 * Tránh lặp lại cùng một nội dung trong thời gian ngắn.
 * Mở rộng từ khái niệm nền tảng sang các mảng ứng dụng thực tế phức tạp hơn.
 
@@ -208,7 +325,7 @@ Phần này cần giải thích cách kiến thức có thể giúp tôi:
 * Tránh những kết luận kinh tế trực giác nhưng sai.
 * Nhìn một hiện tượng tại Việt Nam trong bối cảnh kinh tế quốc tế.
 
-Không được cố biến mọi bài học thành lời khuyên đầu tư. Nếu kiến thức không trực tiếp dẫn đến một hành động tài chính, hãy giải thích nó giúp cải thiện cách tư duy như thế nào.
+Không được cố biến mọi bài học thành lời khuyên đầu tư. Nếu kiến thức không trực tiếp dẫn đến một hành động tài chính, hãy giải thích nó giúp cải thiện cách tư tư tư tư như thế nào.
 
 ## Thuật ngữ
 
@@ -355,7 +472,7 @@ Tóm tắt một đến ba ý cốt lõi, tập trung vào cơ chế thay vì ch
 
 ---
 
-## 4. Giao thức Chống Bịa Thông tin & Chống Sửa Tung
+## 5. Giao thức Chống Bịa Thông tin & Chống Sửa Tung
 
 ### A. Giao thức Chống Bịa Thông tin (Anti-Fabrication Protocol)
 
@@ -389,23 +506,22 @@ Mỗi phiên biên soạn chỉ được tạo/sửa đúng 5 loại file:
 - `RELATE.md`
 - `GLOSSARY.md`
 
-Không tự ý sửa file ngoài danh sách này trong cùng phiên, kể cả khi "tiện thể" phát hiện lỗi ở nơi khác.
+*(Trừ trường hợp cập nhật hệ thống bộ nhớ `.memory/` khi phát hiện và xử lý lỗi kiến thức theo Step 5 of Memory Protocol).*
 
 #### 2. Chỉ ghi thêm (append-only) vào log
-- `LEARNED.md`, `RELATE.md` và `GLOSSARY.md`: chỉ **thêm dòng mới**, không sửa/xóa dòng cũ — trừ khi người dùng yêu cầu rõ ràng (ví dụ: "sửa lại dòng về bài CCC").
+- `LEARNED.md`, `RELATE.md` và `GLOSSARY.md`: chỉ **thêm dòng mới**, không sửa/xóa dòng cũ — trừ khi người dùng yêu cầu rõ ràng.
 - Cấm Agent tự ý "dọn dẹp" hay viết lại các dòng cũ để "gọn hơn" nếu không được yêu cầu.
 
-#### 3. Phát hiện lỗi ở bài cũ → không tự sửa, chỉ ghi nhận
-Nếu trong lúc soạn bài mới phát hiện bài cũ có sai sót, Agent **không** tự sửa file cũ. Thay vào đó, ghi một dòng vào `ISSUES.md` (tạo mới nếu chưa có), theo định dạng:
-
-```
-[Ngày] - [Tên bài] - [Mô tả lỗi nghi ngờ] - [Cần người dùng xác nhận]
-```
+#### 3. Phát hiện lỗi ở bài cũ → Ghi nhận vào Memory Protocol & ISSUES.md
+Nếu trong lúc soạn bài mới phát hiện bài cũ có sai sót:
+- Ghi nhận sự cố vào `.memory/knowledge_corrections.md` và trích xuất bài học tổng quát theo **Step 5 of Memory Protocol**.
+- Ghi một dòng vào `ISSUES.md` (tạo mới nếu chưa có) để theo dõi.
 
 #### 4. Xác nhận trước khi hoàn tất (diff summary)
 Trước khi kết thúc phiên, Agent liệt kê tóm tắt:
 - File nào được tạo mới
-- File nào được sửa, và sửa đúng những dòng nào (không phải mô tả chung chung "đã cập nhật")
+- File nào được sửa, và sửa đúng những dòng nào
+- Kết quả chạy Pre-Finalization Memory Self-Check (Step 4)
 
 ---
 
@@ -414,18 +530,16 @@ Trước khi kết thúc phiên, Agent liệt kê tóm tắt:
 ```
 Bạn là AI Agent quản trị kho tri thức Eco Learning. Trước khi biên soạn bài học mới, hãy:
 
-1. Đọc LEARNED.md và RELATE.md để chọn chủ đề (ưu tiên breadth-first,
+1. Thực hiện Step 0 & Step 1 of Agent Memory Protocol (Đọc agent_memory.md,
+   nhận diện risk patterns và truy xuất các quy tắc tương ứng).
+2. Đọc LEARNED.md và RELATE.md để chọn chủ đề (ưu tiên breadth-first,
    xen kẽ 1 bài củng cố sau mỗi 3-4 bài mới).
-2. Biên soạn bài học theo đúng 9 mục chuẩn trong AGENTS.md.
-3. Tuân thủ NGHIÊM NGẶT Giao thức Chống Bịa Thông tin (Mục A) —
-   không bịa số liệu, không bịa nguồn, đánh dấu rõ [CẦN XÁC MINH LẠI]
-   nếu không chắc chắn.
-4. Tuân thủ NGHIÊM NGẶT Giao thức Chống Sửa Tung (Mục B) —
-   chỉ sửa đúng 5 file được phép, chỉ append vào LEARNED.md/RELATE.md/GLOSSARY.md,
-   không tự sửa bài cũ, ghi lỗi nghi ngờ vào ISSUES.md.
-5. Trước khi kết thúc, in ra bảng tóm tắt:
+3. Biên soạn bài học theo đúng 9 mục chuẩn trong AGENTS.md, dán nhãn phân biệt
+   Textbook Model vs Real-World Mechanism.
+4. Tuân thủ NGHIÊM NGẶT Giao thức Chống Bịa Thông tin (Mục A) và Giao thức Phân loại Khẳng định (Claim Classification Protocol).
+5. Tuân thủ NGHIÊM NGẶT Giao thức Chống Sửa Tung (Mục B) và Memory Protocol.
+6. Trước khi kết thúc, chạy Pre-Finalization Memory Self-Check và in ra bảng tóm tắt:
    - File đã tạo mới: ...
    - File đã sửa và dòng cụ thể: ...
-   - Các điểm [CẦN XÁC MINH LẠI] (nếu có): ...
+   - Kết quả Memory Self-Check: ...
 ```
-

@@ -19,14 +19,15 @@ Hệ thống được tổ chức phân cấp linh hoạt:
 ```
 Eco Learning (GEMINI)/
 ├── README.md               # File tổng quan dự án (File này)
-├── AGENTS.md               # Quy định & Prompt chỉ dẫn master cho AI Agent
+├── AGENTS.md               # Quy định & Protocol master cho AI Agent
 ├── LEARNED.md              # Nhật ký học tập (Lịch sử & Mã ID bài học)
 ├── RELATE.md               # Hàng chờ các khái niệm liên quan (Dùng để củng cố định kỳ)
 ├── GLOSSARY.md             # Chỉ mục thuật ngữ tra cứu nhanh A-Z
-├── .memory/                # Bộ nhớ làm việc tạm thời cho Multi-Agent (Antigravity, Codex...)
-│   ├── README.md           # Hướng dẫn sử dụng bộ nhớ tạm
-│   ├── antigravity_memory.md # Bộ nhớ tạm cho Antigravity (Gemini)
-│   └── codex_memory.md     # Bộ nhớ tạm cho Codex
+├── .memory/                # Agent Memory & Learning System (Hệ thống Học tập & Phòng ngừa Lỗi)
+│   ├── README.md           # Hướng dẫn quy trình & phân định vai trò bộ nhớ 3 tầng
+│   ├── knowledge_corrections.md # Tầng 1: Nhật ký Lỗi & Bài học Tổng quát hóa (Error Memory)
+│   ├── antigravity_memory.md # Tầng 2: Quy tắc vận hành tinh chế cho Antigravity (Operational Memory)
+│   └── codex_memory.md     # Tầng 2: Quy tắc vận hành tinh chế cho Codex (Operational Memory)
 └── topics/                 # Thư mục Nhánh A duy nhất chứa toàn bộ các chủ đề
     └── <category-B>/       # Thư mục chủ đề B (ví dụ: corporate-and-markets)
         ├── README.md       # Danh mục & tóm tắt các bài học trong chủ đề B này
@@ -37,7 +38,7 @@ Eco Learning (GEMINI)/
 
 ## 🔍 Chiến lược Học tập & Hệ thống Tích lũy
 
-Dự án áp dụng mô hình học tập **Phân tầng Xoắn ốc (Spiral Learning Model)** kết hợp **Ghi nhớ Chủ động (Active Recall)**:
+Dự án áp dụng mô hình học tập **Phân tầng Xoắn ốc (Spiral Learning Model)** kết hợp **Ghi nhớ Chủ động (Active Recall)** và **Hệ thống Học tập Agent (Agent Learning System)**:
 
 1. **Phân tầng Xoắn ốc & Khóa Prerequisite:**
    - **Tầng 1 - Core Anchors (Nền tảng):** Lãi suất, Lạm phát, Cung tiền & Thanh khoản. Bắt buộc xây móng vững trước.
@@ -46,7 +47,10 @@ Dự án áp dụng mô hình học tập **Phân tầng Xoắn ốc (Spiral Lea
 2. **Ghi nhớ Chủ động (Active Recall):**
    - **Mở đầu bài (Delayed Active Recall):** Ôn tập ngắt quãng lại 1 ý cốt lõi của bài học cũ từ 1-2 tuần trước.
    - **Cuối bài (Góc Phản xạ & Thang 1-5):** Đưa ra 1 câu hỏi gợi mở phản xạ tự nhiên (tự tóm tắt / liên hệ thực tế) kèm thang tự đánh giá độ tự tin (1-5) để ưu tiên lịch củng cố.
-3. **Tra cứu & Metadata chuẩn:**
+3. **Agent Memory & Learning System (`.memory/`):**
+   - Áp dụng giao thức học tập 5 bước đối với Agent (`Correction → Generalization → Operational Rule → Retrieval → Self-Check`).
+   - Phân biệt tuyệt đối giữa **Mô hình Giáo trình (Textbook Model)** và **Cơ chế Thực tế (Real-World Mechanism)**.
+4. **Tra cứu & Metadata chuẩn:**
    - [Mã ID bài học & Nhật ký](LEARNED.md): Ghi nhận toàn bộ tiến trình theo ID (`CORP-001`, `MACRO-001`...).
    - [Chỉ mục Thuật ngữ GLOSSARY.md](GLOSSARY.md): Tra cứu nhanh thuật ngữ A-Z và đường dẫn bài học gốc.
    - **Versioning cho Thuế & Pháp luật:** Các bài học về luật/thuế có trường `applicable_year` và `last_verified` để kiểm soát dữ liệu khi luật thay đổi.

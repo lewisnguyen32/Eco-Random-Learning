@@ -1,4 +1,4 @@
-# Ignore temporary agent memory files
+# Ignore temporary files, but track agent memory system files
 .memory/*
 !.memory/README.md
 !.memory/antigravity_memory.md
