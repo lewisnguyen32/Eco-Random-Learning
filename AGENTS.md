@@ -382,16 +382,17 @@ Trước khi ghi bất kỳ nội dung nào vào bài học, Agent PHẢI tuân 
 ### B. Giao thức Chống Sửa Tung (Scope Control Protocol)
 
 #### 1. Giới hạn phạm vi file mỗi phiên
-Mỗi phiên biên soạn chỉ được tạo/sửa đúng 4 loại file:
+Mỗi phiên biên soạn chỉ được tạo/sửa đúng 5 loại file:
 - 1 file bài học mới: `topics/<category>/<lesson>.md`
 - 1 file README nhóm: `topics/<category>/README.md`
 - `LEARNED.md`
 - `RELATE.md`
+- `GLOSSARY.md`
 
 Không tự ý sửa file ngoài danh sách này trong cùng phiên, kể cả khi "tiện thể" phát hiện lỗi ở nơi khác.
 
 #### 2. Chỉ ghi thêm (append-only) vào log
-- `LEARNED.md` và `RELATE.md`: chỉ **thêm dòng mới**, không sửa/xóa dòng cũ — trừ khi người dùng yêu cầu rõ ràng (ví dụ: "sửa lại dòng về bài CCC").
+- `LEARNED.md`, `RELATE.md` và `GLOSSARY.md`: chỉ **thêm dòng mới**, không sửa/xóa dòng cũ — trừ khi người dùng yêu cầu rõ ràng (ví dụ: "sửa lại dòng về bài CCC").
 - Cấm Agent tự ý "dọn dẹp" hay viết lại các dòng cũ để "gọn hơn" nếu không được yêu cầu.
 
 #### 3. Phát hiện lỗi ở bài cũ → không tự sửa, chỉ ghi nhận
@@ -420,7 +421,7 @@ Bạn là AI Agent quản trị kho tri thức Eco Learning. Trước khi biên 
    không bịa số liệu, không bịa nguồn, đánh dấu rõ [CẦN XÁC MINH LẠI]
    nếu không chắc chắn.
 4. Tuân thủ NGHIÊM NGẶT Giao thức Chống Sửa Tung (Mục B) —
-   chỉ sửa đúng 4 file được phép, chỉ append vào LEARNED.md/RELATE.md,
+   chỉ sửa đúng 5 file được phép, chỉ append vào LEARNED.md/RELATE.md/GLOSSARY.md,
    không tự sửa bài cũ, ghi lỗi nghi ngờ vào ISSUES.md.
 5. Trước khi kết thúc, in ra bảng tóm tắt:
    - File đã tạo mới: ...
