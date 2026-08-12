@@ -1,6 +1,6 @@
 # Eco Learning - Kho lưu trữ & Lộ trình Tích lũy Kiến thức Kinh tế
 
-[![Nhật ký Bài học](https://img.shields.io/badge/🎓_Nhật_ký_bài_học-blue?style=for-the-badge)](LEARNED.md) [![Khái niệm liên quan](https://img.shields.io/badge/🔗_Khái_niệm_liên_quan-2e7d32?style=for-the-badge)](RELATE.md) [![Thuật ngữ](https://img.shields.io/badge/📖_Thuật_ngữ-ed6c02?style=for-the-badge)](GLOSSARY.md) [![Quy định Agent](https://img.shields.io/badge/🤖_Quy_định_Agent-9c27b0?style=for-the-badge)](AGENTS.md)
+[![Nhật ký Bài học](https://img.shields.io/badge/🎓_Nhật_ký_bài_học-blue?style=for-the-badge)](LEARNED.md) [![Khái niệm liên quan](https://img.shields.io/badge/🔗_Khái_niệm_liên_quan-2e7d32?style=for-the-badge)](RELATE.md) [![Thuật ngữ](https://img.shields.io/badge/📖_Thuật_ngữ-ed6c02?style=for-the-badge)](GLOSSARY.md) [![Quy định Agent](https://img.shields.io/badge/🤖_Quy_định_Agent-9c27b0?style=for-the-badge)](AGENTS.md) [![Note cá nhân](https://img.shields.io/badge/📝_Note_cá_nhân-7b1fa2?style=for-the-badge)](NOTES.md)
 
 Chào mừng bạn đến với **Eco Learning** — hệ thống tích lũy kiến thức kinh tế, tài chính, ngân hàng và đầu tư dài hạn cá nhân hóa.
 
@@ -23,6 +23,7 @@ Eco Learning (GEMINI)/
 ├── LEARNED.md              # Nhật ký học tập (Lịch sử & Mã ID bài học)
 ├── RELATE.md               # Hàng chờ các khái niệm liên quan (Dùng để củng cố định kỳ)
 ├── GLOSSARY.md             # Chỉ mục thuật ngữ tra cứu nhanh A-Z
+├── NOTES.md                # Ghi chú cá nhân (Phân tích kiểm chứng & quản trị backlog)
 ├── .memory/                # Agent Memory & Learning System (Hệ thống Học tập & Phòng ngừa Lỗi)
 │   ├── README.md           # Hướng dẫn quy trình & phân định vai trò bộ nhớ 3 tầng
 │   ├── knowledge_corrections.md # Tầng 1: Nhật ký Lỗi & Bài học Tổng quát hóa (Error Memory)
