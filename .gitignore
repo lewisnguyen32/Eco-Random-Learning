@@ -1,3 +1,6 @@
 # Ignore temporary agent memory files
 .memory/*
 !.memory/README.md
+!.memory/antigravity_memory.md
+!.memory/codex_memory.md
+!.memory/knowledge_corrections.md
