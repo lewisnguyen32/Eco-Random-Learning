@@ -20,3 +20,12 @@ Tài liệu này tổng hợp các thuật ngữ quan trọng đã xuất hiện
 | **Cung tiền M2** | M2 Money Supply | Cung tiền M1 cộng với tiền gửi tiết kiệm có kỳ hạn và chứng chỉ tiền gửi ngắn hạn. | [`MONEY-001`](topics/monetary-and-banking/money-supply-and-bank-money-creation.md) |
 | **Dự trữ bắt buộc** | Required Reserves (R) | Tỷ lệ tiền gửi tối thiểu mà ngân hàng thương mại buộc phải giữ lại tại NHTW theo quy định. | [`MONEY-001`](topics/monetary-and-banking/money-supply-and-bank-money-creation.md) |
 | **Số nhân tiền** | Money Multiplier (m) | Hệ số phản ánh mức độ mở rộng của cung tiền từ một đơn vị tiền cơ sở ban đầu. | [`MONEY-001`](topics/monetary-and-banking/money-supply-and-bank-money-creation.md) |
+| **Lạm phát** | Inflation | Sự gia tăng liên tục và kéo dài của mức giá chung trong nền kinh tế, làm suy giảm sức mua của đồng tiền. | [`MACRO-001`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
+| **Chỉ số Giá tiêu dùng** | Consumer Price Index (CPI) | Chỉ số phần trăm đo lường biến động mức giá trung bình của rổ hàng hóa và dịch vụ tiêu dùng đại diện. | [`MACRO-001`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
+| **Lạm phát tổng thể** | Headline Inflation | Tỷ lệ lạm phát đo lường trên toàn bộ rổ hàng hóa CPI (bao gồm thực phẩm tươi sống và năng lượng). | [`MACRO-001`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
+| **Lạm phát cơ bản** | Core Inflation | Tỷ lệ lạm phát loại bỏ biến động ngắn hạn của lương thực - thực phẩm tươi sống và năng lượng, phản ánh xu hướng giá dài hạn. | [`MACRO-001`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
+| **Lạm phát cầu kéo** | Demand-Pull Inflation | Lạm phát phát sinh khi tổng cầu nền kinh tế vượt quá khả năng cung ứng hàng hóa dịch vụ. | [`MACRO-001`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
+| **Lạm phát chi phí đẩy** | Cost-Push Inflation | Lạm phát phát sinh do chi phí sản xuất đầu vào (nguyên vật liệu, vận tải, tiền lương) tăng cao. | [`MACRO-001`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
+| **Tốc độ lưu thông tiền** | Money Velocity ($V$) | Số lần trung bình một đơn vị tiền tệ được sử dụng để thanh toán hàng hóa dịch vụ trong một thời kỳ. | [`MACRO-001`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
+| **Lợi suất thực** | Real Return ($r_{real}$) | Tỷ lệ tăng trưởng sức mua thực tế của khoản đầu tư sau khi đã trừ đi tỷ lệ lạm phát ($r_{real} \approx r_{nominal} - \pi$). | [`MACRO-001`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
+

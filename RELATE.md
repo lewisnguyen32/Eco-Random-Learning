@@ -18,5 +18,9 @@ Tài liệu này ghi lại tất cả các khái niệm kinh tế được gợi
 | [`cash-conversion-cycle.md`](topics/corporate-and-markets/cash-conversion-cycle.md) | Quản trị tồn kho Tinh gọn (Just-In-Time - JIT) | ⏳ Chưa học | - |
 | [`cash-conversion-cycle.md`](topics/corporate-and-markets/cash-conversion-cycle.md) | Tín dụng thương mại và Chiết khấu thanh toán (Trade Credit & Cash Discounts) | ⏳ Chưa học | - |
 | [`money-supply-and-bank-money-creation.md`](topics/monetary-and-banking/money-supply-and-bank-money-creation.md) | Lãi suất điều hành & Kênh truyền dẫn chính sách tiền tệ | ⏳ Chưa học | - |
-| [`money-supply-and-bank-money-creation.md`](topics/monetary-and-banking/money-supply-and-bank-money-creation.md) | Lạm phát: Bản chất, Đo lường CPI và Mối liên hệ với Cung tiền M2 | ⏳ Chưa học | - |
+| [`money-supply-and-bank-money-creation.md`](topics/monetary-and-banking/money-supply-and-bank-money-creation.md) | Lạm phát: Bản chất, Đo lường CPI và Mối liên hệ với Cung tiền M2 | ✅ Đã học | [`topics/macroeconomics/inflation-cpi-and-macro-transmission.md`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
 | [`money-supply-and-bank-money-creation.md`](topics/monetary-and-banking/money-supply-and-bank-money-creation.md) | Nghiệp vụ Thị trường Mở (Open Market Operations - OMO) và Tiền cơ sở MB | ⏳ Chưa học | - |
+| [`inflation-cpi-and-macro-transmission.md`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) | Lãi suất điều hành & Kênh truyền dẫn chính sách tiền tệ | ⏳ Chưa học | - |
+| [`inflation-cpi-and-macro-transmission.md`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) | Hiệu ứng Fisher & Đường cong Lãi suất (Yield Curve) | ⏳ Chưa học | - |
+| [`inflation-cpi-and-macro-transmission.md`](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) | Lạm phát chi phí đẩy và Hiện tượng Đình lạm (Stagflation) | ⏳ Chưa học | - |
+
