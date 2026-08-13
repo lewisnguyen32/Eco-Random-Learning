@@ -42,7 +42,7 @@ Bài học này giải quyết 3 câu hỏi trung tâm:
   $$M \cdot V = P \cdot Y$$
 
   *Trong đó:*
-  * $M$: Cung tiền trong nền kinh tế ($M2$).
+  * $M$: Chỉ tiêu cung tiền được lựa chọn trong nền kinh tế (trong phân tích vĩ mô thông thường, $M2$ thường được sử dụng như một ví dụ đại diện).
   * $V$: Tốc độ lưu thông tiền (Money Velocity - số lần trung bình 1 đơn vị tiền được dùng để mua hàng hóa/dịch vụ trong một kỳ).
   * $P$: Mức giá chung (Price Level).
   * $Y$: Sản lượng thực tế của nền kinh tế (Real Output / Real GDP).
@@ -100,9 +100,9 @@ $$\pi_t = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \times 100\%$
 
 | Tiêu chí | Lạm phát Tổng thể (Headline Inflation) | Lạm phát Cơ bản (Core Inflation) |
 | :--- | :--- | :--- |
-| **Phạm vi tính toán** | Bao gồm toàn bộ danh mục rổ hàng hóa và dịch vụ tiêu dùng đại diện trong chỉ số CPI. | Không có một công thức loại trừ duy nhất cho mọi quốc gia; phương pháp cụ thể phụ thuộc vào quy định của cơ quan thống kê. Một cách đo phổ biến (như tại Mỹ) là loại trừ **lương thực - thực phẩm và năng lượng**. Tại Việt Nam, lạm phát cơ bản do Cục Thống kê (Bộ Tài chính) tính toán bằng cách loại trừ khỏi rổ CPI: (1) lương thực, thực phẩm tươi sống; (2) năng lượng (xăng dầu, gas...); và (3) các mặt hàng do Nhà nước quản lý giá (như dịch vụ y tế, giáo dục). |
-| **Đặc điểm** | Phản ánh biến động giá ngắn hạn của toàn rổ hàng hóa, nhạy cảm với thời tiết, thiên tai và giá năng lượng thế giới. | Loại bỏ các nhóm biến động ngắn hạn hoặc chịu can thiệp giá để phản ánh xu hướng giá nền tảng dài hạn của nền kinh tế. |
-| **Ý nghĩa chính sách** | Phản ánh sự thay đổi mức giá trung bình của rổ hàng hóa và dịch vụ tiêu dùng đại diện cho hộ gia đình trung bình (không đồng nhất với chi phí sinh hoạt riêng biệt của từng cá nhân). | Là **một chỉ báo quan trọng** giúp Ngân hàng Trung ương đánh giá áp lực lạm phát nền tảng dài hạn (*underlying inflation pressure*) cùng với các chỉ báo vĩ mô khác để hoạch định chính sách tiền tệ. |
+| **Phạm vi tính toán** | Bao gồm toàn bộ danh mục rổ hàng hóa và dịch vụ tiêu dùng đại diện trong chỉ số CPI. | Loại trừ một số nhóm mặt hàng biến động mạnh hoặc chịu sự quản lý giá tùy theo phương pháp luận của từng cơ quan thống kê. Tại Mỹ, công thức phổ biến loại bỏ lương thực - thực phẩm và năng lượng. Tại Việt Nam, Cục Thống kê (Bộ Tài chính) loại trừ: (1) lương thực, thực phẩm tươi sống; (2) năng lượng (xăng dầu, gas...); và (3) dịch vụ y tế, giáo dục do Nhà nước quản lý giá. |
+| **Đặc điểm** | Phản ánh biến động giá ngắn hạn của toàn rổ hàng hóa, nhạy cảm với thời tiết, thiên tai và giá năng lượng. | Loại bỏ các nhóm biến động ngắn hạn hoặc chịu can thiệp giá để phản ánh xu hướng giá nền tảng dài hạn của nền kinh tế. |
+| **Ý nghĩa chính sách** | Phản ánh sự thay đổi mức giá trung bình của rổ hàng hóa tiêu dùng đại diện cho hộ gia đình trung bình (không đồng nhất với chi phí sinh hoạt riêng biệt của từng cá nhân). | Là chỉ báo quan trọng giúp Ngân hàng Trung ương đánh giá áp lực lạm phát nền tảng dài hạn (*underlying inflation pressure*) cùng các chỉ báo vĩ mô khác để hoạch định chính sách tiền tệ. |
 
 ---
 
@@ -166,14 +166,13 @@ Hãy xét một nền kinh tế giả định đơn giản với rổ CPI gồm 
 
 ### Phân tích chi tiết chuỗi truyền dẫn:
 
-1. `[Causal Mechanism]` **Giai đoạn 2020 - Đầu 2021: Tăng trưởng Tiền cơ sở ($MB$) chưa lan nhanh sang Cầu tiêu dùng**
-   * Các chương trình QE làm tăng tiền cơ sở $MB$ (dưới dạng dự trữ của ngân hàng thương mại gửi tại Fed). Tuy nhiên, lượng dự trữ này không tự động chuyển hóa thành sự bùng nổ tín dụng hay tiền gửi tiêu dùng ($M1/M2$) ngay lập tức do dịch bệnh gây gián đoạn hoạt động kinh doanh và cầu tín dụng thấp.
-   * Tốc độ lưu thông tiền $V$ giảm mạnh do tâm lý thận trọng của hộ gia đình và doanh nghiệp. Trong môi trường lãi suất rất thấp, dòng thanh khoản có thể tác động sớm hơn tới giá tài sản tài chính trước khi phản ánh lên CPI rổ hàng hóa tiêu dùng.
+1. `[Causal Mechanism]` **Giai đoạn 2020 - Đầu 2021: Tăng trưởng Tiền cơ sở ($MB$) không tự động tạo ra lạm phát tiêu dùng tức thì**
+   * Các chương trình QE làm tăng tiền cơ sở $MB$ (dự trữ của ngân hàng thương mại tại Fed), nhưng đây không phải là cơ chế cơ học trực tiếp truyền dẫn $MB \to M2 \to \text{lạm phát CPI}$. Việc mở rộng tiền gửi ($M2$) và tín dụng phụ thuộc vào khả năng hấp thụ tín dụng của nền kinh tế và hoạt động cho vay của hệ thống ngân hàng thương mại.
+   * Tốc độ lưu thông tiền $V$ giảm mạnh do tâm lý thận trọng trong đại dịch đã làm suy giảm lực cầu chi tiêu tiêu dùng, mặc dù điều kiện tài chính nới lỏng có thể tác động sớm hơn tới giá tài sản tài chính trước khi phản ánh lên rổ CPI.
 
-2. `[Causal Mechanism]` **Giai đoạn 2021 - 2023: Sự tác động tổng hòa giữa Cầu kéo, Chi phí đẩy và Phản ứng chính sách**
-   * **Tài khóa & Tổng cầu:** Các gói hỗ trợ tài khóa trực tiếp thúc đẩy sức mua của hộ gia đình, kết hợp với nhu cầu dồn nén khi mở cửa trở lại (*reopening*) làm tổng cầu tiêu dùng gia tăng nhanh chóng.
-   * **Nguồn cung & Địa chính trị:** Đứt gãy chuỗi cung ứng toàn cầu cùng với xung đột địa chính trị đẩy giá năng lượng và lương thực tăng vọt (chi phí đẩy).
-   * **Diễn biến số liệu & Phản ứng chính sách:** CPI Mỹ đạt đỉnh **9.1% YoY vào tháng 6/2022**, sau đó hạ nhiệt dần trong năm 2023 khi Fed thắt chặt tiền tệ mạnh mẽ (tăng lãi suất điều hành và thu hẹp bảng cân đối kế toán) kết hợp với chuỗi cung ứng toàn cầu từng bước phục hồi.
+2. `[Causal Mechanism]` **Giai đoạn 2021 - 2023: Sự tương tác đa chiều giữa Tài khóa, Tín dụng, Cung ứng và Điều kiện Tài chính**
+   * Lạm phát CPI Mỹ đạt đỉnh **9.1% YoY vào tháng 6/2022** là kết quả của sự tương tác phức tạp giữa nhiều yếu tố: các gói trợ cấp tài khóa trực tiếp thúc đẩy tiền gửi và sức mua hộ gia đình, cầu tiêu dùng dồn nén bùng nổ khi mở cửa trở lại (*reopening*), kết hợp với đứt gãy chuỗi cung ứng toàn cầu và xung đột địa chính trị đẩy giá năng lượng/lương thực tăng vọt (chi phí đẩy).
+   * Lạm phát hạ nhiệt dần trong năm 2023 khi Fed thắt chặt điều kiện tài chính (tăng mạnh lãi suất điều hành và thu hẹp bảng cân đối kế toán) cùng với sự khai thông từng bước các nút thắt nguồn cung.
 
 ---
 
