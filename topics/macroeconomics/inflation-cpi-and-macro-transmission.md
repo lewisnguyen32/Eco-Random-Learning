@@ -100,7 +100,7 @@ $$\pi_t = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \times 100\%$
 
 | Tiêu chí | Lạm phát Tổng thể (Headline Inflation) | Lạm phát Cơ bản (Core Inflation) |
 | :--- | :--- | :--- |
-| **Phạm vi tính toán** | Bao gồm toàn bộ danh mục rổ hàng hóa và dịch vụ tiêu dùng đại diện trong chỉ số CPI. | Loại trừ một số nhóm mặt hàng biến động mạnh hoặc chịu sự quản lý giá tùy theo phương pháp luận của từng cơ quan thống kê. Tại Mỹ, công thức phổ biến loại bỏ lương thực - thực phẩm và năng lượng. Tại Việt Nam, Cục Thống kê (Bộ Tài chính) loại trừ: (1) lương thực, thực phẩm tươi sống; (2) năng lượng (xăng dầu, gas...); và (3) dịch vụ y tế, giáo dục do Nhà nước quản lý giá. |
+| **Phạm vi tính toán** | Bao gồm toàn bộ danh mục rổ hàng hóa và dịch vụ tiêu dùng đại diện trong chỉ số CPI. | Loại trừ một số nhóm mặt hàng biến động mạnh hoặc chịu sự quản lý giá tùy theo phương pháp luận của từng cơ quan thống kê. Tại Mỹ, công thức phổ biến loại bỏ lương thực - thực phẩm và năng lượng. Tại Việt Nam, Tổng cục Thống kê (Bộ Kế hoạch và Đầu tư) loại trừ: (1) lương thực, thực phẩm tươi sống; (2) năng lượng (xăng dầu, gas...); và (3) dịch vụ y tế, giáo dục do Nhà nước quản lý giá. |
 | **Đặc điểm** | Phản ánh biến động giá ngắn hạn của toàn rổ hàng hóa, nhạy cảm với thời tiết, thiên tai và giá năng lượng. | Loại bỏ các nhóm biến động ngắn hạn hoặc chịu can thiệp giá để phản ánh xu hướng giá nền tảng dài hạn của nền kinh tế. |
 | **Ý nghĩa chính sách** | Phản ánh sự thay đổi mức giá trung bình của rổ hàng hóa tiêu dùng đại diện cho hộ gia đình trung bình (không đồng nhất với chi phí sinh hoạt riêng biệt của từng cá nhân). | Là chỉ báo quan trọng giúp Ngân hàng Trung ương đánh giá áp lực lạm phát nền tảng dài hạn (*underlying inflation pressure*) cùng các chỉ báo vĩ mô khác để hoạch định chính sách tiền tệ. |
 
@@ -208,7 +208,7 @@ Hãy xét một nền kinh tế giả định đơn giản với rổ CPI gồm 
 `[Current Fact]` **Bối cảnh đo lường và Quy định tại Việt Nam (năm 2026):**
 
 1. **Cơ quan công bố dữ liệu:** 
-   Tại Việt Nam, **Cục Thống kê (Bộ Tài chính)** – cơ quan thống kê quốc gia – thực hiện thu thập, tính toán và công bố Chỉ số giá tiêu dùng (CPI) định kỳ hàng tháng, hàng quý và hàng năm.
+   Tại Việt Nam, **Tổng cục Thống kê (Bộ Kế hoạch và Đầu tư)** – cơ quan thống kê quốc gia – thực hiện thu thập, tính toán và công bố Chỉ số giá tiêu dùng (CPI) định kỳ hàng tháng, hàng quý và hàng năm.
 
 2. **Cấu trúc rổ hàng hóa CPI Việt Nam:**
    * Rổ hàng hóa tính CPI tại Việt Nam hiện gồm 11 nhóm hàng hóa và dịch vụ chính.
@@ -222,7 +222,7 @@ Hãy xét một nền kinh tế giả định đơn giản với rổ CPI gồm 
 
 ## 9. Nguồn tham khảo và độ tin cậy
 
-1. **Cục Thống kê (Bộ Tài chính):** Phương pháp điều tra và tính toán chỉ số giá tiêu dùng tại Việt Nam (*mof.gov.vn*).
+1. **Tổng cục Thống kê (Bộ Kế hoạch và Đầu tư):** Phương pháp điều tra và tính toán chỉ số giá tiêu dùng tại Việt Nam (*gso.gov.vn*).
 2. **Ngân hàng Nhà nước Việt Nam (SBV):** Báo cáo thường niên và Định hướng Điều hành Chính sách Tiền tệ (*sbv.gov.vn*).
 3. **Frederic S. Mishkin:** *The Economics of Money, Banking and Financial Markets* (13th Edition) – Chương về Money Supply and Inflation.
 4. **International Monetary Fund (IMF):** *Consumer Price Index Manual: Concepts and Methods* (2020).
