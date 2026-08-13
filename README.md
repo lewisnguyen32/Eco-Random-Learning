@@ -4,6 +4,9 @@
 
 Chào mừng bạn đến với **Eco Learning** — hệ thống tích lũy kiến thức kinh tế, tài chính, ngân hàng và đầu tư dài hạn cá nhân hóa.
 
+> [!CAUTION]
+> **MIỄN TRỪ TRÁCH NHIỆM & MỤC ĐÍCH SỬ DỤNG:** Toàn bộ nội dung trong kho lưu trữ này được tổng hợp và biên soạn bởi AI phục vụ mục đích nghiên cứu và tích lũy kiến thức cá nhân, không phải là giáo trình chính thống hay khuyến nghị tài chính chính thức.
+
 ## 🎯 Mục tiêu
 * **Hiểu bản chất cơ chế:** Giải thích chuỗi nguyên nhân - kết quả của các hiện tượng kinh tế thay vì chỉ đưa ra định nghĩa.
 * **Đọc hiểu tin tức:** Nâng cao khả năng phân tích bản tin tài chính, báo cáo lưu chuyển tiền tệ và chính sách vĩ mô.
