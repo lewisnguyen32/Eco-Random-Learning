@@ -20,7 +20,7 @@ Chào mừng bạn đến với **Eco Learning** — hệ thống tích lũy ki�
 Hệ thống được tổ chức phân cấp linh hoạt:
 
 ```
-Eco Learning (GEMINI)/
+Eco Learning/
 ├── README.md               # File tổng quan dự án (File này)
 ├── AGENTS.md               # Quy định & Protocol master cho AI Agent
 ├── LEARNED.md              # Nhật ký học tập (Lịch sử & Mã ID bài học)

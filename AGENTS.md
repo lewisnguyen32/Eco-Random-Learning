@@ -9,7 +9,7 @@ Tài liệu này chứa toàn bộ quy định, tiêu chuẩn nội dung, kiến
 Dự án được tổ chức theo cấu trúc như sau:
 
 ```
-Eco Learning (GEMINI)/
+Eco Learning/
 ├── README.md               # Tổng quan kho lưu trữ
 ├── AGENTS.md               # Quy định master & Protocol cho Agent (File này)
 ├── LEARNED.md              # Bảng nhật ký tổng quan các bài học đã hoàn thành (Có Mã ID)
