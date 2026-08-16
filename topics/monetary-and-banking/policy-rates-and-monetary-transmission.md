@@ -73,14 +73,15 @@ Trong nền kinh tế thị trường hiện đại, NHTW **không ấn định 
 
 ### 3.2. Cấu trúc Lãi suất Điều hành tại Việt Nam (NHNN Framework)
 
-`[Current Fact]` Tại Việt Nam, Ngân hàng Nhà nước (NHNN) điều hành chính sách tiền tệ thông qua một tổ hợp công cụ lãi suất và chỉ tiêu định lượng đặc thù:
+`[Current Fact]` Tại Việt Nam, Ngân hàng Nhà nước (NHNN) điều hành chính sách tiền tệ theo Luật Ngân hàng Nhà nước Việt Nam thông qua một tổ hợp công cụ lãi suất và hạn mức định lượng:
 
 | Công cụ Lãi suất | Tên tiếng Anh | Vai trò & Bản chất Thể chế |
 | :--- | :--- | :--- |
-| **Lãi suất Tái cấp vốn** | Refinancing Rate | Lãi suất NHNN áp dụng khi cho các NHTM vay có bảo đảm bằng giấy tờ có giá (đóng vai trò chặn trên cho chi phí thanh khoản dài hạn hơn). |
+| **Lãi suất Tái cấp vốn** | Refinancing Rate | Lãi suất NHNN áp dụng khi cho các NHTM vay có bảo đảm bằng giấy tờ có giá (đóng vai trò định hướng chi phí thanh khoản cấp vốn). |
 | **Lãi suất Tái chiết khấu** | Rediscount Rate | Lãi suất áp dụng khi NHNN mua lại các công cụ nợ ngắn hạn (thương phiếu, trái phiếu) chưa đến hạn của NHTM. |
-| **Lãi suất OMO (Repo/Tín phiếu)** | OMO Rate | Lãi suất đấu thầu giấy tờ có giá (mua kỳ hạn bơm thanh khoản hoặc bán tín phiếu hút thanh khoản) trên thị trường mở. Đây là lãi suất can thiệp trực tiếp nhất đến thanh khoản ngắn hạn. |
-| **Trần Lãi suất Tiền gửi ngắn hạn** | Deposit Rate Cap | Quy định mức lãi suất huy động tối đa cho tiền gửi không kỳ hạn và có kỳ hạn dưới 6 tháng bằng VND. |
+| **Lãi suất Cho vay qua đêm** | Overnight Lending Rate | Lãi suất áp dụng trong thanh toán điện tử liên ngân hàng và cho vay bù đắp thiếu hụt vốn trong thanh toán bù trừ của NHNN đối với NHTM (thiết lập trần thanh khoản qua đêm). |
+| **Lãi suất OMO (Repo/Tín phiếu)** | OMO Rate | Lãi suất đấu thầu giấy tờ có giá (mua kỳ hạn bơm thanh khoản hoặc bán tín phiếu NHNN hút thanh khoản) trên thị trường mở. Đây là lãi suất can thiệp trực tiếp và thường xuyên nhất. |
+| **Trần Lãi suất Tiền gửi ngắn hạn** | Deposit Rate Cap | Quy định mức lãi suất huy động tối đa cho tiền gửi không kỳ hạn và có kỳ hạn dưới 6 tháng bằng VND tại các TCTD. |
 
 ---
 
@@ -180,14 +181,15 @@ flowchart TD
 ┌─────────────────────────────────────────┐  ┌──────────────────────────────────────────┐
 │ DOANH NGHIỆP MINH PHÁT (Sản xuất bao bì)│  │ HỘ GIA ĐÌNH ANH TUẤN (Vay mua căn hộ)   │
 ├─────────────────────────────────────────┤  ├──────────────────────────────────────────┤
-│ • Dư nợ vay ngân hàng: 50 tỷ VND       │  │ • Dư nợ vay mua nhà: 2 tỷ VND (thả nổi) │
-│ • Lãi suất vay: 9%/năm ➔ 11%/năm (+2%)  │  │ • Lãi suất vay: 8,5%/năm ➔ 11%/năm      │
-│ • Chi phí lãi vay tăng thêm:            │  │ • Tiền trả góp hàng tháng (gốc + lãi):   │
-│   50 tỷ × 2% = 1,0 tỷ VND/năm           │  │   21,5 triệu ➔ 25,2 triệu VND (+3,7 tr)  │
-│ • Lợi nhuận trước thuế giảm từ:         │  │ • Tỷ lệ nợ/thu nhập (DTI):               │
-│   4,0 tỷ ➔ 3,0 tỷ VND (-25%)            │  │   35% ➔ 42% thu nhập gia đình            │
-│ ➔ Hủy kế hoạch mua dây chuyền mới 20 tỷ │  │ ➔ Cắt giảm ăn ngoài, hủy chuyến du lịch  │
-│ ➔ Đóng băng tuyển dụng 15 công nhân mới │  │ ➔ Gửi tiết kiệm 100 tr nhàn rỗi (lãi 7%) │
+│ • Dư nợ vay ngân hàng: 50 tỷ VND       │  │ • Dư nợ vay mua nhà: 2 tỷ VND (20 năm,   │
+│ • Lãi suất vay: 9%/năm ➔ 11%/năm (+2%)  │  │   trả gốc đều + lãi dư nợ giảm dần)   │
+│ • Chi phí lãi vay tăng thêm:            │  │ • Lãi suất thả nổi: 8,5%/năm ➔ 11%/năm   │
+│   50 tỷ × 2% = 1,0 tỷ VND/năm           │  │ • Tiền trả tháng đầu (gốc 8,33 tr + lãi):│
+│ • Lợi nhuận trước thuế giảm từ:         │  │   22,50 tr ➔ 26,67 triệu VND (+4,17 tr)  │
+│   4,0 tỷ ➔ 3,0 tỷ VND (-25%)            │  │ • Tỷ lệ nợ/thu nhập (DTI - lương 60 tr): │
+│ ➔ Hủy kế hoạch mua máy móc 20 tỷ        │  │   37,5% ➔ 44,4% thu nhập cả gia đình     │
+│ ➔ Đóng băng tuyển dụng 15 công nhân mới │  │ ➔ Cắt giảm ăn ngoài, hủy chuyến du lịch  │
+│                                         │  │ ➔ Gửi tiết kiệm 100 tr nhàn rỗi (lãi 7%) │
 └─────────────────────────────────────────┘  └──────────────────────────────────────────┘
 ```
 
@@ -199,10 +201,10 @@ flowchart TD
 
 ## 5. Tình huống thực tế: Chu kỳ Siết chặt Tiền tệ Lịch sử 2022–2023 & Phản ứng của Việt Nam
 
-`[Historical Claim]` Trong giai đoạn 2022–2023, thế giới chứng kiến chu kỳ thắt chặt tiền tệ nhanh và quyết liệt nhất trong hơn 4 thập kỷ của Cục Dự trữ Liên bang Mỹ (Fed) nhằm kiểm soát lạm phát đạt đỉnh $9{,}1\%$:
+`[Historical Claim]` Trong giai đoạn 2022–2023, thế giới chứng kiến chu kỳ thắt chặt tiền tệ nhanh và quyết liệt nhất trong hơn 4 thập kỷ của Cục Dự trữ Liên bang Mỹ (Fed) nhằm kiểm soát lạm phát đạt đỉnh $9{,}1\%$ (tháng 6/2022 theo Cục Thống kê Lao động Mỹ - BLS):
 
-* **Hành động của Fed:** Nâng lãi suất quỹ liên bang (*Fed Funds Rate*) từ mức gần $0\%$ (tháng 3/2022) lên dải $5{,}25\% - 5{,}50\%$ (tháng 7/2023), tức tăng hơn 500 điểm cơ bản trong vòng 16 tháng.
-* **Tác động qua Kênh Tỷ giá toàn cầu:** Chỉ số sức mạnh đồng USD ($DXY$) tăng vọt từ mốc 95 điểm lên trên 114 điểm. Hầu hết các đồng tiền trên thế giới chịu áp lực mất giá nghiêm trọng.
+* **Hành động của Fed:** Nâng lãi suất quỹ liên bang (*Fed Funds Rate*) từ mức gần $0\%$ (dải $0{,}00\% - 0{,}25\%$ tháng 3/2022) lên dải $5{,}25\% - 5{,}50\%$ (tháng 7/2023), tức tăng hơn 500 điểm cơ bản trong vòng 16 tháng.
+* **Tác động qua Kênh Tỷ giá toàn cầu:** Chỉ số sức mạnh đồng USD ($DXY$) tăng vọt từ mốc 95 điểm lên đỉnh 114,78 điểm (tháng 9/2022). Hầu hết các đồng tiền trên thế giới chịu áp lực mất giá nghiêm trọng.
 
 ```
        [ Fed tăng lãi suất lên 5,25% - 5,50% ]
@@ -214,15 +216,16 @@ flowchart TD
        ┌──────────────────┴──────────────────┐
        ▼                                     ▼
 [ Giai đoạn 1 (Cuối 2022): Ổn định Tỷ giá ] [ Giai đoạn 2 (Đầu 2023): Hỗ trợ Kinh tế ]
-• NHNN tăng lãi suất điều hành 2 lần (+200 bps) • Lạm phát trong nước được kiểm soát (~3,2%)
-• Bán dự trữ ngoại hối can thiệp                • Kinh tế đối mặt suy giảm xuất khẩu & BĐS
+• NHNN tăng lãi suất điều hành 2 lần (+200 bps) • Lạm phát bình quân 2023 kiểm soát 3,25%
+• Bán dự trữ ngoại hối can thiệp tỷ giá         • Kinh tế đối mặt suy giảm xuất khẩu & BĐS
 • Lãi suất huy động VND có lúc vượt 9-10%       • NHNN đi ngược thế giới: 4 lần giảm lãi suất
-• Chi phí vốn tăng, thị trường BĐS đóng băng    • Lãi suất điều hành hạ 150-200 bps để trợ lực
+• Chi phí vốn tăng, thị trường BĐS trầm lắng    • Lãi suất tái cấp vốn hạ từ 6,0% xuống 4,5%
 ```
 
 ### Bài học Cơ chế từ Thực tế Việt Nam:
 1. **Bài toán "Bộ ba Bất khả thi" (Impossible Trinity):** Việt Nam duy trì kiểm soát dòng vốn có quản lý, điều hành tỷ giá ổn định linh hoạt và chủ động chính sách tiền tệ. Khi Fed tăng lãi suất quá gắt, NHNN buộc phải cân bằng giữa hai mục tiêu: **Ổn định tỷ giá / Kiểm soát lạm phát** và **Hỗ trợ thanh khoản / Tăng trưởng kinh tế**.
-2. **Sự phân kỳ chính sách (Policy Divergence):** Đầu năm 2023, khi lạm phát trong nước duy trì ở mức an toàn nhưng các doanh nghiệp kiệt quệ dòng tiền sau sự cố thị trường trái phiếu doanh nghiệp, NHNN đã quyết định **hạ lãi suất điều hành 4 lần liên tiếp** dù Fed vẫn đang trong quá trình tăng lãi suất. Điều này cho thấy lãi suất điều hành luôn phải linh hoạt thích ứng với cấu trúc chu kỳ kinh tế nội tại chứ không sao chép máy móc theo quốc tế.
+2. **Sự phân kỳ chính sách (Policy Divergence):** Đầu năm 2023, khi lạm phát trong nước duy trì an toàn (CPI bình quân năm 2023 đạt $3{,}25\%$, dưới trần $4{,}5\%$ Quốc hội giao) nhưng các doanh nghiệp kiệt quệ dòng tiền sau sự cố thị trường trái phiếu doanh nghiệp, NHNN đã quyết định **hạ lãi suất điều hành 4 lần liên tiếp** (từ tháng 3 đến tháng 6/2023) dù Fed vẫn đang trong quá trình tăng lãi suất. Điều này cho thấy lãi suất điều hành luôn phải linh hoạt thích ứng với cấu trúc chu kỳ kinh tế nội tại chứ không sao chép máy móc theo quốc tế.
+
 
 ---
 
@@ -304,6 +307,7 @@ Hiểu rõ cơ chế lãi suất điều hành và các kênh truyền dẫn gi�
 | **Lãi suất Điều hành** | Policy Interest Rate | Lãi suất chuẩn do NHTW ấn định để điều tiết chi phí thanh khoản và định hướng lãi suất thị trường. |
 | **Lãi suất Tái cấp vốn** | Refinancing Rate | Lãi suất NHTW cho các NHTM vay có bảo đảm bằng giấy tờ có giá. |
 | **Lãi suất Tái chiết khấu** | Rediscount Rate | Lãi suất NHTW áp dụng khi chiết khấu thương phiếu và giấy tờ có giá ngắn hạn chưa đến hạn của NHTM. |
+| **Lãi suất Cho vay qua đêm** | Overnight Lending Rate | Lãi suất áp dụng trong thanh toán bù trừ liên ngân hàng, tạo mức trần lãi suất qua đêm. |
 | **Nghiệp vụ Thị trường Mở** | Open Market Operations (OMO) | Hoạt động NHTW mua/bán giấy tờ có giá trên thị trường để bơm/hút tiền dự trữ của hệ thống ngân hàng. |
 | **Kênh Truyền dẫn Chính sách Tiền tệ** | Monetary Policy Transmission Mechanism | Chuỗi liên kết nhân quả qua đó quyết định lãi suất của NHTW lan tỏa đến tổng cầu, sản lượng và lạm phát. |
 | **Hiệu ứng Của cải** | Wealth Effect | Xu hướng thay đổi mức chi tiêu tiêu dùng của hộ gia đình khi giá trị tài sản ròng (nhà ở, chứng khoán) biến động. |
@@ -322,3 +326,22 @@ Hiểu rõ cơ chế lãi suất điều hành và các kênh truyền dẫn gi�
   - **Hiệu ứng Fisher & Đường cong Lợi suất (Yield Curve - Inverted Yield Curve)**: Khi lãi suất ngắn hạn bị NHTW đẩy lên cao hơn lãi suất dài hạn, đường cong lợi suất đảo ngược báo hiệu suy thoái kinh tế ra sao?
   - **Tỷ giá Hối đoái & Khủng hoảng Cán cân Thanh toán (Exchange Rate & Balance of Payments)**: Cơ chế can thiệp ngoại hối và áp lực tỷ giá USD/VND.
   - **Tâm lý học Hành vi trong Chu kỳ Lãi suất (Behavioral Economics in Market Cycles)**: Bẫy tâm lý sợ bỏ lỡ (FOMO) khi lãi suất rẻ và tâm lý hoảng loạn bán tháo khi lãi suất tăng cao.
+
+---
+
+## 10. Nguồn tham khảo và Căn cứ Xác minh (Primary Sources & Fact-Check Basis)
+
+1. **Văn bản Pháp lý & Dữ liệu Ngân hàng Nhà nước Việt Nam (NHNN):**
+   * *Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12* (Quy định về công cụ thực hiện chính sách tiền tệ quốc gia, Điều 10–15).
+   * Các Quyết định điều chỉnh lãi suất năm 2022: Quyết định số 1606, 1607/QĐ-NHNN (22/09/2022); Quyết định số 1809, 1810/QĐ-NHNN (24/10/2022).
+   * Các Quyết định điều chỉnh giảm lãi suất năm 2023: Quyết định số 313, 314/QĐ-NHNN (15/03/2023); Quyết định số 574, 575/QĐ-NHNN (31/03/2023); Quyết định số 950, 951/QĐ-NHNN (23/05/2023); Quyết định số 1123, 1124, 1125/QĐ-NHNN (16/06/2023).
+2. **Dữ liệu Thống kê Tổng cục Thống kê Việt Nam (GSO):**
+   * *Thông cáo báo chí Tình hình kinh tế - xã hội Quý IV và năm 2023* (Tổng cục Thống kê xác nhận CPI bình quân năm 2023 tăng 3,25% so với năm 2022).
+3. **Cục Dự trữ Liên bang Mỹ (Federal Reserve) & Cục Thống kê Lao động Mỹ (BLS):**
+   * *Federal Open Market Committee (FOMC) Statement & Implementation Notes* (Chu kỳ tăng lãi suất quỹ liên bang từ 0,00%–0,25% lên 5,25%–5,50% giai đoạn 2022–2023).
+   * *U.S. Bureau of Labor Statistics (BLS):* Consumer Price Index Summary June 2022 (Lạm phát CPI Mỹ đạt đỉnh 9,1% YoY).
+4. **Tài liệu Học thuật & Báo cáo Nghiên cứu Thể chế:**
+   * Mishkin, Frederic S. (1995). *Symposium on the Monetary Transmission Mechanism*. Journal of Economic Perspectives, 9(4), 3-10.
+   * Bernanke, Ben S., & Gertler, Mark (1995). *Inside the Black Box: The Credit Channel of Monetary Policy Transmission*. Journal of Economic Perspectives, 9(4), 27-48.
+   * Bank for International Settlements (BIS): *Monetary policy frameworks and central bank market operations*.
+
