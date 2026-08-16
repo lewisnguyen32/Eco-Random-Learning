@@ -106,3 +106,22 @@ Tài liệu này lưu trữ toàn bộ lịch sử các sự cố sai lệch ki�
 * **Dấu hiệu Kích hoạt (Trigger Patterns):**
   - Khi phân tích lạm phát, lãi suất, tỷ giá, tác động chính sách tiền tệ/tài khóa.
 * **Nguồn đối chiếu:** ECB & Fed Monetary Policy Transmission Lag Studies.
+
+---
+
+### 📌 Entry 005: Xác minh Số hiệu Văn bản Pháp lý & Phân biệt Khung Vận hành NHTW (Corridor vs Floor)
+* **Mã bài học liên quan:** `MONEY-002` (`topics/monetary-and-banking/policy-rates-and-monetary-transmission.md`)
+* **Lỗi sai / Hiểu lầm cũ:**
+  - Trích dẫn sai số hiệu văn bản điều hành ngày 24/10/2022 của NHNN thành `1810/QĐ-NHNN` (số hiệu không tồn tại trong đợt điều chỉnh này).
+  - Mô tả mô hình hành lang lãi suất (Corridor System) nhưng thiếu phân định với khung sàn dự trữ dồi dào (Ample-Reserves Floor System) của Fed sau 2008.
+* **Kiến thức chuẩn xác:**
+  - Ngày 24/10/2022, NHNN ban hành bộ 3 quyết định: `1809/QĐ-NHNN` (lãi suất điều hành), `1812/QĐ-NHNN` (trần lãi suất tiền gửi), và `1813/QĐ-NHNN` (trần lãi suất cho vay ngắn hạn 5 lĩnh vực ưu tiên).
+  - Phân định rõ: ECB và NHNN vận hành theo Khung Hành lang đối xứng (Corridor System), trong khi Fed hậu 2008 vận hành theo Khung Sàn (Floor System) dựa trên IORB và ON RRP.
+* **Nguyên nhân sai lầm tư duy (Why Reasoning Failed):**
+  - AI bị lỗi giả định số hiệu văn bản liên tiếp (*Sequential Number Hallucination*) khi trích dẫn các quyết định ban hành cùng ngày mà không tra cứu cơ sở dữ liệu pháp luật sơ cấp.
+* **Bài học Tổng quát hóa (Generalizable Lesson - `G-005`):**
+  - Mọi số hiệu văn bản quy phạm pháp luật / quyết định hành chính điều hành bắt buộc phải được tra cứu đối chiếu trực tiếp từ CSDL văn bản pháp luật trước khi hoàn tất.
+* **Dấu hiệu Kích hoạt (Trigger Patterns):**
+  - Khi trích dẫn thông tư, nghị định, quyết định điều hành lãi suất hoặc quy định pháp luật.
+* **Nguồn đối chiếu:** Cổng thông tin Ngân hàng Nhà nước Việt Nam (sbv.gov.vn) & Federal Reserve Board Policy Tools.
+

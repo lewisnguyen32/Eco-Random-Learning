@@ -65,9 +65,12 @@ Trong nền kinh tế thị trường hiện đại, NHTW **không ấn định 
 #### Khung hành lang Lãi suất (Corridor / Channel System)
 Để giữ lãi suất thị trường liên ngân hàng vận hành quanh mục tiêu, các NHTW thường thiết lập một **Hành lang Lãi suất (Interest Rate Corridor)** gồm 3 mức:
 
-1. **Lãi suất Trần (Ceiling Rate - Lãi suất Tái cấp vốn / Discount Rate):** Mức lãi suất NHTW cho các ngân hàng thương mại vay khi họ thiếu hụt thanh khoản khẩn cấp. Không ngân hàng nào đi vay liên ngân hàng với lãi suất cao hơn mức trần này (vì họ luôn có thể vay trực tiếp từ NHTW).
-2. **Lãi suất Sàn (Floor Rate - Lãi suất Tiền gửi Dự trữ / IORB / Reverse Repo Rate):** Mức lãi suất NHTW trả cho tiền dự trữ mà các ngân hàng thương mại gửi tại NHTW. Không ngân hàng nào chấp nhận cho ngân hàng khác vay trên thị trường liên ngân hàng với lãi suất thấp hơn mức sàn này (vì gửi tại NHTW vừa an toàn tuyệt đối vừa được hưởng lãi suất sàn).
+1. **Lãi suất Trần (Ceiling Rate - Lãi suất Tái cấp vốn / Discount Rate / Standing Lending Facility):** Mức lãi suất NHTW cho các ngân hàng thương mại vay khi họ thiếu hụt thanh khoản khẩn cấp. Không ngân hàng nào đi vay liên ngân hàng với lãi suất cao hơn mức trần này (vì họ luôn có thể vay trực tiếp từ NHTW).
+2. **Lãi suất Sàn (Floor Rate - Lãi suất Tiền gửi Dự trữ / Standing Deposit Facility):** Mức lãi suất NHTW trả cho tiền dự trữ mà các ngân hàng thương mại gửi tại NHTW. Không ngân hàng nào chấp nhận cho ngân hàng khác vay trên thị trường liên ngân hàng với lãi suất thấp hơn mức sàn này (vì gửi tại NHTW vừa an toàn tuyệt đối vừa được hưởng lãi suất sàn).
 3. **Lãi suất Mục tiêu Trung tâm (Target Policy Rate / OMO Rate):** Lãi suất mục tiêu mà NHTW muốn thị trường liên ngân hàng giao dịch, thường được can thiệp thông qua **Nghiệp vụ Thị trường Mở (Open Market Operations - OMO)**.
+
+> 💡 **Phân biệt Thể chế (Corridor System vs Floor System):** 
+> Mô hình hành lang (Corridor) 3 mức đối xứng là chuẩn mực cổ điển được áp dụng tại ECB và NHNN. Tuy nhiên, kể từ sau khủng hoảng tài chính 2008, Cục Dự trữ Liên bang Mỹ (Fed) đã chuyển sang **Hệ thống Sàn với Lượng dự trữ Dồi dào (Ample-Reserves Floor System)**, trong đó Fed sử dụng Lãi suất Trả cho Tiền gửi Dự trữ (IORB) làm điểm tựa chính và Lãi suất Thoả thuận Mua lại Đảo ngược Qua đêm (ON RRP) làm mức sàn phụ.
 
 ---
 
@@ -81,7 +84,8 @@ Trong nền kinh tế thị trường hiện đại, NHTW **không ấn định 
 | **Lãi suất Tái chiết khấu** | Rediscount Rate | Lãi suất áp dụng khi NHNN mua lại các công cụ nợ ngắn hạn (thương phiếu, trái phiếu) chưa đến hạn của NHTM. |
 | **Lãi suất Cho vay qua đêm** | Overnight Lending Rate | Lãi suất áp dụng trong thanh toán điện tử liên ngân hàng và cho vay bù đắp thiếu hụt vốn trong thanh toán bù trừ của NHNN đối với NHTM (thiết lập trần thanh khoản qua đêm). |
 | **Lãi suất OMO (Repo/Tín phiếu)** | OMO Rate | Lãi suất đấu thầu giấy tờ có giá (mua kỳ hạn bơm thanh khoản hoặc bán tín phiếu NHNN hút thanh khoản) trên thị trường mở. Đây là lãi suất can thiệp trực tiếp và thường xuyên nhất. |
-| **Trần Lãi suất Tiền gửi ngắn hạn** | Deposit Rate Cap | Quy định mức lãi suất huy động tối đa cho tiền gửi không kỳ hạn và có kỳ hạn dưới 6 tháng bằng VND tại các TCTD. |
+| **Trần Lãi suất Tiền gửi ngắn hạn** | Deposit Rate Cap | Quy định mức lãi suất huy động tối đa cho tiền gửi không kỳ hạn và có kỳ hạn dưới 6 tháng bằng VND tại các TCTD (Thông tư 07/2014/TT-NHNN). |
+| **Trần Lãi suất Cho vay Lĩnh vực Ưu tiên** | Priority Sector Lending Rate Cap | Quy định mức lãi suất cho vay ngắn hạn tối đa bằng VND cho 5 lĩnh vực ưu tiên: nông nghiệp - nông thôn, xuất khẩu, DNNVV, công nghiệp hỗ trợ, DN công nghệ cao (Thông tư 39/2016/TT-NHNN). |
 
 ---
 
@@ -164,6 +168,9 @@ flowchart TD
 `[Causal Mechanism]`
 * **Tâm lý tự ứng nghiệm:** Nếu NHTW có uy tín cao (*Credibility*) và đưa ra thông điệp kiên quyết chống lạm phát, các doanh nghiệp sẽ ngần ngại tăng giá bán hàng loạt (vì sợ mất khách hàng trong tương lai), người lao động bớt yêu cầu tăng lương bù lạm phát quá mức.
 * **Kỳ vọng lạm phát neo vững (Anchored Inflation Expectations):** Kênh kỳ vọng giúp hạ nhiệt lạm phát ngay từ trong tâm lý thị trường trước khi các kênh tín dụng và lãi suất kịp phát huy toàn bộ tác dụng cơ học.
+
+> 💡 **Kênh bổ trợ — Kênh Chấp nhận Rủi ro (Risk-Taking Channel):** 
+> Trong kinh tế học hiện đại (Borio & Zhu 2012, Adrian & Shin), khi lãi suất duy trì ở mức quá thấp trong thời gian dài, các định chế tài chính và nhà đầu tư có xu hướng "tìm kiếm lợi suất" (*Search for Yield*), hạ thấp tiêu chuẩn thẩm định và chấp nhận rủi ro quá mức. Khi NHTW bất ngờ tăng lãi suất, kênh này đảo chiều nhanh chóng, gây siết chặt thanh khoản đột ngột trên toàn thị trường.
 
 ---
 
@@ -333,7 +340,7 @@ Hiểu rõ cơ chế lãi suất điều hành và các kênh truyền dẫn gi�
 
 1. **Văn bản Pháp lý & Dữ liệu Ngân hàng Nhà nước Việt Nam (NHNN):**
    * *Luật Ngân hàng Nhà nước Việt Nam số 46/2010/QH12* (Quy định về công cụ thực hiện chính sách tiền tệ quốc gia, Điều 10–15).
-   * Các Quyết định điều chỉnh lãi suất năm 2022: Quyết định số 1606, 1607/QĐ-NHNN (22/09/2022); Quyết định số 1809, 1810/QĐ-NHNN (24/10/2022).
+   * Các Quyết định điều chỉnh lãi suất năm 2022: Quyết định số 1606, 1607/QĐ-NHNN (22/09/2022); Quyết định số 1809, 1812, 1813/QĐ-NHNN (24/10/2022).
    * Các Quyết định điều chỉnh giảm lãi suất năm 2023: Quyết định số 313, 314/QĐ-NHNN (15/03/2023); Quyết định số 574, 575/QĐ-NHNN (31/03/2023); Quyết định số 950, 951/QĐ-NHNN (23/05/2023); Quyết định số 1123, 1124, 1125/QĐ-NHNN (16/06/2023).
 2. **Dữ liệu Thống kê Tổng cục Thống kê Việt Nam (GSO):**
    * *Thông cáo báo chí Tình hình kinh tế - xã hội Quý IV và năm 2023* (Tổng cục Thống kê xác nhận CPI bình quân năm 2023 tăng 3,25% so với năm 2022).
@@ -343,5 +350,6 @@ Hiểu rõ cơ chế lãi suất điều hành và các kênh truyền dẫn gi�
 4. **Tài liệu Học thuật & Báo cáo Nghiên cứu Thể chế:**
    * Mishkin, Frederic S. (1995). *Symposium on the Monetary Transmission Mechanism*. Journal of Economic Perspectives, 9(4), 3-10.
    * Bernanke, Ben S., & Gertler, Mark (1995). *Inside the Black Box: The Credit Channel of Monetary Policy Transmission*. Journal of Economic Perspectives, 9(4), 27-48.
+   * Borio, Claudio, & Zhu, Haibin (2012). *Capital regulation, risk-taking and monetary policy: a missing link in the transmission mechanism?* Journal of Financial Stability, 8(4), 236-251.
    * Bank for International Settlements (BIS): *Monetary policy frameworks and central bank market operations*.
 
