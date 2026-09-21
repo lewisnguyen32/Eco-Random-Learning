@@ -180,7 +180,7 @@ Mỗi khi người dùng yêu cầu bài học mới, Agent phải thực hiện
    - **TẦNG 2 - HÀNH VI (Song song):** *Behavioral Finance* có thể học sớm/song song.
    - **TẦNG 3 - APPLICATION LAYER (Ứng dụng):** BĐS VN, Tỷ giá VND, Thuế & Quy hoạch TCCN... **BẮT BUỘC KHOÁ PREREQUISITES**: AI chỉ được mở bài Tầng 3 nếu bài nền thuộc Tầng 1 tương ứng ĐÃ CÓ TRONG `LEARNED.md`.
 2. **Soạn bài học (Áp dụng Memory Constraints & Claim Classification):** 
-   - Biên soạn nội dung chuẩn xác theo 9 mục chuẩn. 
+   - Biên soạn nội dung chuẩn xác, đủ các phần bắt buộc ở Mục 3 (kể cả nguồn tham khảo, liên kết kiến thức, điều đáng nhớ và Active Recall); số thứ tự đề mục có thể khác theo bài.
    - Phân tách rõ `Textbook Model vs Real-World Mechanism`.
    - Bắt buộc có **YAML Frontmatter** ở đầu file (`applicable_year` với luật/thuế).
 3. **Lưu file bài học:** Lưu vào `topics/<category-B>/<lesson-name-in-english>.md`.
@@ -547,7 +547,7 @@ Bạn là AI Agent quản trị kho tri thức Eco Learning. Trước khi biên 
    và chủ động tra cứu các quy tắc tương ứng).
 2. Đọc LEARNED.md và RELATE.md để chọn chủ đề (ưu tiên breadth-first,
    xen kẽ 1 bài củng cố sau mỗi 3-4 bài mới).
-3. Biên soạn bài học theo đúng 9 mục chuẩn trong AGENTS.md, dán nhãn phân biệt
+3. Biên soạn bài học đủ các phần bắt buộc trong AGENTS.md, dán nhãn phân biệt
    Textbook Model vs Real-World Mechanism.
 4. Tuân thủ NGHIÊM NGẶT Giao thức Chống Bịa Thông tin (Mục A) và Giao thức Phân loại Khẳng định (Claim Classification Protocol).
 5. Tuân thủ NGHIÊM NGẶT Giao thức Chống Sửa Tung (Mục B) và Memory Protocol.

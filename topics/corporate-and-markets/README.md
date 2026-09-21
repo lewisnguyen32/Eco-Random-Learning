@@ -1,19 +1,11 @@
-# Corporate & Markets (Doanh nghiệp & Thị trường)
+# Doanh nghiệp & Thị trường (Corporate & Markets)
 
-Thư mục này chứa các bài học thuộc nhóm **Doanh nghiệp & Thị trường**, tập trung vào quản trị tài chính doanh nghiệp, cấu trúc vốn lưu động, rủi ro thanh khoản, hiệu quả vận hành và mối tương quan giữa doanh nghiệp với thị trường tài chính.
+Nhóm bài học về dòng tiền, vốn lưu động và hoạt động doanh nghiệp. Tóm tắt đã đồng bộ ngày 22/09/2026.
 
-> 💡 **Nhắc nhở cho Agent:** Để tiết kiệm token, hãy tham khảo các tóm tắt bài học dưới đây thay vì đọc trực tiếp từng file bài học `.md` chi tiết trừ khi thực sự cần trích dẫn công thức/số liệu cụ thể.
+## Danh mục bài học
 
----
+### CORP-001 – Chu kỳ chuyển đổi tiền mặt & Quản trị rủi ro thanh khoản
 
-## 📚 Danh mục Bài học
-
-### 1. `CORP-001` - [Chu kỳ chuyển đổi tiền mặt (Cash Conversion Cycle - CCC) & Quản trị Rủi ro Thanh khoản](cash-conversion-cycle.md)
-* **Ngày khởi tạo:** 2026-08-04
-* **Tóm tắt cơ chế:** 
-  Giải thích nguyên nhân vì sao một doanh nghiệp có lợi nhuận kế toán (Accrual Profit) tăng trưởng mạnh nhưng vẫn có thể rơi vào vỡ nợ kỹ thuật (Technical Insolvency) và phá sản do kiệt hụt tiền mặt thực tế. Bài học phân tích sâu công thức định lượng $\text{CCC} = \text{DIO} + \text{DSO} - \text{DPO}$, trong đó:
-  - **DIO (Days Inventory Outstanding):** Số ngày chôn vốn trong hàng tồn kho.
-  - **DSO (Days Sales Outstanding):** Số ngày bị khách hàng chiếm dụng vốn.
-  - **DPO (Days Payable Outstanding):** Số ngày chiếm dụng vốn từ nhà cung cấp.
-  
-  Bài học chỉ rõ "Bẫy tăng trưởng quá sức" (*Overtrading*), trong đó việc mở rộng doanh thu quá nhanh làm phình to NWC (Vốn lưu động ròng), kéo dòng tiền từ hoạt động kinh doanh (OCF) xuống mức âm và dẫn đến nguy cơ đứt gãy thanh khoản.
+- **Ngày học:** 2026-08-04.
+- **Đường dẫn:** [cash-conversion-cycle.md](cash-conversion-cycle.md).
+- **Tóm tắt cơ chế:** CCC = DIO + DSO − DPO mô tả thời gian thu tiền sau khi trừ thời gian được nhà cung cấp tài trợ. Vốn lưu động hoạt động và vốn lưu động ròng kế toán có phạm vi khác nhau, nên không thay thế trong công thức OCF. Không thể lấy giá vốn/ngày nhân CCC rồi gọi đó là nhu cầu vay chính xác; ví dụ trong bài cho vốn hoạt động 37,5 tỷ, trong khi phép tính theo giá vốn cho 30 tỷ. Nhu cầu tài trợ phải xét lịch thu/chi, tăng trưởng, nguồn vốn sẵn có và các nghĩa vụ khác.

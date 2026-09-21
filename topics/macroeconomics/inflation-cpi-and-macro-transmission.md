@@ -7,254 +7,201 @@ prerequisites: [MONEY-001]
 difficulty: Fundamental
 date: 2026-08-13
 applicable_year: 2026
-last_verified: 2026-08-13
+last_verified: 2026-09-22
 ---
 
-# Lạm phát: Bản chất, Phương pháp Đo lường CPI và Các Kênh Truyền dẫn Vĩ mô
+# Lạm phát, CPI và các kênh truyền dẫn vĩ mô
 
 ## 1. Chủ đề hôm nay
 
-* **Tên tiếng Việt:** Lạm phát và Chỉ số Giá tiêu dùng (CPI)
-* **Tên tiếng Anh:** Inflation and Consumer Price Index (CPI)
-
----
+**Lạm phát (Inflation)**, **chỉ số giá tiêu dùng (Consumer Price Index – CPI)** và **lợi suất thực (Real return)**.
 
 ## 2. Vấn đề cốt lõi
 
-Trong đời sống thường ngày, chúng ta thường nghe báo chí thông báo "tỷ lệ lạm phát (mức tăng CPI) năm nay được kiểm soát ở mức 3.5%", nhưng khi đi chợ hay thanh toán hóa đơn sinh hoạt, nhiều người lại cảm thấy chi phí sống đã tăng lên 10-15%. Vì sao lại có sự chênh lệch này?
+Giả sử CPI tăng 3,5% nhưng chi tiêu của gia đình tăng 10%: hai con số có nhất thiết mâu thuẫn không? Vì sao cung tiền tăng không cho phép dự báo ngay một tỷ lệ lạm phát? Và gửi tiết kiệm có lãi danh nghĩa có bảo đảm sức mua tăng không?
 
-Bài học này giải quyết 3 câu hỏi trung tâm:
-1. **Bản chất của lạm phát là gì?** Liệu lạm phát là sự tăng giá của một vài hàng hóa riêng lẻ hay là sự suy giảm sức mua mang tính hệ thống của đồng tiền?
-2. **Chỉ số CPI được tính toán như thế nào** và sự khác biệt giữa *Lạm phát Tổng thể (Headline Inflation)* và *Lạm phát Cơ bản (Core Inflation)*?
-3. **Cung tiền chuyển hóa thành Lạm phát qua cơ chế nào**, và tại sao bơm tiền không phải lúc nào cũng gây lạm phát ngay lập tức trên rổ hàng hóa tiêu dùng?
-
----
+Cần tách **mức giá**, **tốc độ tăng giá**, **số lượng/chất lượng hàng mua** và **sức mua của khoản tiền**.
 
 ## 3. Giải thích cơ chế
 
-### 3.1. Phân định Mô hình Lý thuyết vs Cơ chế Thực tế
+### 3.1. Định nghĩa và những khác biệt dễ nhầm
 
-#### TEXTBOOK MODEL (Mô hình Giáo trình)
+[Definition] Lạm phát là mức tăng của mặt bằng giá chung trong một khoảng thời gian. Một mặt hàng tăng giá chưa đủ đại diện cho toàn bộ mặt bằng giá.
 
-- `[Theoretical Model]` **Thuyết Số lượng Tiền tệ (Quantity Theory of Money - QTM):**
-  Trong mô hình kinh tế cổ điển của Irving Fisher và Milton Friedman, mối quan hệ giữa cung tiền và mức giá được diễn tả qua Phương trình Trao đổi:
+**Giảm lạm phát (disinflation)** là tốc độ tăng giá chậm lại; **giảm phát (deflation)** là mặt bằng giá giảm. Giả sử chỉ số giá từ 100 lên 110 rồi lên 115,5: lạm phát giảm từ 10% xuống 5%, nhưng giá vẫn cao hơn trước.
 
-  $$M \cdot V = P \cdot Y$$
+[Definition] CPI là chỉ số theo dõi biến động giá một rổ tiêu dùng đại diện. CPI bằng 110 không có nghĩa “lạm phát 110%”. Phải xác định kỳ gốc hoặc kỳ so sánh. [IMF và các tổ chức thống kê quốc tế, CPI Manual: Concepts and Methods, 2020](https://www.imf.org/en/data/statistics/cpi-manual).
 
-  *Trong đó:*
-  * $M$: Chỉ tiêu cung tiền (monetary aggregate) được lựa chọn trong nền kinh tế (trong mô hình lý thuyết đại diện cho khối lượng tiền tệ $M$; trong nghiên cứu thực nghiệm, các nhà kinh tế thường chọn một chỉ tiêu tiền tệ cụ thể như $M1$ hoặc $M2$).
-  * $V$: Tốc độ lưu thông tiền (Money Velocity - số lần trung bình 1 đơn vị tiền được dùng để mua hàng hóa/dịch vụ cuối cùng trong một kỳ).
-  * $P$: Mức giá chung (Price Level).
-  * $Y$: Sản lượng thực tế của nền kinh tế (Real Output / Real GDP).
+### 3.2. TEXTBOOK MODEL – rổ hàng cố định
 
-- **Giả định của Mô hình Giáo trình:**
-  1. Tốc độ lưu thông tiền $V$ là một hằng số cố định trong ngắn hạn do thói quen thanh toán không đổi.
-  2. Sản lượng $Y$ luôn ở mức toàn dụng nhân công (Full-employment output $Y = Y_{\bar{N}}$) cố định bởi công nghệ và nguồn lực.
+[Theoretical Model] Mô hình Laspeyres giữ nguyên lượng hàng kỳ gốc:
 
-- **Kết luận của Mô hình Giáo trình:** 
-  **Nằm trong phạm vi các giả định của mô hình giáo trình nêu trên**, khi $V$ và $Y$ được giữ cố định, sự gia tăng của cung tiền $M$ được giả định sẽ dẫn tới sự gia tăng tỷ lệ thuận trực tiếp của mức giá $P$:
-  
-  $$\frac{\Delta M}{M} \approx \frac{\Delta P}{P} = \pi \quad (\text{với } \pi \text{ là tỷ lệ lạm phát})$$
+$$CPI_t = \frac{\sum_i P_{i,t}Q_{i,0}}{\sum_i P_{i,0}Q_{i,0}}\times100$$
 
----
+P là giá, Q là lượng; tổng ở tử số là chi phí mua **cùng một rổ** theo giá mới. Trọng số phản ánh tỷ trọng chi tiêu ở kỳ gốc, không phải mọi mặt hàng đều quan trọng như nhau.
 
-#### REAL-WORLD MECHANISM (Cơ chế Thực tế)
+[Definition] Tỷ lệ thay đổi CPI:
 
-Trong thực tế thể chế và vận hành vĩ mô, phương trình $M \cdot V = P \cdot Y$ vẫn đúng về mặt đồng nhất thức, nhưng mối quan hệ $M \uparrow \to P \uparrow$ (hoặc $M2 \uparrow \to P \uparrow$) **không phải là quy luật cơ học, tức thời hay 1:1**:
+$$\pi_{t,s}=\left(\frac{CPI_t}{CPI_s}-1\right)\times100\%$$
 
-1. `[Accounting Identity & Causal Mechanism]` **Phân biệt Tiền cơ sở ($MB$) vs Cung tiền mở rộng ($M2$), Vai trò điều hành và Tốc độ lưu thông ($V$):**
-   * **Phân định chủ thể và công cụ:** Ngân hàng Trung ương thực thi chính sách tiền tệ bằng cách điều hành các điều kiện tiền tệ và tài chính (thông qua lãi suất điều hành, nghiệp vụ thị trường mở OMO, và quy định dự trữ), thay vì trực tiếp ấn định quy mô cung tiền $M2$. Ngân hàng thương mại mở rộng $M2$ (tiền gửi) thông qua hoạt động cho vay. $M2$ là một chỉ tiêu tiền tệ rộng (*monetary aggregate*), không đồng nghĩa với tiền cơ sở do NHTW phát hành ($MB$).
-   * **Cơ chế truyền dẫn $MB \to M2$:** Khi NHTW nới lỏng tiền tệ hoặc thực hiện QE, tiền cơ sở $MB$ tăng lên dưới dạng dự trữ ngân hàng thương mại tại NHTW (reserve balances). Việc tăng dự trữ này **không tự động dẫn tới sự gia tăng tương ứng của $M2$ hay tiền gửi tiêu dùng** nếu các ngân hàng thương mại không mở rộng tín dụng hoặc nhu cầu vay tiền của nền kinh tế yếu.
-   * **Vai trò của $V$ và môi trường vĩ mô:** Tốc độ lưu thông tiền $V$ không cố định mà biến động theo niềm tin kinh tế và mức độ ưa thích thanh khoản. Thay đổi của $M2$ không có quan hệ cơ học 1:1 với CPI; mức giá $P$ chịu sự tác động tổng hòa từ $V$, năng lực sản xuất $Y$, cầu tín dụng, kỳ vọng lạm phát, chính sách tài khóa và các cú sốc cung ứng.
+- So tháng trước: s là tháng liền trước.
+- So cùng kỳ (YoY): s là cùng tháng năm trước.
+- Bình quân năm: so trung bình các mức CPI tháng của năm này với năm trước trên chuỗi tương thích; không lấy riêng tháng 12 đại diện cả năm.
 
-2. `[Causal Mechanism]` **Phản ứng của giá tài sản vs CPI (Asset Prices vs CPI):**
-   Trong một số giai đoạn nới lỏng tiền tệ và tài chính, dòng tiền có thể phản ứng sớm hơn trên thị trường tài sản (chứng khoán, bất động sản) trước khi tác động tới rổ hàng hóa tiêu dùng ($CPI$). Tuy nhiên, **đây không phải là quy luật cố định hay chuỗi truyền dẫn tất yếu** (kiểu $M2 \to \text{giá tài sản} \to CPI$). Thứ tự và mức độ tác động tùy thuộc vào cơ chế truyền dẫn tín dụng, hiệu ứng tài sản (*wealth effect*), chi phí nhà ở/tiền thuê, tỷ giá, kỳ vọng lạm phát và các phản ứng chính sách tiền tệ theo từng bối cảnh cụ thể.
+Mô hình giúp hiểu quyền số và kỳ so sánh. Nó không bao quát toàn bộ cách thu thập và tổng hợp CPI chính thức.
 
-3. `[Causal Mechanism]` **Các kênh nguyên nhân lạm phát thực tế:**
-   * `[Demand-Pull]` **Lạm phát Cầu kéo:** Tổng cầu trong nền kinh tế ($C + I + G + NX$) tăng nhanh hơn khả năng cung ứng thực tế ($Y < Y_{demand}$), tạo áp lực đẩy mức giá chung tăng lên.
-   * `[Cost-Push]` **Lạm phát Chi phí đẩy:** Giá nguyên vật liệu đầu vào nhập khẩu (dầu mỏ, phân bón, logistics) tăng vọt, hoặc tỷ giá mất giá làm tăng chi phí sản xuất bằng đồng nội tệ, tạo áp lực thúc đẩy doanh nghiệp điều chỉnh tăng giá bán dù tổng cầu không tăng.
-   * `[Inflation Expectations]` **Kỳ vọng lạm phát:** Khi người dân và công đoàn kỳ vọng giá cả năm tới tăng, điều này có thể dẫn tới việc người lao động yêu cầu tăng lương. Nếu doanh nghiệp chuyển giao chi phí nhân công tăng này vào giá bán để bảo vệ biên lợi nhuận, hiện tượng này có thể kích hoạt **Vòng xoáy Lương - Giá (Wage-Price Spiral)**.
+### 3.3. REAL-WORLD MECHANISM – đo giá không đơn giản là cộng hóa đơn
 
----
+Cơ quan thống kê phải xử lý thay đổi chất lượng, sản phẩm biến mất, hàng mới, giá khuyến mại và cập nhật quyền số. CPI thực tế có nhiều cấp tổng hợp; không phải mọi cấp đều dùng duy nhất công thức Laspeyres đơn giản ở trên. CPI cũng không trùng hoàn toàn với chi phí duy trì một mức sống hoặc trải nghiệm của từng hộ. [IMF, CPI Manual 2020, chương 1](https://www.elibrary.imf.org/display/book/9781484354841/ch01.xml).
 
-### 3.2. Phương pháp Đo lường CPI & Phân loại Lạm phát
+[Causal Mechanism] Hộ dành phần lớn ngân sách cho thực phẩm chịu tác động mạnh hơn khi thực phẩm tăng giá. Hộ vừa đổi sang căn nhà lớn hơn có chi tiêu tăng do cả **giá lẫn lượng/chất lượng**, nên mức tăng hóa đơn không phải phép đo lạm phát riêng thuần túy.
 
-`[Definition]` **Chỉ số Giá tiêu dùng (CPI - Consumer Price Index)** là một **chỉ số giá** (price index) đo lường mức giá trung bình của một rổ hàng hóa và dịch vụ tiêu dùng đại diện cho hộ gia đình. Tỷ lệ phần trăm thay đổi của chỉ số CPI giữa các kỳ được sử dụng để xác định **tỷ lệ lạm phát**.
+| Chỉ tiêu | Diễn giải đúng |
+| :--- | :--- |
+| Lạm phát tổng thể (Headline inflation) | Biến động CPI toàn rổ theo kỳ so sánh đã nêu. |
+| Lạm phát cơ bản (Core inflation) | Chỉ báo lọc một số biến động nhằm xem xu hướng nền; danh mục loại trừ tùy cơ quan và phương pháp. |
+| Lạm phát riêng của hộ | Ước lượng theo cơ cấu tiêu dùng hộ; cần giữ cách đo giá và lượng nhất quán. |
 
-`[Theoretical Model]` **Công thức chỉ số giá Laspeyres dùng để tính CPI:**
+Lạm phát cơ bản không phải “lạm phát thật”, không bảo đảm luôn thấp hơn tổng thể và không có nghĩa khoản chi bị loại trừ là không quan trọng.
 
-$$\text{CPI}_t = \frac{\sum_{i=1}^{n} (P_{i,t} \cdot Q_{i,0})}{\sum_{i=1}^{n} (P_{i,0} \cdot Q_{i,0})} \times 100$$
+### 3.4. Tiền và giá: đồng nhất thức khác mô hình nhân quả
 
-*Trong đó:*
-* $P_{i,t}$: Giá của mặt hàng $i$ tại thời điểm kỳ tính toán $t$.
-* $P_{i,0}$: Giá của mặt hàng $i$ tại thời điểm kỳ gốc $0$.
-* $Q_{i,0}$: Lượng tiêu dùng của mặt hàng $i$ tại kỳ gốc $0$ (xác định trọng số của rổ hàng hóa).
+[Accounting Identity] Với Y là GDP thực, P là **chỉ số giảm phát GDP được chuẩn hóa phù hợp**, PY là GDP danh nghĩa. Định nghĩa tốc độ lưu thông thu nhập $V=PY/M$ cho ta:
 
-`[Definition]` **Tỷ lệ lạm phát ($\pi_t$)** giữa kỳ $t$ và kỳ $t-1$:
+$$MV=PY$$
 
-$$\pi_t = \frac{\text{CPI}_t - \text{CPI}_{t-1}}{\text{CPI}_{t-1}} \times 100\%$$
+M là chỉ tiêu tiền tệ lựa chọn và V tương ứng; **không thay P bằng CPI rồi mặc định đẳng thức vẫn đúng với GDP**. CPI đo giá tiêu dùng, còn giảm phát GDP đo giá sản lượng trong nước. [Federal Reserve Bank of St. Louis, The velocity of money, 2015](https://fredblog.stlouisfed.org/2015/01/the-velocity-of-money/).
 
----
+[Theoretical Model] Nếu giả định M được thay đổi ngoại sinh, V không đổi và Y không đổi, thì P tỷ lệ thuận với M. Đây là mô hình số lượng tiền với ràng buộc cụ thể, không phải mô tả mặc định ngắn hạn.
 
-#### Phân biệt Lạm phát Tổng thể vs Lạm phát Cơ bản
+Dạng tăng trưởng chính xác:
 
-| Tiêu chí | Lạm phát Tổng thể (Headline Inflation) | Lạm phát Cơ bản (Core Inflation) |
-| :--- | :--- | :--- |
-| **Phạm vi tính toán** | Bao gồm toàn bộ danh mục rổ hàng hóa và dịch vụ tiêu dùng đại diện trong chỉ số CPI. | Loại trừ một số nhóm mặt hàng biến động mạnh hoặc chịu sự quản lý giá tùy theo phương pháp luận của từng cơ quan thống kê. Tại Mỹ, công thức phổ biến loại bỏ lương thực - thực phẩm và năng lượng. Tại Việt Nam, Tổng cục Thống kê (Bộ Kế hoạch và Đầu tư) loại trừ: (1) lương thực, thực phẩm tươi sống; (2) năng lượng (xăng dầu, gas...); và (3) dịch vụ y tế, giáo dục do Nhà nước quản lý giá. |
-| **Đặc điểm** | Phản ánh biến động giá ngắn hạn của toàn rổ hàng hóa, nhạy cảm với thời tiết, thiên tai và giá năng lượng. | Loại bỏ các nhóm biến động ngắn hạn hoặc chịu can thiệp giá để phản ánh xu hướng giá nền tảng dài hạn của nền kinh tế. |
-| **Ý nghĩa chính sách** | Phản ánh sự thay đổi mức giá trung bình của rổ hàng hóa tiêu dùng đại diện cho hộ gia đình trung bình (không đồng nhất với chi phí sinh hoạt riêng biệt của từng cá nhân). | Là chỉ báo quan trọng giúp Ngân hàng Trung ương đánh giá áp lực lạm phát nền tảng dài hạn (*underlying inflation pressure*) cùng các chỉ báo vĩ mô khác để hoạch định chính sách tiền tệ. |
+$$1+g_P = \frac{(1+g_M)(1+g_V)}{1+g_Y}$$
 
----
+Khi các tốc độ đủ nhỏ: $g_P \approx g_M+g_V-g_Y$. Các tốc độ viết dạng thập phân, cùng kỳ đo.
 
-### 3.3. Tác động của Lạm phát lên Lợi suất Thực (Real Return)
+Ví dụ tự xây dựng: M tăng 10%, V giảm 5%, Y tăng 3% thì:
 
-`[Accounting Identity]` **Phương trình Fisher (Fisher Equation):**
-Mối quan hệ **ex-ante** (trước kỳ đầu tư, dựa trên tỷ lệ lạm phát kỳ vọng $\pi^e$) giữa Lãi suất Danh nghĩa ($r_{nominal}$), Lãi suất Thực kỳ vọng ($r_{real}$) và Lạm phát Kỳ vọng ($\pi^e$):
+$$g_P=\frac{1{,}10\times0{,}95}{1{,}03}-1\approx1{,}46\%$$
 
-$$1 + r_{nominal} = (1 + r_{real})(1 + \pi^e)$$
+Đây là phép tính theo giả định, **không phải dự báo CPI**. Hơn nữa, V tính bằng PY/M không phải một nguyên nhân độc lập có thể quan sát mà không cần xét hành vi; tiền, chi tiêu và chính sách cùng phản ứng với điều kiện kinh tế.
 
-Khi tính toán **sau kỳ đầu tư (ex-post)** với tỷ lệ lạm phát thực tế $\pi$ đo lường qua CPI:
+### 3.5. Từ chính sách đến chi tiêu và giá
 
-1. **Công thức xấp xỉ tuyến tính (Fisher Approximation):**
-   $$r_{real} \approx r_{nominal} - \pi$$
+[Causal Mechanism] Điều kiện vay thuận lợi hơn có thể làm doanh nghiệp đầu tư, hộ mua hàng lâu bền và người giữ tài sản điều chỉnh danh mục. Nếu tổng chi tiêu tăng nhanh hơn khả năng đáp ứng, doanh nghiệp có thể tăng giá. Nếu còn năng lực nhàn rỗi, sản lượng có thể tăng trước hoặc cùng với giá.
 
-2. **Công thức chính xác (Exact Ex-post Real Return):**
-   $$1 + r_{real} = \frac{1 + r_{nominal}}{1 + \pi} \implies r_{real} = \frac{1 + r_{nominal}}{1 + \pi} - 1$$
+Phải phân biệt các giao dịch:
 
-* **Lưu ý:** Công thức xấp xỉ $r_{nominal} - \pi$ (Fisher approximation) chỉ phù hợp cho các đánh giá nhanh khi tỷ lệ lạm phát ở mức thấp. Khi tỷ lệ lạm phát ở mức cao, phép xấp xỉ tuyến tính này sẽ phóng đại mức sụt giảm sức mua so với kết quả tính toán chính xác.
+- NHTW mua tài sản **từ ngân hàng**: dự trữ tăng, chưa tự tăng tiền gửi công chúng.
+- NHTW mua **từ chủ thể phi ngân hàng đủ điều kiện thống kê**: tiền gửi người bán và dự trữ ngân hàng có thể cùng tăng ngay, dù chưa có khoản vay mới.
+- Tiền gửi tăng không buộc chủ sở hữu chi tiêu ngay; họ có thể giữ tiền hoặc trả nợ.
 
----
+Vì vậy, không được nói “QE chỉ tăng M2 khi ngân hàng cho vay”. Bút toán đã phân tích ở [MONEY-001](../monetary-and-banking/money-supply-and-bank-money-creation.md); đối chiếu [Bank of England, QE: functioning and effectiveness, 2022](https://www.bankofengland.co.uk/quarterly-bulletin/2022/2022-q1/qe-at-the-bank-of-england-a-perspective-on-its-functioning-and-effectiveness).
+
+[Causal Mechanism] Các lực tác động khác gồm:
+
+1. **Cầu kéo:** chi tiêu tăng so với năng lực cung ứng, tạo áp lực tăng giá.
+2. **Chi phí đẩy:** năng lượng, đầu vào hoặc tỷ giá làm chi phí tăng; mức chuyển vào giá bán còn phụ thuộc cạnh tranh, biên lợi nhuận và sức mua.
+3. **Kỳ vọng:** dự báo giá/lương tương lai ảnh hưởng đàm phán và định giá hôm nay. Vòng xoáy lương–giá là khả năng có điều kiện, không phải mọi tăng lương đều tạo vòng xoáy.
+
+Giá tài sản có thể phản ứng nhanh qua kỳ vọng và chiết khấu; không có thứ tự bắt buộc “tiền vào chứng khoán trước, rồi mới vào CPI”. Giao dịch mua cổ phiếu cũ thường chuyển tiền giữa người mua và người bán, không làm tiền biến mất khỏi nền kinh tế.
+
+### 3.6. Lợi suất thực: chính xác sau kỳ, xấp xỉ trước kỳ
+
+[Accounting Identity] Với lợi suất danh nghĩa i và lạm phát thực tế π **cùng khoảng thời gian**, sức mua sau kỳ thay đổi:
+
+$$r_{\text{thực, ex-post}} = \frac{1+i}{1+\pi}-1$$
+
+Đây là phép chia mức tăng tiền cho mức tăng giá. Thuế và phí cần trừ trong i nếu muốn tính sức mua ròng.
+
+[Theoretical Model] Trước kỳ, cách ước lượng thường dùng là:
+
+$$r_{\text{thực, ex-ante}}\approx i-E(\pi)$$
+
+Không coi $1+i=(1+r)(1+E\pi)$ là đồng nhất thức kỳ vọng tổng quát khi lạm phát bất định. Với i cố định, kỳ vọng chính xác là $E[(1+i)/(1+\pi)]-1$, nhìn chung khác $(1+i)/(1+E\pi)-1$. Nếu phân tích hình thành lãi suất thị trường còn cần xét phần bù rủi ro lạm phát, thanh khoản và kỳ hạn.
+
+Với lạm phát dương, công thức xấp xỉ $i-\pi$ phóng đại **độ lớn** của lợi suất thực so với phép chia chính xác: phóng đại khoản lỗ nếu $i<\pi$, hoặc phóng đại khoản lãi nếu $i>\pi$. Không phải lúc nào nó cũng “phóng đại sụt giảm sức mua”.
 
 ## 4. Ví dụ trực quan
 
-Hãy xét một nền kinh tế giả định đơn giản với rổ CPI gồm 3 nhóm mặt hàng cơ bản được theo dõi trong 2 năm ($t_0$ và $t_1$):
+**Ví dụ giả định**, rổ hàng giữ nguyên trong một năm:
 
-| Nhóm hàng hóa | Lượng tiêu dùng kỳ gốc ($Q_0$) | Giá năm $t_0$ ($P_0$) | Giá năm $t_1$ ($P_1$) | Chi phí kỳ gốc ($P_0 \cdot Q_0$) | Chi phí kỳ $t_1$ ($P_1 \cdot Q_0$) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Gạo & Thực phẩm** | 100 kg | 20.000 VNĐ | 24.000 VNĐ | 2.000.000 VNĐ | 2.400.000 VNĐ |
-| **Xăng dầu (Năng lượng)** | 50 lít | 22.000 VNĐ | 27.500 VNĐ | 1.100.000 VNĐ | 1.375.000 VNĐ |
-| **Dịch vụ giáo dục & y tế**| 10 đơn vị | 100.000 VNĐ | 105.000 VNĐ | 1.000.000 VNĐ | 1.050.000 VNĐ |
-| **TỔNG CỘNG** | - | - | - | **4.100.000 VNĐ** | **4.825.000 VNĐ** |
+| Nhóm hàng | Lượng kỳ gốc | Giá đầu năm | Giá cuối năm | Chi phí đầu năm | Chi phí cuối năm |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Thực phẩm | 100 kg | 20.000 | 24.000 | 2.000.000 | 2.400.000 |
+| Năng lượng | 50 lít | 22.000 | 27.500 | 1.100.000 | 1.375.000 |
+| Dịch vụ | 10 đơn vị | 100.000 | 105.000 | 1.000.000 | 1.050.000 |
+| **Tổng (đồng)** | | | | **4.100.000** | **4.825.000** |
 
-### Các bước tính toán:
+CPI đầu kỳ bằng 100; cuối kỳ bằng $100\times4.825.000/4.100.000 \approx117{,}6829$. Lạm phát cả kỳ khoảng 17,6829%.
 
-1. **Tính CPI năm $t_0$ (Kỳ gốc):**
-   $$\text{CPI}_0 = \frac{4.100.000}{4.100.000} \times 100 = 100$$
+Gửi 10 triệu với lãi 7%/năm, bỏ qua thuế/phí, cuối kỳ có 10,7 triệu. Sức mua tính theo rổ đầu kỳ:
 
-2. **Tính CPI năm $t_1$:**
-   $$\text{CPI}_1 = \frac{4.825.000}{4.100.000} \times 100 = 117,68$$
+$$\frac{10{,}7}{4{,}825/4{,}1}\approx9{,}0922\ \text{triệu đồng}$$
 
-3. **Tính Tỷ lệ Lạm phát năm $t_1$ ($\pi_1$):**
-   $$\pi_1 = \frac{117,68 - 100}{100} \times 100\% = 17,68\%$$
+$$r_{\text{thực}}=\frac{1{,}07}{4{,}825/4{,}1}-1\approx-9{,}08\%$$
 
-4. **Phân tích Lợi suất Thực tế (Ex-post Real Return):**
-   * Giả sử đầu năm $t_0$, bạn gửi 10.000.000 VNĐ vào ngân hàng với lãi suất danh nghĩa $r_{nominal} = 7\%$/năm.
-   * Đến năm $t_1$, bạn nhận được cả gốc và lãi là $10.700.000$ VNĐ.
-   * **Nếu tính theo xấp xỉ tuyến tính (Fisher approximation):** 
-     $$r_{real} \approx 7\% - 17,68\% = -10,68\%$$
-   * **Nếu tính theo công thức chính xác (Exact Ex-post Real Return):**
-     $$1 + r_{real} = \frac{1 + 0,07}{1 + 0,1768} = \frac{1,07}{1,1768} \approx 0,909245 \implies r_{real} \approx -9,08\%$$
-   * **Đánh giá:** Mặc dù số tiền danh nghĩa tăng 700.000 VNĐ, sức mua thực tế của khoản tiền gửi đã giảm khoảng **9.08%** (thay vì mức xấp xỉ -10.68%). Con số -10.68% chỉ là kết quả của phép xấp xỉ tuyến tính và đã phóng đại mức tổn thất sức mua thực tế so với kết quả tính toán chính xác khi lạm phát ở mức cao ($17.68\%$).
+Phép xấp xỉ cho $7\%-17{,}6829\%\approx-10{,}68\%$. Dùng tỷ lệ chưa làm tròn khi tính, chỉ làm tròn kết quả cuối.
 
----
+## 5. Tình huống thực tế: lạm phát Mỹ trong đại dịch
 
-## 5. Tình huống thực tế
+[Historical Claim] CPI-U Mỹ tháng 6/2022 tăng **9,1% so cùng kỳ**, chưa điều chỉnh mùa vụ; đây là biến động 12 tháng, không phải bình quân cả năm. [BLS, công bố ngày 13/07/2022](https://www.bls.gov/news.release/archives/cpi_07132022.htm).
 
-### Tình huống phân tích
+[Causal Mechanism / diễn giải có nguồn] Trong bài phát biểu ngày 23/08/2024, Chủ tịch Fed Jerome Powell giải thích giai đoạn này bằng sự kết hợp của cầu phục hồi mạnh và lệch sang hàng hóa, cung bị hạn chế, thị trường lao động và giá nguyên liệu. Việc áp lực giá giảm sau đó liên quan cả phục hồi nguồn cung, điều tiết tổng cầu và kỳ vọng. Đây là cách diễn giải của người phát biểu, không phải phép phân rã duy nhất được mọi nghiên cứu thống nhất. [Fed, Review and Outlook](https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm).
 
-> **Câu hỏi:** *"Giai đoạn 2020–2021, US Fed thực hiện nới lỏng định lượng (QE), bơm lượng lớn tiền cơ sở (MB) vào hệ thống ngân hàng. Tại sao trong năm 2020 lạm phát CPI ở Mỹ vẫn ở mức thấp (dưới 1.5%), nhưng đến tháng 6/2022, lạm phát CPI lại đạt đỉnh tới 9.1% YoY (mức cao nhất trong 40 năm, theo số liệu từ [U.S. Bureau of Labor Statistics - BLS](https://www.bls.gov/cpi/)) trước khi hạ nhiệt trong năm 2023?"*
-
-### Phân tích chi tiết chuỗi truyền dẫn:
-
-1. `[Causal Mechanism]` **Giai đoạn 2020 - Đầu 2021: Tăng trưởng Tiền cơ sở ($MB$) không tự động tạo ra lạm phát tiêu dùng tức thì**
-   * Các chương trình QE làm tăng tiền cơ sở $MB$ (dự trữ của ngân hàng thương mại tại Fed), nhưng đây không phải là cơ chế cơ học trực tiếp truyền dẫn $MB \to M2 \to \text{lạm phát CPI}$. Việc mở rộng tiền gửi ($M2$) và tín dụng phụ thuộc vào khả năng hấp thụ tín dụng của nền kinh tế và hoạt động cho vay của hệ thống ngân hàng thương mại.
-   * Tốc độ lưu thông tiền $V$ giảm mạnh do tâm lý thận trọng trong đại dịch đã làm suy giảm lực cầu chi tiêu tiêu dùng, mặc dù điều kiện tài chính nới lỏng có thể tác động sớm hơn tới giá tài sản tài chính trước khi phản ánh lên rổ CPI.
-
-2. `[Causal Mechanism]` **Giai đoạn 2021 - 2023: Sự tương tác đa chiều giữa Tài khóa, Tín dụng, Cung ứng và Điều kiện Tài chính**
-   * Lạm phát CPI Mỹ đạt đỉnh **9.1% YoY vào tháng 6/2022** là kết quả của sự tương tác phức tạp giữa nhiều yếu tố: các gói trợ cấp tài khóa trực tiếp thúc đẩy tiền gửi và sức mua hộ gia đình, cầu tiêu dùng dồn nén bùng nổ khi mở cửa trở lại (*reopening*), kết hợp với đứt gãy chuỗi cung ứng toàn cầu và xung đột địa chính trị đẩy giá năng lượng/lương thực tăng vọt (chi phí đẩy).
-   * Lạm phát hạ nhiệt dần trong năm 2023 khi Fed thắt chặt điều kiện tài chính (tăng mạnh lãi suất điều hành và thu hẹp bảng cân đối kế toán) cùng với sự khai thông từng bước các nút thắt nguồn cung.
-
----
+Không thể nhìn hai đường M2 và CPI rồi suy ra toàn bộ lạm phát do QE, hoặc gán độ trễ cố định. Cần tách kế toán tạo tiền gửi khỏi quyết định chi tiêu và khả năng sản xuất hàng hóa.
 
 ## 6. Kiến thức này có ích gì với tôi?
 
-### 1. Đọc và giải mã tin tức kinh tế chính xác
-* Nhận biết CPI là chỉ số giá, còn tỷ lệ % thay đổi CPI giữa các kỳ là tỷ lệ lạm phát. Phản ánh đúng bản chất CPI đo lường rổ hàng hóa đại diện thay vì trùng khớp tuyệt đối với chi phí sinh hoạt riêng của từng cá nhân. Phân biệt được sự khác nhau giữa biến động ngắn hạn của giá năng lượng/thực phẩm (lạm phát tổng thể) và áp lực tăng giá dài hạn (lạm phát cơ bản).
-
-### 2. Định hình tư duy quản trị tài sản cá nhân
-* **Phân biệt Lãi suất thực Ex-ante vs Ex-post:** Đánh giá rủi ro lạm phát kỳ vọng trước khi gửi tiết kiệm hay đầu tư, và hiểu sự khác biệt giữa công thức xấp xỉ và công thức chính xác khi lạm phát cao.
-* **Tư duy về tài sản bảo vệ sức mua (Inflation Hedge):** Trong một số bối cảnh lạm phát cao kéo dài, các tài sản thực hoặc cổ phiếu của những doanh nghiệp có sức mạnh ấn định giá (*pricing power*) có thể có khả năng bảo hộ sức mua tốt hơn việc nắm giữ tiền mặt cố định, dù vẫn chịu các rủi ro biến động giá riêng. Đây là nguyên lý tư duy vĩ mô, không phải lời khuyên đầu tư cụ thể.
-
-### 3. Hiểu hành vi điều hành của Ngân hàng Trung ương
-* Nhận diện lạm phát cơ bản là một chỉ báo quan trọng (bên cạnh tăng trưởng, việc làm và tỷ giá) để Ngân hàng Trung ương hoạch định lãi suất điều hành và thanh khoản thị trường.
-
----
+- **Đọc tin:** xác định chỉ số, kỳ so sánh, điều chỉnh mùa vụ và phạm vi địa lý trước khi so hai con số.
+- **Đánh giá khoản tiết kiệm:** dùng lạm phát kỳ vọng cho kế hoạch, lạm phát thực tế để đánh giá sau kỳ; thu nhập danh nghĩa tăng chưa chắc sức mua tăng.
+- **Hiểu hành vi:** doanh nghiệp có thể hấp thụ chi phí bằng giảm biên lợi nhuận thay vì tăng toàn bộ vào giá; người lao động đòi tăng lương không có nghĩa lạm phát tất yếu tăng tương ứng.
+- **Tránh kết luận đầu tư máy móc:** một tài sản có khả năng tăng dòng tiền theo giá chung vẫn có thể giảm giá vì lãi suất, rủi ro hoặc mức giá mua ban đầu.
 
 ## 7. Thuật ngữ
 
-* **Lạm phát (Inflation):** Sự gia tăng liên tục và kéo dài của mức giá chung trong nền kinh tế theo thời gian, làm suy giảm sức mua của đồng tiền.
-* **Chỉ số Giá tiêu dùng (Consumer Price Index - CPI):** Chỉ số giá đo lường mức giá trung bình của một rổ hàng hóa và dịch vụ tiêu dùng đại diện cho hộ gia đình. Tỷ lệ % thay đổi của chỉ số CPI giữa các kỳ được dùng để xác định tỷ lệ lạm phát.
-* **Lạm phát Tổng thể (Headline Inflation):** Tỷ lệ lạm phát tính toán trên toàn bộ danh mục rổ hàng hóa tiêu dùng trong chỉ số CPI.
-* **Lạm phát Cơ bản (Core Inflation):** Chỉ báo lạm phát nền tảng loại bỏ các nhóm hàng hóa có giá biến động ngắn hạn hoặc do Nhà nước quản lý giá, nhằm phản ánh xu hướng tăng giá dài hạn và ổn định của nền kinh tế (danh mục loại trừ cụ thể phụ thuộc vào phương pháp luận của từng cơ quan thống kê).
-* **Lạm phát Cầu kéo (Demand-Pull Inflation):** Lạm phát phát sinh khi tổng cầu trong nền kinh tế vượt quá khả năng cung ứng hàng hóa dịch vụ.
-* **Lạm phát Chi phí đẩy (Cost-Push Inflation):** Lạm phát phát sinh khi chi phí sản xuất đầu vào (nguyên vật liệu, tiền lương, vận tải) tăng cao, tạo áp lực thúc đẩy doanh nghiệp nâng giá bán.
-* **Lợi suất Thực (Real Return):** Tỷ lệ tăng trưởng sức mua thực tế của một khoản đầu tư sau khi đã trừ đi lạm phát. Phân biệt *ex-ante real return* (dựa trên lạm phát kỳ vọng $\pi^e$) và *ex-post real return* (dựa trên lạm phát thực tế $\pi$).
-* **Tốc độ lưu thông tiền (Money Velocity - $V$):** Số lần trung bình một đơn vị tiền tệ chuyển tay để thực hiện giao dịch hàng hóa/dịch vụ cuối cùng trong một thời kỳ.
+- **CPI:** chỉ số giá tiêu dùng; phân biệt mức chỉ số với tỷ lệ thay đổi.
+- **Headline/Core inflation:** tổng thể/cơ bản; phạm vi loại trừ phải theo phương pháp công bố.
+- **GDP deflator:** chỉ số giảm phát GDP; không phải CPI.
+- **Money velocity:** trong bài là GDP danh nghĩa chia chỉ tiêu tiền tệ tương ứng.
+- **Ex-ante / Ex-post:** dự kiến trước kỳ / quan sát sau kỳ.
+- **Disinflation / Deflation:** lạm phát chậm lại / mặt bằng giá giảm.
 
----
+## 8. Phạm vi Việt Nam và tính cập nhật
 
-## 8. Tin tức và tính cập nhật
+[Current Fact – đối chiếu 22/09/2026] Tên cơ quan hiện dùng là **Cục Thống kê, Bộ Tài chính**. Quyết định 384/QĐ-BTC ngày 26/02/2025 và những thay đổi tổ chức sau đó được cơ quan ghi nhận trong [Lịch sử phát triển](https://www.nso.gov.vn/gioi-thieu/lich-su-phat-trien/). Không dùng tên “Tổng cục Thống kê thuộc Bộ Kế hoạch và Đầu tư” như hiện trạng năm 2026.
 
-`[Current Fact]` **Bối cảnh đo lường và Quy định tại Việt Nam (năm 2026):**
+[Historical Claim] Tài liệu phương pháp do cơ quan thống kê đăng năm 2025 mô tả **752 mặt hàng cho giai đoạn 2020–2025** và việc chuyển năm gốc từ 2019 sang 2024. Vì vậy, số mặt hàng và quyền số cũ không được mặc định là rổ hiện hành năm 2026. [Cục Thống kê, Chỉ số giá tiêu dùng và phương pháp đo lường tại Việt Nam, 2025](https://www.nso.gov.vn/default/2025/11/chi-so-gia-tieu-dung-va-phuong-phap-do-luong-tai-viet-nam/).
 
-1. **Cơ quan công bố dữ liệu:** 
-   Tại Việt Nam, **Tổng cục Thống kê - GSO (Bộ Kế hoạch và Đầu tư)** – cơ quan thống kê quốc gia – thực hiện thu thập, tính toán và công bố Chỉ số giá tiêu dùng (CPI) định kỳ hàng tháng, hàng quý và hàng năm (chi tiết công bố tại [gso.gov.vn](https://www.gso.gov.vn)).
+[Current Fact – phạm vi công bố tháng 02/2026] Chú thích lạm phát cơ bản trong báo cáo giá của Cục Thống kê loại trừ lương thực, thực phẩm tươi sống, năng lượng và mặt hàng Nhà nước quản lý gồm dịch vụ y tế, giáo dục. [Báo cáo CPI tháng 02/2026, chú thích 2](https://www.nso.gov.vn/wp-content/uploads/2026/03/Tong-quan-CPI-thang-02-nam-2026-1.pdf). Đợt kiểm tra đọc được chú thích qua chỉ mục tìm kiếm của PDF chính thức; công cụ mở toàn văn gặp lỗi, nên không dùng nguồn này để xác nhận thêm số liệu ngoài chú thích.
 
-2. **Cấu trúc rổ hàng hóa CPI Việt Nam:**
-   * Rổ hàng hóa tính CPI tại Việt Nam hiện gồm 11 nhóm hàng hóa và dịch vụ chính (với 752 mặt hàng đại diện trong danh mục điều tra).
-   * Trong **kỳ quyền số benchmark (giai đoạn 2020–2025)** do Tổng cục Thống kê công bố, nhóm **"Hàng ăn và dịch vụ ăn uống"** chiếm trọng số lớn nhất (khoảng **33,56%** tổng rổ CPI). Trọng số này được cơ quan thống kê cập nhật định kỳ (thường 5 năm/lần) dựa trên kết quả Khảo sát mức sống dân cư (VHLSS) để phản ánh thực tế thói quen tiêu dùng.
-   * Nhóm **"Giao thông"** (chiếm khoảng **9,67%** trong kỳ quyền số benchmark) chịu ảnh hưởng trực tiếp từ biến động của giá xăng dầu thế giới và trong nước.
+Bài không khẳng định số mặt hàng, bộ quyền số đầy đủ hoặc mục tiêu CPI cả năm 2026 khi chưa có văn bản tương ứng được đối chiếu. Phần cơ chế vẫn sử dụng được độc lập với những số liệu cập nhật đó.
 
-3. **Mục tiêu Kiểm soát Lạm phát:**
-   Hàng năm, Quốc hội Việt Nam đề ra mục tiêu kiểm soát lạm phát CPI (thường ở mức khoảng 4,0% – 4,5%). Ngân hàng Nhà nước Việt Nam ([SBV](https://www.sbv.gov.vn)) phối hợp các công cụ chính sách tiền tệ (lãi suất điều hành, nghiệp vụ thị trường mở OMO, tỷ lệ dự trữ bắt buộc) để đạt mục tiêu vĩ mô này.
+## 9. Nguồn tham khảo
 
----
+Năm nguồn trọng tâm; nguồn cho dữ kiện bổ sung đã đặt tại đoạn liên quan:
 
-## 9. Nguồn tham khảo và độ tin cậy
+1. **IMF và các tổ chức thống kê quốc tế (2020)**, [Consumer Price Index Manual: Concepts and Methods](https://www.imf.org/en/data/statistics/cpi-manual).
+2. **Federal Reserve Bank of St. Louis (2015)**, [The velocity of money](https://fredblog.stlouisfed.org/2015/01/the-velocity-of-money/).
+3. **BLS (13/07/2022)**, [Consumer Price Index – June 2022](https://www.bls.gov/news.release/archives/cpi_07132022.htm).
+4. **Jerome H. Powell – Federal Reserve (23/08/2024)**, [Review and Outlook](https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm).
+5. **Cục Thống kê (2025)**, [Chỉ số giá tiêu dùng và phương pháp đo lường tại Việt Nam](https://www.nso.gov.vn/default/2025/11/chi-so-gia-tieu-dung-va-phuong-phap-do-luong-tai-viet-nam/).
 
-1. **Tổng cục Thống kê - GSO (Bộ Kế hoạch và Đầu tư):** Phương pháp luận điều tra, tính toán CPI và thông cáo báo chí số liệu thống kê ([gso.gov.vn](https://www.gso.gov.vn)).
-2. **Ngân hàng Nhà nước Việt Nam - SBV:** Báo cáo thường niên và Định hướng Điều hành Chính sách Tiền tệ ([sbv.gov.vn](https://www.sbv.gov.vn)).
-3. **U.S. Bureau of Labor Statistics - BLS:** Consumer Price Index Data & Historical Releases ([bls.gov/cpi](https://www.bls.gov/cpi/)).
-4. **Frederic S. Mishkin:** *The Economics of Money, Banking and Financial Markets* (13th Edition) – Chương 19 & 20 về Money Supply and Inflation.
-5. **International Monetary Fund (IMF):** *Consumer Price Index Manual: Concepts and Methods* (2020).
+## Liên kết kiến thức
 
----
+- [MONEY-001](../monetary-and-banking/money-supply-and-bank-money-creation.md): tạo tiền gửi và phân biệt tiền cơ sở (✅ Đã học).
+- [MONEY-002](../monetary-and-banking/policy-rates-and-monetary-transmission.md): lãi suất và truyền dẫn tiền tệ (✅ Đã học).
+- **Hiệu ứng Fisher và đường cong lợi suất:** từ kỳ vọng lạm phát đến lãi suất thị trường (⏳ Chưa học riêng).
+- **Đình lạm (Stagflation):** giá tăng trong bối cảnh hoạt động kinh tế yếu (⏳ Chưa học riêng).
 
-## 10. Liên kết kiến thức
+## Điều đáng nhớ nhất
 
-### 🔗 Bài học đã qua:
-* [`MONEY-001`](topics/monetary-and-banking/money-supply-and-bank-money-creation.md): Cung tiền M1, M2 và Cơ chế Tạo tiền của Ngân hàng Thương mại (Hiểu cách cung tiền được tạo ra trước khi tìm hiểu cách cung tiền tác động đến mức giá $P$).
+1. CPI là chỉ số; lạm phát là tỷ lệ thay đổi theo kỳ xác định. Chi tiêu riêng còn bị ảnh hưởng bởi lượng hàng và cơ cấu mua sắm.
+2. MV = PY không tự chứng minh M gây ra CPI, và P trong đồng nhất thức GDP không phải CPI.
+3. Lợi suất thực sau kỳ tính bằng phép chia mức tăng tiền cho mức tăng giá; kỳ vọng trước kỳ không phải kết quả chắc chắn.
 
-### 💡 Khái niệm gợi mở cho bài học tiếp theo (RELATE.md):
-* **Lãi suất điều hành & Kênh truyền dẫn chính sách tiền tệ:** NHTW dùng công cụ gì để kiềm chế khi lạm phát vượt mục tiêu?
-* **Hiệu ứng Fisher & Đường cong Lãi suất (Yield Curve):** Lạm phát kỳ vọng làm thay đổi lãi suất trái phiếu và giá tài sản như thế nào?
-* **Lạm phát chi phí đẩy và Hiện tượng Đình lạm (Stagflation):** Điều gì xảy ra khi nền kinh tế vừa bị lạm phát cao vừa bị suy thoái/thất nghiệp?
+## Góc Phản xạ & Active Recall (Dành cho bạn)
 
----
+Nếu lạm phát giảm từ 10% xuống 5%, tại sao gia đình vẫn có thể phải chi nhiều hơn để mua cùng rổ hàng?
 
-## 11. Điều đáng nhớ nhất
-
-1. **Lạm phát là sự suy giảm sức mua hệ thống**, không đơn thuần là sự tăng giá cục bộ của một vài mặt hàng. Tốc độ lưu thông tiền $V$ và sản lượng thực tế $Y$ đóng vai trò mắt xích điều tiết trong phương trình $M \cdot V = P \cdot Y$, khiến cho bơm tiền không tự động dẫn tới lạm phát CPI tức thì.
-2. **CPI đo lường mức giá trung bình của rổ hàng hóa tiêu dùng đại diện**, không đồng nhất với chi phí sinh hoạt riêng của từng cá nhân. Lạm phát cơ bản (Core Inflation) loại bỏ các nhóm hàng biến động mạnh hoặc do nhà nước quản lý giá để phản ánh xu hướng lạm phát nền tảng dài hạn.
-3. **Lợi suất thực ex-post ($r_{real}$) đo lường sức mua thực tế**, được tính chính xác qua công thức $r_{real} = \frac{1 + r_{nominal}}{1 + \pi} - 1$. Phép xấp xỉ $r_{real} \approx r_{nominal} - \pi$ chỉ thích hợp cho việc đánh giá nhanh khi lạm phát ở mức thấp.
-
----
-
-## 12. Góc Phản xạ & Active Recall (Dành cho bạn)
-
-* **Dạng 3 (Liên hệ thực tế):** *"Khi đọc tin tức báo chí công bố 'Lạm phát CPI tăng 3,5%', tại sao chi phí sinh hoạt thực tế của bạn hoặc gia đình có thể cảm nhận tăng nhiều hơn con số này? Hãy giải thích dựa trên khái niệm trọng số rổ hàng hóa đại diện và danh mục tiêu dùng cá nhân."*
-
-*Gợi ý nhẹ cuối mục:* **Thang tự đánh giá (1–5):** Bạn tự thấy mức độ hiểu và nhớ cơ chế lạm phát & CPI hôm nay ở mức nào?
-- `1` = Cần đọc lại sớm (Chưa nắm rõ sự khác biệt giữa $MB \to M2 \to CPI$ hoặc công thức tính CPI/Real Return)
-- `3` = Nắm vững (Hiểu rõ cơ chế QTM, phân biệt Headline vs Core Inflation và tác động sức mua)
-- `5` = Rất tự tin (Có thể giải thích lại chuỗi truyền dẫn vĩ mô và phân tích diễn biến CPI trên thực tế)
+**Thang tự đánh giá (1–5):** 1 = cần đọc lại sớm; 3 = nắm vững; 5 = giải thích được CPI, đồng nhất thức tiền tệ và lợi suất thực.

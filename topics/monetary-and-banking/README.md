@@ -1,16 +1,18 @@
 # Tiền tệ và Ngân hàng (Monetary & Banking)
 
-Thư mục này chứa các bài học thuộc chủ đề **Tiền tệ, Ngân hàng, Cung tiền và Chính sách Tiền tệ**. Đây là nhóm bài học Hạt nhân (Core Anchors - Tầng 1) giúp xây dựng nền tảng vĩ mô vững chắc cho kho tri thức Eco Learning.
+Nhóm bài học nền tảng về tiền, ngân hàng và chính sách tiền tệ. Tóm tắt đã đồng bộ ngày 22/09/2026.
 
----
+## Danh mục bài học
 
-## Danh mục Bài học
+### MONEY-001 – Cung tiền M1, M2 và cơ chế tạo tiền của ngân hàng thương mại
 
-### 1. [`MONEY-001`] Cung tiền M1, M2 và Cơ chế Tạo tiền của Ngân hàng Thương mại
-* **Đường dẫn:** [`money-supply-and-bank-money-creation.md`](money-supply-and-bank-money-creation.md)
-* **Tóm tắt cơ chế:** Trong hệ thống ngân hàng dự trữ một phần, phần lớn tiền trong nền kinh tế ($M1, M2$) không xuất phát trực tiếp từ máy in của Ngân hàng Trung ương mà được tạo ra từ hoạt động cho vay của các ngân hàng thương mại. Khi người dân gửi tiền, ngân hàng giữ lại một tỷ lệ dự trữ bắt buộc ($r$) và cho vay phần còn lại, tạo ra chuỗi tiền gửi nối tiếp qua số nhân tiền $m = \frac{1+c}{c+r+e}$. Nếu niềm tin suy giảm dẫn đến hoảng loạn rút tiền (*bank run*) hoặc thắt chặt tín dụng (*credit crunch*), số nhân tiền sụt giảm mạnh sẽ làm co hẹp cung tiền toàn hệ thống.
+- **Ngày học:** 2026-08-12.
+- **Đường dẫn:** [money-supply-and-bank-money-creation.md](money-supply-and-bank-money-creation.md).
+- **Tóm tắt cơ chế:** Ngân hàng tạo tiền gửi khi ghi nhận khoản vay mới và nợ tiền gửi tương ứng, nhưng vẫn phải quản trị vốn, rủi ro và nguồn vốn thanh toán. Số dư dự trữ tại NHTW, tiền mặt trong két và tiền gửi khách hàng cần được tách riêng. Mua đứt tài sản từ ngân hàng chưa tự tạo tiền gửi khách hàng, còn mua từ chủ thể phi ngân hàng thuộc phạm vi thống kê có thể tạo tiền gửi ngay. Công thức số nhân là tỷ số đại số hoặc mô hình có giả định, không phải quy trình nhân quả ngân hàng chờ tiền gửi rồi cho vay phần còn lại.
 
-### 2. [`MONEY-002`] Lãi suất Điều hành và Các Kênh Truyền dẫn Chính sách Tiền tệ
-* **Đường dẫn:** [`policy-rates-and-monetary-transmission.md`](policy-rates-and-monetary-transmission.md)
-* **Tóm tắt cơ chế:** NHTW điều tiết chi phí thanh khoản bán buôn trên thị trường liên ngân hàng thông qua hành lang lãi suất (Tái cấp vốn, Tái chiết khấu, OMO Repo/Tín phiếu). Quyết định lãi suất lan tỏa vào nền kinh tế thực thông qua 5 kênh truyền dẫn chính: Lãi suất trực tiếp, Tín dụng & Bảng cân đối kế toán, Giá tài sản & Hiệu ứng của cải, Tỷ giá hối đoái, và Kỳ vọng lạm phát. Trong thực tế, cơ chế truyền dẫn có độ trễ dài và biến thiên (6–24 tháng) và mang tính bất đối xứng giữa chu kỳ thắt chặt và nới lỏng tiền tệ.
+### MONEY-002 – Lãi suất điều hành và các kênh truyền dẫn chính sách tiền tệ
 
+- **Ngày học:** 2026-08-16.
+- **Điều kiện nền:** MONEY-001, MACRO-001.
+- **Đường dẫn:** [policy-rates-and-monetary-transmission.md](policy-rates-and-monetary-transmission.md).
+- **Tóm tắt cơ chế:** Chính sách ảnh hưởng chi phí vay và quyết định chi tiêu qua lãi suất, tín dụng, giá tài sản, tỷ giá và kỳ vọng. Khung điều hành Fed, ECB và NHNN phải được xác định riêng theo thời điểm, không gán chung một hành lang đối xứng. Repo thường được hạch toán như khoản tài trợ có bảo đảm, tạo nghĩa vụ hoàn trả thay vì xóa trái phiếu như bán đứt. Tác động tới tăng trưởng và lạm phát phụ thuộc hợp đồng, rủi ro và hành vi, không có độ trễ 6–24 tháng áp dụng chung cho mọi bối cảnh.

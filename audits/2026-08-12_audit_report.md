@@ -1,5 +1,7 @@
 # 📋 AUDIT REPORT (12/08/2026) — Eco Learning Knowledge Repository
 
+> **Đính chính ngày 22/09/2026:** Đây là báo cáo lịch sử, không còn đại diện cho tình trạng hiện tại. Những điểm số 9.x/10, khẳng định “triệt để/hoàn toàn”, ước lượng token và kết luận không còn vấn đề mở dưới đây không có đủ bằng chứng kiểm chứng để dùng như bảo đảm độ chính xác. Đợt rà soát mới phát hiện lỗi trong công thức, hạch toán, phạm vi thống kê, nguồn và chỉ mục; xem [báo cáo kiểm chứng 22/09/2026](2026-09-22_factcheck_review.md). Phần gốc được giữ để theo dõi lịch sử.
+
 **Ngày đánh giá:** 12/08/2026  
 **Phạm vi:** Toàn bộ Repository (`README.md`, `AGENTS.md`, `LEARNED.md`, `RELATE.md`, `GLOSSARY.md`, `.memory/`, `topics/`)  
 **Mục tiêu:** Kiểm tra tính đồng bộ (coherence), nhất quán (consistency), độ tin cậy tri thức (factual reliability), khả năng bảo trì (maintainability) và sự phù hợp với mục đích ban đầu của kho lưu trữ.

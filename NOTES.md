@@ -1,36 +1,49 @@
-# Note Cá Nhân: Phân Tích Bản Chất Toán Học của Kiểm Chứng Thông Tin & Quản Trị Backlog (RELATE / GLOSSARY)
+# Ghi chú: kiểm chứng thông tin và quản trị hàng chờ
 
-Hai vấn đề này thực chất có bản chất toán học khác nhau — đáng tách riêng để xử lý đúng cách.
+Cập nhật sau rà soát ngày 22/09/2026. Đây là phân tích và đề xuất, không tự thay đổi quy trình trong AGENTS.md.
 
-## 1. Kiểm chứng thông tin — vấn đề là "tự khai không phải bằng chứng"
+## 1. Tên nguồn đúng chưa chứng minh nội dung trích dẫn đúng
 
-Protocol hiện tại yêu cầu Agent *tự dán nhãn* độ tin cậy (`[CẦN XÁC MINH LẠI]`) và *tự tuyên bố* không bịa nguồn. Nhưng không có bước nào bắt buộc **thực sự chạy web search để đối chiếu** trước khi ghi vào bài — nó chỉ nói "nếu có công cụ tra cứu, ưu tiên xác minh", tức là tùy chọn chứ không bắt buộc.
+Một tài liệu có thật có thể bị dẫn sai tác giả, năm, chương hoặc nội dung. Việc tự ghi “đã xác minh” không thay thế việc đối chiếu đoạn nguồn liên quan.
 
-Vấn đề cụ thể: 4 nguồn trong bài MONEY-001 (McLeay et al. 2014, Fed St. Louis 2021, Mishkin 2021, Friedman & Schwartz 1963) đều là tài liệu kinh điển có thật — nhưng tôi không có cách nào biết agent đã đọc chúng hay chỉ "nhớ mang máng" nội dung rồi diễn giải lại (đây chính là cách hallucination học thuật hay xảy ra: tên nguồn đúng, nội dung trích dẫn sai).
+Đợt rà soát này đã thay các nguồn chỉ trỏ trang chủ hoặc không xác minh được bằng tài liệu cụ thể. Ví dụ, tên “Money and Missed Conceptions” từng gắn với Fed St. Louis chưa tìm được tài liệu tương ứng; việc không tìm thấy không đủ để khẳng định chắc chắn tài liệu không tồn tại.
 
-**Đề xuất phân tầng xác minh theo chi phí/lợi ích, không xác minh mọi thứ:**
+**Phân tầng kiểm tra:**
 
-| Loại nội dung | Rủi ro | Cách xử lý |
-|---|---|---|
-| Khái niệm/công thức ổn định (VD: CCC = DIO+DSO-DPO) | Thấp — dễ tự kiểm bằng trực giác toán học | Không cần xác minh thêm |
-| Trích dẫn học thuật kinh điển (Mishkin, Friedman...) | Trung bình — tên đúng nhưng nội dung có thể bị diễn giải sai | Bạn tự search 1 câu nhanh mỗi ~5 bài để spot-check, không cần mỗi bài |
-| Số liệu thời sự/quy định VN (lãi suất, thuế, tỷ giá) | Cao — dễ sai, dễ lỗi thời | **Bắt buộc** agent chạy web search thật và dán link nguồn gốc ngay trong bài, không chỉ tên báo cáo |
+| Loại nhận định | Cách kiểm tra phù hợp |
+| :--- | :--- |
+| Đại số và ví dụ giả định | Nêu giả định, kiểm tra đơn vị và tính lại độc lập. |
+| Cơ chế thể chế, hạch toán | Đối chiếu tài liệu chính thức; tách chủ thể, loại giao dịch và điều kiện vận hành. |
+| Dữ liệu lịch sử, luật, thông tin hiện hành | Nguồn trực tiếp, kỳ dữ liệu, ngày công bố/hiệu lực; kiểm tra văn bản thay thế. |
+| Diễn giải thực nghiệm | Đối chiếu nghiên cứu gốc và phạm vi mẫu; không gọi tương quan là nhân quả. |
 
-Việc đáng làm nhất: sửa `AGENTS.md` để phần "Nguồn tham khảo và độ tin cậy" đổi từ "ưu tiên xác minh nếu có công cụ" thành **bắt buộc chạy search cho mọi Current Fact/Empirical Relationship**, có log lại query đã dùng. Điều này biến "tôi tin agent không bịa" thành "tôi có thể truy vết được agent đã tra gì".
+Không cần bắt mọi công thức ổn định phải có truy vấn web riêng. Nhưng dẫn một nguồn để chứng minh nhận định phải kiểm tra nguồn thực sự hỗ trợ nhận định đó. Nếu chỉ đọc được kết quả tìm kiếm của nguồn chính thức do lỗi truy cập, cần ghi giới hạn bằng chứng.
 
-## 2. RELATE.md và GLOSSARY.md — hai file này có tốc độ phình khác hẳn nhau
+## 2. Kích thước glossary: đo trước khi quyết định chia nhỏ
 
-**GLOSSARY.md: tăng tuyến tính, vô hại trong trung hạn.** Mỗi bài thêm ~5-6 thuật ngữ, không có cơ chế xóa. Làm phép tính nhanh: hiện 23 dòng ≈ 300 token để agent đọc. Nếu duy trì nhịp độ vài bài/tuần trong 1 năm (~150 bài) → khoảng 800-900 dòng ≈ 15.000-18.000 token phải nạp *mỗi lần* trước khi viết bài mới. Không phá hệ thống nhưng bắt đầu tốn kém thật sự sau ~1 năm kiên trì. Nên định sẵn ngưỡng chia nhỏ ngay từ bây giờ (VD: khi vượt 150 dòng → tách `GLOSSARY.md` thành index gốc trỏ tới `topics/<category>/GLOSSARY.md` con), thay vì để đến lúc file quá to mới cuống cuồng refactor.
+Bản cũ ước lượng số dòng và số token như thể có quan hệ cố định. Điều đó không hợp lý: số token còn phụ thuộc độ dài định nghĩa, tiếng Việt, URL và tokenizer.
 
-**RELATE.md: đây mới là vấn đề thật — nó là một hàng đợi phình *nhanh hơn* tốc độ xử lý, không phải chỉ "file to".** Nhìn vào cấu trúc: mỗi bài học tạo ra 2-4 dòng RELATE mới (mục "Liên kết kiến thức"), nhưng protocol chỉ chọn 1 bài củng cố sau mỗi 3-4 bài mới (breadth-first ưu tiên). Tức là:
+[Theoretical Model] Nếu mỗi bài thêm trung bình a thuật ngữ **mới, không trùng**, sau n bài có khoảng $G_n=G_0+an$ thuật ngữ. Đây là mô hình tăng trưởng theo giả định, không phải dự báo đo được.
 
-- Tốc độ nạp vào hàng đợi: ~3 mục/bài × mọi bài
-- Tốc độ rút ra khỏi hàng đợi: ~1 mục / (3-4 bài)
+Việc chia glossary theo nhóm có thể hữu ích khi chi phí tìm/đọc tăng rõ rệt. Chưa có cơ sở để coi một ngưỡng như 150 dòng là tối ưu; nên đo dung lượng, tần suất tra cứu và tỷ lệ thuật ngữ trùng trước khi đổi cấu trúc.
 
-→ Hàng đợi tăng ròng khoảng 10-11 mục sau mỗi 4 bài, **và không có cơ chế nào rút bớt**. Đây không phải lỗi thiết kế nhỏ — nó là backlog hội tụ về vô hạn về mặt toán học, giống hệt bug kinh điển trong task queue management. Sau vài trăm bài, `RELATE.md` sẽ có hàng nghìn dòng "⏳ Chưa học" mà phần lớn không bao giờ được chọn tới, nhiều mục sẽ lỗi thời hoặc không còn liên quan khi cuối cùng agent quay lại.
+## 3. RELATE là quan hệ giữa bài và khái niệm, không phải số chủ đề duy nhất
 
-**Đề xuất cụ thể** (không cần làm ngay, nhưng nên viết luật vào AGENTS.md trước khi backlog vượt tầm kiểm soát):
-- Thêm cơ chế "aging": mục nào nằm trong `RELATE.md` quá N bài (VD: 30 bài) mà chưa được chọn → tự động chuyển sang `RELATE_archive.md`, không hiển thị trong hàng đợi hoạt động nữa.
-- Hoặc giới hạn cứng: mỗi bài chỉ được phép thêm tối đa 2 mục mới vào RELATE (thay vì 2-4), giảm tốc độ nạp thay vì tăng tốc độ rút — dễ implement hơn vì không cần logic archive.
+Một khái niệm có thể được gợi mở từ nhiều bài. Một bài học mới cũng có thể giải quyết nhiều dòng chờ, kể cả khi không mang nhãn “bài củng cố”. Vì vậy không thể suy ra tốc độ hoàn thành chỉ từ lịch “mỗi 3–4 bài mới có một bài củng cố”.
 
-Cả hai vấn đề đều chưa cấp bách ở quy mô hiện tại (2 bài học), nhưng đáng viết luật xử lý ngay bây giờ trong AGENTS.md, vì sửa một quy tắc trong file protocol dễ hơn nhiều so với việc dọn dẹp một file 1000 dòng đã rối sau này.
+[Accounting Identity của mô hình hàng chờ] Đặt Q là số **khái niệm duy nhất chưa xử lý**:
+
+$$Q_{n+1}=\max(0,Q_n+A_n-C_n-R_n)$$
+
+A là số khái niệm mới thực sự được thêm, C là số được học, R là số được rút khỏi hàng chờ hoạt động. Các biến phải được định nghĩa không đếm trùng. Nếu việc hoàn thành một bài đóng ba dòng cùng khái niệm, C theo khái niệm chỉ tăng một.
+
+[Theoretical Model] Nếu giả định A = 3, C trung bình = 0,25 và R = 0 thì tăng ròng là 2,75 khái niệm/bài, tức 11 sau bốn bài. Kết luận này **chỉ đúng trong giả định đó**. Không chứng minh hàng chờ thực tế chắc chắn tăng vô hạn, vì chủ đề có thể trùng, được học chung hoặc không tiếp tục được thêm mãi.
+
+## 4. Các lựa chọn quản trị chưa triển khai
+
+- Theo dõi số khái niệm duy nhất, không chỉ đếm dòng quan hệ.
+- Hạn chế thêm mục trùng và đánh dấu phạm vi đã học rõ ràng.
+- Có thể giới hạn hàng chờ hoạt động hoặc chuyển mục ít ưu tiên vào kho lưu, nếu người dùng muốn.
+- Giảm số mục thêm mỗi bài chỉ làm giảm tốc độ tăng; không bảo đảm hàng chờ ổn định nếu tốc độ thêm vẫn lớn hơn tốc độ xử lý.
+
+Giữ cấu trúc Markdown hiện tại trong đợt sửa kiến thức này. Không tự tạo cơ chế lưu trữ hoặc lịch ôn tập tự động từ các đề xuất trên.
