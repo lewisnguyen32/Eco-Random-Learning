@@ -16,3 +16,10 @@ Nhóm bài học nền tảng về tiền, ngân hàng và chính sách tiền t
 - **Điều kiện nền:** MONEY-001, MACRO-001.
 - **Đường dẫn:** [policy-rates-and-monetary-transmission.md](policy-rates-and-monetary-transmission.md).
 - **Tóm tắt cơ chế:** Chính sách ảnh hưởng chi phí vay và quyết định chi tiêu qua lãi suất, tín dụng, giá tài sản, tỷ giá và kỳ vọng. Khung điều hành Fed, ECB và NHNN phải được xác định riêng theo thời điểm, không gán chung một hành lang đối xứng. Repo thường được hạch toán như khoản tài trợ có bảo đảm, tạo nghĩa vụ hoàn trả thay vì xóa trái phiếu như bán đứt. Tác động tới tăng trưởng và lạm phát phụ thuộc hợp đồng, rủi ro và hành vi, không có độ trễ 6–24 tháng áp dụng chung cho mọi bối cảnh.
+
+### MONEY-003 – Thanh khoản ngân hàng: Vì sao có tài sản vẫn thiếu tiền chi trả?
+
+- **Ngày học:** 2026-09-27.
+- **Điều kiện nền:** MONEY-001, MONEY-002, CORP-001.
+- **Đường dẫn:** [bank-liquidity-and-funding-risk.md](bank-liquidity-and-funding-risk.md).
+- **Tóm tắt cơ chế:** Tiền gửi khách hàng là nợ của ngân hàng, còn số dư dự trữ tại ngân hàng trung ương là tài sản dùng trong quyết toán liên ngân hàng. Một ngân hàng có vốn dương vẫn có thể thiếu phương tiện thanh toán đúng hạn nếu tài sản chưa thu hồi, khó bán hoặc không vay được kịp thời. Ví dụ hai ngân hàng kiểm tra từng bút toán và cho thấy tiền gửi chuyển từ A sang B làm dự trữ dịch chuyển, không tự làm tổng dự trữ biến mất. Bán tài sản dưới giá ghi sổ có thể biến áp lực thanh khoản thành lỗ vốn; khả năng và mức độ tác động tùy điều kiện thị trường.

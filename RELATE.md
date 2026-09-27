@@ -34,3 +34,5 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [`fisher-effect-and-yield-curve.md`](topics/macroeconomics/fisher-effect-and-yield-curve.md) | Lạm phát hòa vốn từ trái phiếu chống lạm phát và sai lệch do phần bù (Breakeven Inflation) | ⏳ Chưa học | - |
 | [`loss-aversion-and-disposition-effect.md`](topics/behavioral-finance/loss-aversion-and-disposition-effect.md) | Kế toán tinh thần và cách đánh giá toàn danh mục (Mental Accounting) | ⏳ Chưa học | - |
 | [`loss-aversion-and-disposition-effect.md`](topics/behavioral-finance/loss-aversion-and-disposition-effect.md) | Tái cân bằng danh mục so với hành vi bán lãi, giữ lỗ (Portfolio Rebalancing) | ⏳ Chưa học | - |
+| [`bank-liquidity-and-funding-risk.md`](topics/monetary-and-banking/bank-liquidity-and-funding-risk.md) | Rút tiền gửi đồng loạt và vai trò của bảo hiểm tiền gửi (Bank Runs & Deposit Insurance) | ⏳ Chưa học | - |
+| [`bank-liquidity-and-funding-risk.md`](topics/monetary-and-banking/bank-liquidity-and-funding-risk.md) | Đo rủi ro thanh khoản ngân hàng: LCR và cấu trúc nguồn vốn ổn định (LCR & NSFR) | ⏳ Chưa học | - |
