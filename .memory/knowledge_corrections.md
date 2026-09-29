@@ -183,3 +183,12 @@ Tài liệu lưu lịch sử lỗi và quy tắc phòng ngừa. Đợt đối ch
 - **Generalizable Lesson:** G-001/G-005/G-006: nguồn sơ cấp có thẩm quyền tri thức; rà soát mọi nơi lặp lại khẳng định đã sửa và nêu giới hạn chứng cứ.
 - **Trigger Patterns:** “đã kiểm chứng”, điểm audit, tên nguồn không có link, tóm tắt còn khác bài gốc.
 - **Verification Source:** đối chiếu trực tiếp các file và nguồn đã dẫn tại Entries 005–010; báo cáo ngày 22/09/2026 lưu riêng trong audits/.
+
+### Entry 012: Không suy từ cầu thị trường sang từng người mua
+- **Bài liên quan:** MICRO-001.
+- **Error:** Bản nháp nói giá tăng trên cùng đường cầu thị trường dốc xuống thì “từng người sẽ muốn mua ít đi”.
+- **Corrected Understanding:** Khi các yếu tố khác cố định, đường cầu thị trường dốc xuống cho biết **tổng lượng cầu** giảm khi giá tăng; điều đó không bắt buộc lượng mua của mọi cá nhân đều giảm. Hai cặp giá–lượng quan sát ở các thời điểm khác nhau cũng chưa tự xác định đường cầu nếu cung hoặc cầu dịch chuyển.
+- **Root Cause:** Chuyển ngầm một kết luận ở cấp thị trường sang cấp cá nhân; không kiểm tra phạm vi chủ thể của khẳng định nhân quả.
+- **Generalizable Lesson:** Mở rộng G-006: định rõ cấp độ đo lường (cá nhân, doanh nghiệp, thị trường) trước khi diễn giải dấu thay đổi; từ kết quả tổng hợp không suy ra mọi thành phần cùng thay đổi như tổng.
+- **Trigger Patterns:** Cầu thị trường, chỉ tiêu bình quân/tổng, “mọi người”, “từng người”, kết luận về hộ từ dữ liệu tổng hợp.
+- **Verification Source:** [Curtis & Irvine, *Principles of Microeconomics*, bản 2021A, mục 3.8 về cầu thị trường là tổng các cầu cá nhân](https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/895/3/CI-Principles-of-Microeconomics-2021A.pdf); [Angrist & Krueger, *Journal of Economic Perspectives* (2001), về vấn đề xác định đường cầu từ dữ liệu cân bằng quan sát](https://economics.mit.edu/sites/default/files/publications/Instrumental%20Variables%20and%20the%20Search%20for%20Identifi.pdf).

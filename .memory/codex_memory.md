@@ -43,6 +43,8 @@ Phân loại khẳng định quan trọng: Definition, Accounting Identity, Theo
 
 Ví dụ tự xây dựng phải gắn nhãn giả định. Kết quả tính toán từ giả định không phải bằng chứng thực nghiệm; lời diễn giải của một cơ quan không tự là đồng thuận nghiên cứu.
 
+Kiểm tra cấp độ của chủ thể được đo: từ cầu hoặc kết quả **toàn thị trường** không suy rằng **từng cá nhân** có cùng mức thay đổi. Nêu rõ khi lập luận chuyển giữa cá nhân, doanh nghiệp và tổng thể.
+
 ## G-007 — Measurement Basis & Units
 
 Kiểm tra đơn vị, mẫu số, phạm vi đại lượng và kỳ đo trước khi biến đổi:
