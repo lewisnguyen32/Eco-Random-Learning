@@ -38,3 +38,12 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [`bank-liquidity-and-funding-risk.md`](topics/monetary-and-banking/bank-liquidity-and-funding-risk.md) | Đo rủi ro thanh khoản ngân hàng: LCR và cấu trúc nguồn vốn ổn định (LCR & NSFR) | ⏳ Chưa học | - |
 | [`price-elasticity-of-demand-and-revenue.md`](topics/microeconomics/price-elasticity-of-demand-and-revenue.md) | Độ co giãn chéo của cầu: hàng thay thế và hàng bổ sung (Cross-price Elasticity) | ⏳ Chưa học | - |
 | [`price-elasticity-of-demand-and-revenue.md`](topics/microeconomics/price-elasticity-of-demand-and-revenue.md) | Doanh thu cận biên, chi phí cận biên và tối đa hóa lợi nhuận (MR, MC & Profit Maximization) | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-10-03
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [MACRO-002](topics/macroeconomics/fisher-effect-and-yield-curve.md) | Độ nhạy giá trái phiếu với lãi suất (Duration & Interest-Rate Risk) — cập nhật trạng thái dòng chờ ở trên ngày 2026-10-03 | ✅ Đã học | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+| [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) | Tái đầu tư coupon và lợi suất nắm giữ (Reinvestment Risk & Holding-period Return) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) | Chênh lệch tín dụng (Credit Spread) — tách rủi ro tín dụng và các phần bù khác trong lợi suất | ⏳ Chưa học | - |
+| [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) | Độ lồi và biến động đường cong lợi suất không song song (Convexity & Non-parallel Yield-curve Shifts) — cần bài chuyên sâu | ⏳ Chưa học | - |

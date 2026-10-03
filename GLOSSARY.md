@@ -69,3 +69,16 @@
 | Độ co giãn của cầu theo giá | Price elasticity of demand | Tỷ lệ giữa phần trăm thay đổi lượng cầu và phần trăm thay đổi giá của chính hàng hóa, khi các yếu tố khác của cầu không đổi; thường báo cáo trị tuyệt đối. | [MICRO-001](topics/microeconomics/price-elasticity-of-demand-and-revenue.md) |
 | Phương pháp trung điểm | Midpoint method | Tính phần trăm thay đổi dựa trên trung bình của hai giá trị đầu và cuối; cho cùng độ lớn độ co giãn trên đoạn khi đảo chiều so sánh. | [MICRO-001](topics/microeconomics/price-elasticity-of-demand-and-revenue.md) |
 | Cầu co giãn / cầu kém co giãn | Elastic demand / Inelastic demand | Với độ lớn độ co giãn trên đoạn đang xét, lớn hơn 1 / nhỏ hơn 1; không có nghĩa người mua luôn phản ứng như vậy ở mọi mức giá. | [MICRO-001](topics/microeconomics/price-elasticity-of-demand-and-revenue.md) |
+
+## Cập nhật ngày 2026-10-03
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Lãi suất coupon | Coupon rate | Tỷ lệ lãi coupon hằng năm tính trên mệnh giá; trong bài là tỷ lệ cố định, khác YTM suy ra từ giá mua. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+| Mệnh giá trái phiếu | Face value / Par value | Giá trị gốc hợp đồng hứa hoàn trả khi đáo hạn; khác giá thị trường và không bảo đảm được trả đầy đủ khi vỡ nợ. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+| Thời lượng Macaulay | Macaulay duration | Thời gian bình quân nhận dòng tiền, với trọng số bằng giá trị hiện tại từng dòng tiền chia giá trái phiếu; khác thời gian còn lại đến đáo hạn. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+| Thời lượng điều chỉnh | Modified duration | Với coupon trả năm và ghép lãi năm, D_mod = D_Mac/(1+y); xấp xỉ ΔP/P ≈ −D_mod × Δy khi YTM đổi nhỏ và dòng tiền cố định. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+| Rủi ro lãi suất | Interest-rate risk | Rủi ro giá trị trái phiếu thay đổi khi lãi suất thị trường thay đổi; giá trái phiếu coupon cố định có thể giảm dù tổ chức phát hành vẫn trả đúng hạn. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+| Rủi ro tái đầu tư | Reinvestment risk | Không chắc mức lợi suất để tái đầu tư tiền nhận về; giữ trái phiếu đến đáo hạn không bảo đảm coupon được tái đầu tư ở YTM lúc mua. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+| Độ lồi | Convexity | Độ cong của quan hệ giá–lợi suất; giúp giải thích sai số của xấp xỉ duration khi lợi suất đổi nhiều, với dòng tiền và quy ước định giá đã xác định. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+| Chênh lệch tín dụng | Credit spread | Chênh lợi suất so với chuẩn tham chiếu phù hợp về đồng tiền và kỳ hạn; có thể chứa ảnh hưởng thanh khoản và các phần bù khác, không chỉ xác suất vỡ nợ. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
