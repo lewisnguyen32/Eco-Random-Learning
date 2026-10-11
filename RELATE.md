@@ -47,3 +47,11 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) | Tái đầu tư coupon và lợi suất nắm giữ (Reinvestment Risk & Holding-period Return) — cần bài chuyên sâu | ⏳ Chưa học | - |
 | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) | Chênh lệch tín dụng (Credit Spread) — tách rủi ro tín dụng và các phần bù khác trong lợi suất | ⏳ Chưa học | - |
 | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) | Độ lồi và biến động đường cong lợi suất không song song (Convexity & Non-parallel Yield-curve Shifts) — cần bài chuyên sâu | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-10-11
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) | Giá trị thời gian của tiền và giá trị hiện tại ròng (Time Value of Money & NPV) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) | Lãi suất thả nổi và rủi ro tái định giá (Floating Rates & Repricing Risk) | ⏳ Chưa học | - |
+| [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) | Tất toán sớm và tái cấp vốn khoản vay cá nhân (Early Repayment & Loan Refinancing) | ⏳ Chưa học | - |

@@ -82,3 +82,14 @@
 | Rủi ro tái đầu tư | Reinvestment risk | Không chắc mức lợi suất để tái đầu tư tiền nhận về; giữ trái phiếu đến đáo hạn không bảo đảm coupon được tái đầu tư ở YTM lúc mua. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
 | Độ lồi | Convexity | Độ cong của quan hệ giá–lợi suất; giúp giải thích sai số của xấp xỉ duration khi lợi suất đổi nhiều, với dòng tiền và quy ước định giá đã xác định. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
 | Chênh lệch tín dụng | Credit spread | Chênh lợi suất so với chuẩn tham chiếu phù hợp về đồng tiền và kỳ hạn; có thể chứa ảnh hưởng thanh khoản và các phần bù khác, không chỉ xác suất vỡ nợ. | [INVEST-001](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+
+## Cập nhật ngày 2026-10-11
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Dư nợ gốc | Outstanding principal | Phần tiền gốc còn chưa hoàn trả tại thời điểm xét; khác tổng nghĩa vụ còn lại gồm gốc, lãi và phí. | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
+| Lãi phẳng | Flat-rate interest | Trong mô hình của bài, lãi tính trên gốc ban đầu suốt kỳ vay dù gốc được trả dần; khác tính lãi trên dư nợ giảm dần. | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
+| Trả góp với tổng khoản trả đều | Level-payment amortization | Lịch trả có tổng gốc và lãi mỗi kỳ bằng nhau; với lãi suất cố định trên dư nợ giảm dần, phần lãi giảm và phần trả gốc tăng. Không đồng nghĩa trả gốc đều. | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
+| Suất chi phí vay theo dòng tiền | Borrowing-cost IRR | Suất i mỗi kỳ làm giá trị hiện tại của các khoản trả bằng tiền nhận ròng; trong bài các kỳ là tháng, không tự đồng nhất với APR theo quy định pháp lý. | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
+| Suất chi phí hiệu dụng năm | Effective annual borrowing cost | Trong bài, quy đổi suất chi phí tháng i bằng (1+i)^12 − 1 để so sánh trên cùng quy ước ghép lãi; khác lãi suất thực điều chỉnh lạm phát và khác quy đổi 12i. | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
+| Tiền giải ngân ròng | Net loan proceeds | Số tiền người vay sử dụng được sau phí trả hoặc khấu trừ ngay đầu kỳ trong mô hình; không tự bằng số nợ gốc ghi trên hợp đồng. | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |

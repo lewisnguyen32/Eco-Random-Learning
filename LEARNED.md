@@ -19,3 +19,9 @@ Ngày trong bảng là ngày học ban đầu; nội dung tóm tắt được đ
 | Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-10-03 | INVEST-001 | investing | Rủi ro lãi suất của trái phiếu: Vì sao giá giảm khi lợi suất tăng? | [Bài học](topics/investing/bond-prices-duration-and-interest-rate-risk.md) | Với dòng tiền cố định được trả đầy đủ, YTM tăng làm giá trị hiện tại giảm; coupon khác YTM. Modified duration xấp xỉ độ nhạy giá khi YTM đổi nhỏ và dòng tiền không đổi; giữ đến đáo hạn không xóa chi phí cơ hội, vỡ nợ, lạm phát hoặc rủi ro tái đầu tư. |
+
+## Cập nhật ngày 2026-10-11
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-11 | INDIV-001 | personal-finance | Chi phí vay trả góp: vì sao cùng “12%/năm” có thể khác xa nhau? | [Bài học](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) | Tính lãi trên gốc ban đầu khác tính trên dư nợ giảm dần; khoản trả đều không đồng nghĩa trả gốc đều. IRR đối chiếu tiền nhận ròng với lịch trả; suất chi phí hiệu dụng năm = (1+i)^12 − 1 với i theo tháng. So sánh chi phí vay khác đánh giá khả năng trả đúng hạn. |
