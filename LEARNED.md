@@ -1,5 +1,52 @@
 # Nhật ký Học tập Kinh tế (Economics Learning Log)
 
+## Thứ tự đọc theo điều kiện tiên quyết
+
+Bản đồ này được xếp theo `prerequisites` trong YAML của các bài đã có trong nhật ký. Các quan hệ tiên quyết hiện được giữ theo metadata; mức độ cần thiết của từng quan hệ chưa được rà soát riêng.
+
+- **Cấp đọc thể hiện vị trí trong chuỗi tiên quyết; độ khó được ghi riêng bằng `difficulty`.** Bài không khai báo bài tiên quyết trong kho thuộc cấp 1; các bài còn lại có cấp bằng 1 cộng cấp cao nhất của các bài tiên quyết.
+- Trước khi đọc một bài, hãy đọc các bài tiên quyết trực tiếp và những bài nền mà chúng phụ thuộc. Không cần hoàn thành toàn bộ các cấp thấp hơn; các bài cùng cấp có thể đọc theo thứ tự linh hoạt.
+- Dấu “—” nghĩa là không khai báo bài tiên quyết trong kho, không có nghĩa bài học không cần kiến thức cơ bản.
+
+### Cấp 1
+
+| ID | Bài học | Tiên quyết trực tiếp | Đường dẫn |
+| :--- | :--- | :--- | :--- |
+| MONEY-001 | Cung tiền M1, M2 và Cơ chế Tạo tiền của Ngân hàng Thương mại | — | [Bài học](topics/monetary-and-banking/money-supply-and-bank-money-creation.md) |
+| CORP-001 | Chu kỳ chuyển đổi tiền mặt & Rủi ro Thanh khoản | — | [Bài học](topics/corporate-and-markets/cash-conversion-cycle.md) |
+| MICRO-001 | Độ co giãn của cầu theo giá: Vì sao giảm giá chưa chắc tăng doanh thu? | — | [Bài học](topics/microeconomics/price-elasticity-of-demand-and-revenue.md) |
+
+### Cấp 2
+
+| ID | Bài học | Tiên quyết trực tiếp | Đường dẫn |
+| :--- | :--- | :--- | :--- |
+| MACRO-001 | Lạm phát: Bản chất, Phương pháp Đo lường CPI và Các Kênh Truyền dẫn Vĩ mô | MONEY-001 | [Bài học](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) |
+| CORP-002 | Báo cáo lưu chuyển tiền tệ: Vì sao có lợi nhuận vẫn thiếu tiền? | CORP-001 | [Bài học](topics/corporate-and-markets/cash-flow-statement-and-operating-cash-flow.md) |
+
+### Cấp 3
+
+| ID | Bài học | Tiên quyết trực tiếp | Đường dẫn |
+| :--- | :--- | :--- | :--- |
+| MONEY-002 | Lãi suất Điều hành và Các Kênh Truyền dẫn Chính sách Tiền tệ | MONEY-001, MACRO-001 | [Bài học](topics/monetary-and-banking/policy-rates-and-monetary-transmission.md) |
+| BEHAV-001 | Ngại ghi nhận lỗ và hiệu ứng bán lãi sớm, giữ lỗ lâu | MACRO-001 | [Bài học](topics/behavioral-finance/loss-aversion-and-disposition-effect.md) |
+
+### Cấp 4
+
+| ID | Bài học | Tiên quyết trực tiếp | Đường dẫn |
+| :--- | :--- | :--- | :--- |
+| MONEY-003 | Thanh khoản ngân hàng: Vì sao có tài sản vẫn thiếu tiền chi trả? | MONEY-001, MONEY-002, CORP-001 | [Bài học](topics/monetary-and-banking/bank-liquidity-and-funding-risk.md) |
+| MACRO-002 | Hiệu ứng Fisher và đường cong lợi suất: vì sao lãi suất dài hạn có thể thấp hơn ngắn hạn? | MACRO-001, MONEY-002 | [Bài học](topics/macroeconomics/fisher-effect-and-yield-curve.md) |
+| MACRO-003 | Cú sốc cung, lạm phát chi phí đẩy và đình lạm: vì sao giá tăng khi kinh tế yếu? | MACRO-001, MONEY-002 | [Bài học](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+
+### Cấp 5
+
+| ID | Bài học | Tiên quyết trực tiếp | Đường dẫn |
+| :--- | :--- | :--- | :--- |
+| INVEST-001 | Rủi ro lãi suất của trái phiếu: Vì sao giá giảm khi lợi suất tăng? | MACRO-002, MONEY-002 | [Bài học](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
+| INDIV-001 | Chi phí vay trả góp: vì sao cùng “12%/năm” có thể khác xa nhau? | MONEY-002, MACRO-002 | [Bài học](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
+
+## Nhật ký theo ngày
+
 Ngày trong bảng là ngày học ban đầu; nội dung tóm tắt được đồng bộ sau đợt kiểm chứng 22/09/2026. Việc sửa kiến thức không tạo thêm một bài học đã hoàn thành.
 
 | Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
