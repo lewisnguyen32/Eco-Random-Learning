@@ -8,6 +8,68 @@ Bản đồ này được xếp theo `prerequisites` trong YAML của các bài 
 - Trước khi đọc một bài, hãy đọc các bài tiên quyết trực tiếp và những bài nền mà chúng phụ thuộc. Không cần hoàn thành toàn bộ các cấp thấp hơn; các bài cùng cấp có thể đọc theo thứ tự linh hoạt.
 - Dấu “—” nghĩa là không khai báo bài tiên quyết trong kho, không có nghĩa bài học không cần kiến thức cơ bản.
 
+### Sơ đồ các cấp và quan hệ tiên quyết
+
+Mũi tên đi từ **bài tiên quyết → bài phụ thuộc**, theo đúng các quan hệ trực tiếp trong YAML. Một mũi tên có thể đi qua nhiều cấp; bài không có mũi tên nối vẫn thuộc cấp được ghi trong khung.
+
+```mermaid
+flowchart TB
+    subgraph LEVEL_1["Cấp 1"]
+        MONEY_001["MONEY-001<br/>Cung tiền & tạo tiền"]
+        CORP_001["CORP-001<br/>Chu kỳ tiền mặt"]
+        MICRO_001["MICRO-001<br/>Độ co giãn của cầu"]
+    end
+
+    subgraph LEVEL_2["Cấp 2"]
+        MACRO_001["MACRO-001<br/>Lạm phát & CPI"]
+        CORP_002["CORP-002<br/>Báo cáo lưu chuyển tiền tệ"]
+    end
+
+    subgraph LEVEL_3["Cấp 3"]
+        MONEY_002["MONEY-002<br/>Lãi suất điều hành"]
+        BEHAV_001["BEHAV-001<br/>Ngại ghi nhận lỗ"]
+    end
+
+    subgraph LEVEL_4["Cấp 4"]
+        MONEY_003["MONEY-003<br/>Thanh khoản ngân hàng"]
+        MACRO_002["MACRO-002<br/>Fisher & đường cong lợi suất"]
+        MACRO_003["MACRO-003<br/>Cú sốc cung & đình lạm"]
+    end
+
+    subgraph LEVEL_5["Cấp 5"]
+        INVEST_001["INVEST-001<br/>Rủi ro lãi suất trái phiếu"]
+        INDIV_001["INDIV-001<br/>Chi phí vay trả góp"]
+    end
+
+    MONEY_001 --> MACRO_001
+    CORP_001 --> CORP_002
+    MONEY_001 --> MONEY_002
+    MACRO_001 --> MONEY_002
+    MACRO_001 --> BEHAV_001
+    MONEY_001 --> MONEY_003
+    MONEY_002 --> MONEY_003
+    CORP_001 --> MONEY_003
+    MACRO_001 --> MACRO_002
+    MONEY_002 --> MACRO_002
+    MACRO_001 --> MACRO_003
+    MONEY_002 --> MACRO_003
+    MACRO_002 --> INVEST_001
+    MONEY_002 --> INVEST_001
+    MONEY_002 --> INDIV_001
+    MACRO_002 --> INDIV_001
+
+    classDef level1 fill:#eaf2ff,stroke:#4263a8,color:#172b4d
+    classDef level2 fill:#e6f6f0,stroke:#25856b,color:#173d32
+    classDef level3 fill:#f0eaff,stroke:#7952a8,color:#35234d
+    classDef level4 fill:#fff3d6,stroke:#a87918,color:#4d390e
+    classDef level5 fill:#ffe8ed,stroke:#ae4560,color:#4d2030
+    class MONEY_001,CORP_001,MICRO_001 level1
+    class MACRO_001,CORP_002 level2
+    class MONEY_002,BEHAV_001 level3
+    class MONEY_003,MACRO_002,MACRO_003 level4
+    class INVEST_001,INDIV_001 level5
+```
+
 ### Cấp 1
 
 | ID | Bài học | Tiên quyết trực tiếp | Đường dẫn |

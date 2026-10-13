@@ -530,7 +530,8 @@ Mỗi phiên biên soạn chỉ được tạo/sửa đúng 5 loại file:
 - Lấy `id` và `prerequisites` từ YAML của bài học; chỉ đưa vào bản đồ những bài đã có trong nhật ký. Không tự đổi `prerequisites` chỉ để sắp xếp bản đồ.
 - Bài không khai báo bài tiên quyết trong kho thuộc cấp 1; các bài còn lại có cấp bằng 1 cộng cấp cao nhất của các bài tiên quyết. Ghi ID, tên bài, tiên quyết trực tiếp và đường dẫn tương đối; chỉ đặt liên kết ở cột “Đường dẫn”. Cấp đọc phản ánh chuỗi phụ thuộc kiến thức, còn độ khó dùng trường `difficulty`.
 - Giải thích rằng người học cần đọc các bài tiên quyết trực tiếp và gián tiếp của bài mình chọn, không phải toàn bộ các cấp thấp hơn; các bài cùng cấp có thể đọc linh hoạt.
-- Kiểm tra mỗi bài trong nhật ký xuất hiện đúng một lần trong bản đồ, ID tiên quyết tồn tại trong nhật ký, liên kết đúng bài và không có vòng phụ thuộc. Nếu thiếu ID hoặc có vòng phụ thuộc, báo rõ lỗi và không tự gán cấp cho các bài bị ảnh hưởng.
+- Kiểm tra mỗi bài trong nhật ký xuất hiện đúng một lần trong bảng, ID tiên quyết tồn tại trong nhật ký, liên kết đúng bài và không có vòng phụ thuộc. Nếu thiếu ID hoặc có vòng phụ thuộc, báo rõ lỗi và không tự gán cấp cho các bài bị ảnh hưởng.
+- Nếu có sơ đồ Mermaid trong mục thứ tự đọc, phải đồng bộ sơ đồ cùng bảng: mỗi bài xuất hiện đúng một nút ở cùng cấp với bảng; có đủ và chỉ các mũi tên tiên quyết trực tiếp từ YAML, theo hướng bài tiên quyết → bài phụ thuộc.
 - **Ngoại lệ có giới hạn đối với append-only:** Được cập nhật riêng mục bản đồ thứ tự đọc để duy trì tính đồng bộ, kể cả đổi cấp các bài phụ thuộc khi cần. Phần “Nhật ký theo ngày” và các dòng lịch sử trong `LEARNED.md`, cũng như log `RELATE.md` và `GLOSSARY.md`, vẫn tuân thủ append-only trừ khi người dùng yêu cầu rõ ràng.
 
 #### 3. Phát hiện lỗi ở bài cũ → Ghi nhận vào Memory Protocol
