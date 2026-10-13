@@ -55,3 +55,11 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) | Giá trị thời gian của tiền và giá trị hiện tại ròng (Time Value of Money & NPV) — cần bài chuyên sâu | ⏳ Chưa học | - |
 | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) | Lãi suất thả nổi và rủi ro tái định giá (Floating Rates & Repricing Risk) | ⏳ Chưa học | - |
 | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) | Tất toán sớm và tái cấp vốn khoản vay cá nhân (Early Repayment & Loan Refinancing) | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-10-13
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [MACRO-001](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) | Lạm phát chi phí đẩy và Hiện tượng Đình lạm (Stagflation) — cập nhật trạng thái dòng chờ ở trên ngày 2026-10-13 | ✅ Đã học | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+| [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) | Năng suất, lương và chi phí lao động đơn vị (Productivity, Wages & Unit Labour Costs) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) | Kỳ vọng lạm phát và cơ chế neo kỳ vọng (Inflation Expectations & Anchoring) — cần bài chuyên sâu | ⏳ Chưa học | - |

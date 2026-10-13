@@ -25,3 +25,9 @@ Ngày trong bảng là ngày học ban đầu; nội dung tóm tắt được đ
 | Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-10-11 | INDIV-001 | personal-finance | Chi phí vay trả góp: vì sao cùng “12%/năm” có thể khác xa nhau? | [Bài học](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) | Tính lãi trên gốc ban đầu khác tính trên dư nợ giảm dần; khoản trả đều không đồng nghĩa trả gốc đều. IRR đối chiếu tiền nhận ròng với lịch trả; suất chi phí hiệu dụng năm = (1+i)^12 − 1 với i theo tháng. So sánh chi phí vay khác đánh giá khả năng trả đúng hạn. |
+
+## Cập nhật ngày 2026-10-13
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-13 | MACRO-003 | macroeconomics | Cú sốc cung, lạm phát chi phí đẩy và đình lạm: vì sao giá tăng khi kinh tế yếu? | [Bài học](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) | Chi phí tăng được phân bổ giữa giá, số dư đảm phí và lượng sản xuất; tác động trực tiếp, gián tiếp và vòng hai khác nhau. SRAS dịch trái với AD giữ nguyên chỉ là kết quả mô hình có điều kiện. Mức giá 100 → 102 → 102 không tạo lạm phát cao liên tục; đình lạm và phản ứng lãi suất phụ thuộc bối cảnh. |

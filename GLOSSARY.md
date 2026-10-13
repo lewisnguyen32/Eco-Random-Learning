@@ -93,3 +93,16 @@
 | Suất chi phí vay theo dòng tiền | Borrowing-cost IRR | Suất i mỗi kỳ làm giá trị hiện tại của các khoản trả bằng tiền nhận ròng; trong bài các kỳ là tháng, không tự đồng nhất với APR theo quy định pháp lý. | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
 | Suất chi phí hiệu dụng năm | Effective annual borrowing cost | Trong bài, quy đổi suất chi phí tháng i bằng (1+i)^12 − 1 để so sánh trên cùng quy ước ghép lãi; khác lãi suất thực điều chỉnh lạm phát và khác quy đổi 12i. | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
 | Tiền giải ngân ròng | Net loan proceeds | Số tiền người vay sử dụng được sau phí trả hoặc khấu trừ ngay đầu kỳ trong mô hình; không tự bằng số nợ gốc ghi trên hợp đồng. | [INDIV-001](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
+
+## Cập nhật ngày 2026-10-13
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Cú sốc cung | Supply shock | Biến động làm thay đổi chi phí hoặc khả năng cung ứng; bài tập trung cú sốc bất lợi, không suy nguyên nhân chỉ từ giá tăng. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+| Đình lạm | Stagflation | Lạm phát cao đi cùng hoạt động trì trệ hoặc tăng trưởng yếu, thường kèm thất nghiệp cao; không phải kết quả tất yếu của mọi cú sốc cung. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+| Giá tương đối | Relative price | Tỷ lệ giữa các giá, như giá năng lượng so với giá dịch vụ; khác mức giá chung. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+| Tổng cầu | Aggregate demand – AD | Trong mô hình AD–AS, tổng chi tiêu dự kiến cho sản lượng cuối cùng sản xuất trong nước tại từng mức giá chung; đường cầu giữ nguyên trong phép so sánh của bài. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+| Tổng cung ngắn hạn | Short-run aggregate supply – SRAS | Trong mô hình, sản lượng thực doanh nghiệp cung ứng tại từng mức giá chung khi một số chi phí chưa điều chỉnh ngay; chi phí đầu vào tăng có thể dịch đường sang trái. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+| Mức chuyển chi phí vào giá | Cost pass-through | Phần tăng chi phí được phản ánh trong giá bán; không mặc định doanh nghiệp chuyển hết chi phí hoặc giá tăng cùng tỷ lệ với đầu vào. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+| Tác động vòng hai | Second-round effects | Theo cách phân loại dùng trong bài, tác động lạm phát ban đầu làm thay đổi thương lượng lương và định giá, tạo thêm áp lực giá; khác tác động gián tiếp do chi phí lan qua chuỗi sản xuất và phân phối. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+| Số dư đảm phí | Contribution margin | Doanh thu trừ chi phí biến đổi; phần còn lại bù chi phí cố định trước khi hình thành lợi nhuận, không phải lợi nhuận ròng. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
