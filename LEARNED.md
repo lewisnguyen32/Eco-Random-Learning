@@ -42,6 +42,7 @@ flowchart TB
     subgraph LEVEL_5["Cấp 5"]
         INVEST_001["INVEST-001<br/>Rủi ro lãi suất trái phiếu"]
         INDIV_001["INDIV-001<br/>Chi phí vay trả góp"]
+        MACRO_004["MACRO-004<br/>Kỳ vọng lạm phát & neo kỳ vọng"]
     end
 
     MONEY_001 --> MACRO_001
@@ -63,6 +64,8 @@ flowchart TB
     CORP_002 --> CORP_003
     MONEY_002 --> CORP_003
     BEHAV_001 --> BEHAV_002
+    MACRO_003 --> MACRO_004
+    MACRO_002 --> MACRO_004
 
     classDef level1 fill:#eaf2ff,stroke:#4263a8,color:#172b4d
     classDef level2 fill:#e6f6f0,stroke:#25856b,color:#173d32
@@ -73,7 +76,7 @@ flowchart TB
     class MACRO_001,CORP_002 level2
     class MONEY_002,BEHAV_001 level3
     class MONEY_003,MACRO_002,MACRO_003,CORP_003,BEHAV_002 level4
-    class INVEST_001,INDIV_001 level5
+    class INVEST_001,INDIV_001,MACRO_004 level5
 ```
 
 ### Cấp 1
@@ -115,6 +118,7 @@ flowchart TB
 | :--- | :--- | :--- | :--- |
 | INVEST-001 | Rủi ro lãi suất của trái phiếu: Vì sao giá giảm khi lợi suất tăng? | MACRO-002, MONEY-002 | [Bài học](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
 | INDIV-001 | Chi phí vay trả góp: vì sao cùng “12%/năm” có thể khác xa nhau? | MONEY-002, MACRO-002 | [Bài học](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
+| MACRO-004 | Kỳ vọng lạm phát và cơ chế neo kỳ vọng: vì sao dự đoán giá ảnh hưởng quyết định hôm nay? | MACRO-003, MACRO-002 | [Bài học](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
 
 ## Nhật ký theo ngày
 
@@ -167,3 +171,9 @@ Ngày trong bảng là ngày học ban đầu; nội dung tóm tắt được đ
 | Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-10-24 | BEHAV-002 | behavioral-finance | Kế toán tinh thần: vì sao cùng một đồng tiền lại được đối xử khác nhau? | [Bài học](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Nhãn nguồn tiền và mục đích chi có thể làm thay đổi lựa chọn dù nguồn lực thực không đổi. Ví dụ giả định cho thấy giữ đồng thời tiền gửi 20 triệu lãi đơn 5% và nợ 20 triệu lãi đơn 24% làm tài sản ròng cuối năm thấp hơn 3,8 triệu so với tất toán; kết luận phụ thuộc khả năng sử dụng tiền, phí và nhu cầu thanh khoản. Chia ngăn có thể hỗ trợ kỷ luật nhưng cần đối chiếu toàn bộ tài sản, nợ và dòng tiền. |
+
+## Cập nhật ngày 2026-10-26
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-26 | MACRO-004 | macroeconomics | Kỳ vọng lạm phát và cơ chế neo kỳ vọng: vì sao dự đoán giá ảnh hưởng quyết định hôm nay? | [Bài học](topics/macroeconomics/inflation-expectations-and-anchoring.md) | Kỳ vọng ảnh hưởng giá qua hợp đồng và hành động có điều kiện; mô hình chi phí đơn vị không dự báo CPI. Kỳ vọng ngắn hạn tăng chưa đủ chứng minh mất neo dài hạn; khảo sát khác breakeven có phần bù. Phân biệt bất đồng với bất định và tương quan với nhân quả; sức mua tiền gửi được tính theo từng kịch bản, không tự là lợi suất thực kỳ vọng. |

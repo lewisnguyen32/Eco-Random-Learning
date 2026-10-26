@@ -24,3 +24,10 @@ Nhóm bài học về giá cả, sản lượng và các mối liên hệ vĩ m�
 - **Điều kiện nền:** MACRO-001, MONEY-002.
 - **Đường dẫn:** [supply-shocks-cost-push-inflation-and-stagflation.md](supply-shocks-cost-push-inflation-and-stagflation.md).
 - **Tóm tắt cơ chế:** Trong mô hình AD–AS giữ tổng cầu không đổi, cú sốc tăng chi phí dịch SRAS trái, làm mức giá cao hơn và sản lượng thấp hơn mức đối chứng. Thực tế, doanh nghiệp phân bổ chi phí giữa giá bán, số dư đảm phí và lượng sản xuất; phản ứng lương/định giá vòng hai khác truyền dẫn gián tiếp qua đầu vào. Rổ giá giả định 100 → 102 → 102 minh họa mức giá cao không đồng nghĩa lạm phát tiếp tục cao. Đình lạm và lựa chọn lãi suất phụ thuộc độ dai dẳng, sức cầu và kỳ vọng, không phải kết quả tất yếu của mọi cú sốc cung.
+
+### MACRO-004 – Kỳ vọng lạm phát và cơ chế neo kỳ vọng
+
+- **Ngày học:** 2026-10-26.
+- **Điều kiện nền:** MACRO-003, MACRO-002.
+- **Đường dẫn:** [inflation-expectations-and-anchoring.md](inflation-expectations-and-anchoring.md).
+- **Tóm tắt cơ chế:** Kỳ vọng có thể ảnh hưởng giá thông qua thương lượng lương, định giá và chi tiêu thực hiện được; mô hình chi phí đơn vị chỉ cô lập một kênh có giả định. Kỳ vọng ngắn hạn tăng sau cú sốc chưa đủ chứng minh mất neo dài hạn, và neo tốc độ tăng giá khác giữ nguyên mức giá. Khảo sát phải được đọc theo đối tượng, thước đo và khoảng thời gian; breakeven còn chứa ảnh hưởng của phần bù rủi ro và thanh khoản. Các ví dụ giả định phân biệt giá riêng của doanh nghiệp với CPI, bất đồng với bất định, và sức mua theo kịch bản với lợi suất thực kỳ vọng; tương quan không tự xác định tác động nhân quả.

@@ -88,3 +88,12 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Tự kiểm soát, thiên lệch hiện tại và công cụ cam kết (Self-control, Present Bias & Commitment Devices) — cần bài chuyên sâu | ⏳ Chưa học | - |
 | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Quỹ dự phòng và giá trị của thanh khoản cá nhân (Emergency Funds & Liquidity Value) — cần bài chuyên sâu | ⏳ Chưa học | - |
 | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Tái cân bằng danh mục theo tỷ trọng và rủi ro (Portfolio Rebalancing) — cần bài chuyên sâu; nối với hàng chờ BEHAV-001 | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-10-26
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) | Kỳ vọng lạm phát và cơ chế neo kỳ vọng (Inflation Expectations & Anchoring) — cập nhật trạng thái dòng chờ ngày 2026-10-13; bài củng cố chuyên sâu | ✅ Đã học | [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
+| [MACRO-002](topics/macroeconomics/fisher-effect-and-yield-curve.md) | Lạm phát hòa vốn từ trái phiếu chống lạm phát và sai lệch do phần bù (Breakeven Inflation) — MACRO-004 mới giới thiệu cách đọc chỉ báo, dòng chờ chuyên sâu ở trên vẫn chưa hoàn tất | ⏳ Chưa học | [Phần giới thiệu trong MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
+| [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) | Chỉ số hóa hợp đồng theo lạm phát và độ dai dẳng (Inflation Indexation & Persistence) — phân biệt điều chỉnh theo dữ liệu quá khứ với kỳ vọng tương lai | ⏳ Chưa học | - |
+| [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) | Thông tin, mức độ chú ý và cập nhật kỳ vọng (Information, Attention & Expectations Updating) — cần bài chuyên sâu | ⏳ Chưa học | - |

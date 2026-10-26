@@ -139,3 +139,14 @@
 | Khoanh vùng lựa chọn hẹp / rộng | Narrow / broad choice bracketing | Xét từng lựa chọn riêng hoặc xét nhiều lựa chọn cùng hệ quả kết hợp; liên quan nhưng không đồng nghĩa hoàn toàn với việc gắn nhãn tiền. | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
 | Dành riêng tiền cho mục tiêu | Earmarking | Gắn một khoản tiền với mục đích cụ thể; nhãn có thể hỗ trợ tự kiểm soát nhưng không tự tạo ràng buộc hợp đồng hay bảo đảm tiết kiệm tăng. | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
 | Chi phí cơ hội | Opportunity cost | Giá trị của lựa chọn tốt nhất phải từ bỏ khi dùng nguồn lực cho mục đích khác; không chỉ gồm tiền thực chi. | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
+
+## Cập nhật ngày 2026-10-26
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Neo kỳ vọng lạm phát | Anchoring inflation expectations | Theo nghĩa dùng trong bài, kỳ vọng dài hạn tương đối ổn định quanh mức phù hợp với ổn định giá và ít bị kéo đi bởi tin ngắn hạn; không đồng nghĩa giữ nguyên mức giá. | [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
+| Mất neo kỳ vọng lạm phát | De-anchoring inflation expectations | Kỳ vọng dài hạn rời điểm neo hoặc trở nên nhạy hơn với các cú sốc ngắn hạn; kỳ vọng một năm tăng hoặc một quan sát riêng lẻ chưa đủ kết luận. | [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
+| Bất đồng kỳ vọng | Disagreement in expectations | Chênh lệch dự kiến giữa các chủ thể về cùng đại lượng và khoảng thời gian; khác mức bất định của từng chủ thể. | [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
+| Bất định về lạm phát | Inflation uncertainty | Mức không chắc chắn của một chủ thể về các kết quả lạm phát có thể xảy ra; cùng kỳ vọng trung tâm có thể đi kèm mức bất định khác nhau. | [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
+| Lạm phát hòa vốn từ trái phiếu | Breakeven inflation | Chênh lệch lợi suất danh nghĩa và lợi suất trái phiếu bảo vệ trước lạm phát có kỳ hạn tương ứng; chứa cả ảnh hưởng của phần bù rủi ro và khác biệt thanh khoản, không phải kỳ vọng thuần túy. | [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
+| Phần bù rủi ro lạm phát | Inflation risk premium | Thành phần định giá phản ánh việc nhà đầu tư chịu rủi ro lạm phát khác dự kiến; cần phân biệt với mức lạm phát kỳ vọng và ảnh hưởng thanh khoản. | [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
