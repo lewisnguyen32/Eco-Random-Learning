@@ -63,3 +63,28 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [MACRO-001](topics/macroeconomics/inflation-cpi-and-macro-transmission.md) | Lạm phát chi phí đẩy và Hiện tượng Đình lạm (Stagflation) — cập nhật trạng thái dòng chờ ở trên ngày 2026-10-13 | ✅ Đã học | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
 | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) | Năng suất, lương và chi phí lao động đơn vị (Productivity, Wages & Unit Labour Costs) — cần bài chuyên sâu | ⏳ Chưa học | - |
 | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) | Kỳ vọng lạm phát và cơ chế neo kỳ vọng (Inflation Expectations & Anchoring) — cần bài chuyên sâu | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-10-15
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [MICRO-002](topics/microeconomics/asymmetric-information-and-adverse-selection.md) | Quan hệ người ủy quyền–người đại diện và thiết kế động cơ (Principal–Agent Relationship & Incentive Design) | ⏳ Chưa học | - |
+| [MICRO-002](topics/microeconomics/asymmetric-information-and-adverse-selection.md) | Phát tín hiệu và sàng lọc hợp đồng (Signaling & Contract Screening) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [MICRO-002](topics/microeconomics/asymmetric-information-and-adverse-selection.md) | Hạn chế tín dụng theo lượng (Credit Rationing) — cần bài chuyên sâu | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-10-18
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) | Đòn bẩy hoạt động và điểm hòa vốn (Operating Leverage & Break-even Point) — phân biệt rủi ro chi phí cố định với rủi ro nợ vay | ⏳ Chưa học | - |
+| [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) | Cấu trúc vốn và chi phí vốn bình quân gia quyền (Capital Structure & WACC) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) | Điều khoản ràng buộc, tái cơ cấu nợ và động cơ chủ nợ–cổ đông (Covenants, Debt Restructuring & Creditor–Shareholder Incentives) — cần bài chuyên sâu | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-10-24
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [BEHAV-001](topics/behavioral-finance/loss-aversion-and-disposition-effect.md) | Kế toán tinh thần và cách đánh giá toàn danh mục (Mental Accounting) — cập nhật trạng thái dòng chờ ở trên ngày 2026-10-24; bài chuyên sâu, không đồng nghĩa đã học tái cân bằng danh mục | ✅ Đã học | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
+| [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Tự kiểm soát, thiên lệch hiện tại và công cụ cam kết (Self-control, Present Bias & Commitment Devices) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Quỹ dự phòng và giá trị của thanh khoản cá nhân (Emergency Funds & Liquidity Value) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Tái cân bằng danh mục theo tỷ trọng và rủi ro (Portfolio Rebalancing) — cần bài chuyên sâu; nối với hàng chờ BEHAV-001 | ⏳ Chưa học | - |

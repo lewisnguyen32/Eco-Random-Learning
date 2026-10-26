@@ -15,3 +15,9 @@ Nhóm bài học về dòng tiền, vốn lưu động và hoạt động doanh 
 - **Ngày học:** 2026-09-23.
 - **Đường dẫn:** [cash-flow-statement-and-operating-cash-flow.md](cash-flow-statement-and-operating-cash-flow.md).
 - **Tóm tắt cơ chế:** Báo cáo phân tiền thu chi thành hoạt động kinh doanh, đầu tư và tài trợ. Lợi nhuận dồn tích có thể khác OCF vì khấu hao không chi tiền ngay, còn phải thu, tồn kho và phải trả làm lệch thời điểm thu chi. Trong ví dụ giả định, lợi nhuận 100 triệu nhưng OCF chỉ 35 triệu do vốn lưu động hoạt động tăng 85 triệu, sau khi cộng lại 20 triệu khấu hao. Tổng tiền cuối kỳ vẫn có thể giảm khi chi mua máy vượt dòng tiền từ hoạt động và vay ròng.
+
+### CORP-003 – Đòn bẩy tài chính: vì sao lợi nhuận trên vốn tăng kèm rủi ro mất vốn?
+
+- **Ngày học:** 2026-10-18.
+- **Đường dẫn:** [financial-leverage-and-equity-risk.md](financial-leverage-and-equity-risk.md).
+- **Tóm tắt cơ chế:** Nợ vay tạo nghĩa vụ trả lãi và hoàn gốc, còn vốn chủ nhận phần kết quả còn lại sau các nghĩa vụ liên quan. Trong mô hình bỏ thuế và dùng vốn đầu kỳ, chênh lệch giữa tỷ suất hoạt động trên tài sản và lãi vay được nhân với tỷ lệ nợ vay/vốn chủ, làm ROE nhạy hơn khi kinh doanh thay đổi. Lợi nhuận kế toán không tự bảo đảm có tiền đúng ngày trả nợ: ví dụ giả định có lãi 20 triệu nhưng thiếu 110 triệu để trả đủ gốc và lãi cuối năm. Lãi suất thả nổi, nhu cầu tái tài trợ và các điều khoản hợp đồng tạo thêm ràng buộc so với mô hình.

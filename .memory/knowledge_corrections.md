@@ -192,3 +192,12 @@ Tài liệu lưu lịch sử lỗi và quy tắc phòng ngừa. Đợt đối ch
 - **Generalizable Lesson:** Mở rộng G-006: định rõ cấp độ đo lường (cá nhân, doanh nghiệp, thị trường) trước khi diễn giải dấu thay đổi; từ kết quả tổng hợp không suy ra mọi thành phần cùng thay đổi như tổng.
 - **Trigger Patterns:** Cầu thị trường, chỉ tiêu bình quân/tổng, “mọi người”, “từng người”, kết luận về hộ từ dữ liệu tổng hợp.
 - **Verification Source:** [Curtis & Irvine, *Principles of Microeconomics*, bản 2021A, mục 3.8 về cầu thị trường là tổng các cầu cá nhân](https://openlibrary-repo.ecampusontario.ca/jspui/bitstream/123456789/895/3/CI-Principles-of-Microeconomics-2021A.pdf); [Angrist & Krueger, *Journal of Economic Perspectives* (2001), về vấn đề xác định đường cầu từ dữ liệu cân bằng quan sát](https://economics.mit.edu/sites/default/files/publications/Instrumental%20Variables%20and%20the%20Search%20for%20Identifi.pdf).
+
+### Entry 013: Phân biệt quỹ để riêng ban đầu với số dư sau trả nợ
+- **Bài liên quan:** BEHAV-002 và README behavioral-finance; audit Astra xhigh ngày 24/10/2026.
+- **Error:** Bản nháp nói quỹ dự phòng 10 triệu “được giữ nguyên ở cả hai phương án”, trong khi phương án giữ tiền gửi và nợ chỉ có 21 triệu tiền gửi để trả nghĩa vụ 24,8 triệu cuối năm. Bảng tài sản ròng đúng nhưng câu mô tả không giới hạn thời điểm, khiến người đọc có thể hiểu quỹ được bảo toàn cả sau khi trả nợ.
+- **Corrected Understanding:** Hai phương án đều không dùng quỹ để tất toán tại thời điểm ban đầu. Cuối năm, phương án giữ nợ phải dùng thêm 3,8 triệu từ quỹ, còn 6,2 triệu sau thanh toán; phương án tất toán ngay còn quỹ 10 triệu. Số dư trước/sau thanh toán khác nhau, còn tài sản ròng không đổi chỉ vì trả một nghĩa vụ đã được ghi nhận.
+- **Root Cause:** Kiểm tra bảng tài sản trừ nợ nhưng chưa đi tiếp đến nguồn tiền thực hiện nghĩa vụ; đồng nhất điều kiện tại thời điểm ban đầu với điều kiện kéo dài suốt kỳ.
+- **Generalizable Lesson:** Mở rộng G-002: luôn gắn điều kiện bảo toàn số dư với thời điểm, rồi kiểm tra dòng tiền hoàn tất nghĩa vụ đến hạn; số học tài sản ròng đúng chưa bảo đảm mọi mô tả về từng quỹ đều nhất quán.
+- **Trigger Patterns:** “Giữ nguyên quỹ”, “không động đến tiền dự phòng”, tất toán ngay so với giữ nợ, số dư trước/sau trả nợ, nghĩa vụ cuối kỳ.
+- **Verification Source:** Đối chiếu trực tiếp giả định và bảng trong [BEHAV-002](../topics/behavioral-finance/mental-accounting-and-financial-decisions.md): 21 − 24,8 = −3,8; 10 − 3,8 = 6,2. Đây là kiểm tra hạch toán của ví dụ giả định, không phải số liệu thực nghiệm hay quy định ngân hàng.

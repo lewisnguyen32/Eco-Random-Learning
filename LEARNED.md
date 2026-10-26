@@ -18,6 +18,7 @@ flowchart TB
         MONEY_001["MONEY-001<br/>Cung tiền & tạo tiền"]
         CORP_001["CORP-001<br/>Chu kỳ tiền mặt"]
         MICRO_001["MICRO-001<br/>Độ co giãn của cầu"]
+        MICRO_002["MICRO-002<br/>Lựa chọn bất lợi"]
     end
 
     subgraph LEVEL_2["Cấp 2"]
@@ -34,6 +35,8 @@ flowchart TB
         MONEY_003["MONEY-003<br/>Thanh khoản ngân hàng"]
         MACRO_002["MACRO-002<br/>Fisher & đường cong lợi suất"]
         MACRO_003["MACRO-003<br/>Cú sốc cung & đình lạm"]
+        CORP_003["CORP-003<br/>Đòn bẩy tài chính"]
+        BEHAV_002["BEHAV-002<br/>Kế toán tinh thần"]
     end
 
     subgraph LEVEL_5["Cấp 5"]
@@ -57,16 +60,19 @@ flowchart TB
     MONEY_002 --> INVEST_001
     MONEY_002 --> INDIV_001
     MACRO_002 --> INDIV_001
+    CORP_002 --> CORP_003
+    MONEY_002 --> CORP_003
+    BEHAV_001 --> BEHAV_002
 
     classDef level1 fill:#eaf2ff,stroke:#4263a8,color:#172b4d
     classDef level2 fill:#e6f6f0,stroke:#25856b,color:#173d32
     classDef level3 fill:#f0eaff,stroke:#7952a8,color:#35234d
     classDef level4 fill:#fff3d6,stroke:#a87918,color:#4d390e
     classDef level5 fill:#ffe8ed,stroke:#ae4560,color:#4d2030
-    class MONEY_001,CORP_001,MICRO_001 level1
+    class MONEY_001,CORP_001,MICRO_001,MICRO_002 level1
     class MACRO_001,CORP_002 level2
     class MONEY_002,BEHAV_001 level3
-    class MONEY_003,MACRO_002,MACRO_003 level4
+    class MONEY_003,MACRO_002,MACRO_003,CORP_003,BEHAV_002 level4
     class INVEST_001,INDIV_001 level5
 ```
 
@@ -77,6 +83,7 @@ flowchart TB
 | MONEY-001 | Cung tiền M1, M2 và Cơ chế Tạo tiền của Ngân hàng Thương mại | — | [Bài học](topics/monetary-and-banking/money-supply-and-bank-money-creation.md) |
 | CORP-001 | Chu kỳ chuyển đổi tiền mặt & Rủi ro Thanh khoản | — | [Bài học](topics/corporate-and-markets/cash-conversion-cycle.md) |
 | MICRO-001 | Độ co giãn của cầu theo giá: Vì sao giảm giá chưa chắc tăng doanh thu? | — | [Bài học](topics/microeconomics/price-elasticity-of-demand-and-revenue.md) |
+| MICRO-002 | Lựa chọn bất lợi: vì sao hàng tốt có thể rời thị trường? | — | [Bài học](topics/microeconomics/asymmetric-information-and-adverse-selection.md) |
 
 ### Cấp 2
 
@@ -99,6 +106,8 @@ flowchart TB
 | MONEY-003 | Thanh khoản ngân hàng: Vì sao có tài sản vẫn thiếu tiền chi trả? | MONEY-001, MONEY-002, CORP-001 | [Bài học](topics/monetary-and-banking/bank-liquidity-and-funding-risk.md) |
 | MACRO-002 | Hiệu ứng Fisher và đường cong lợi suất: vì sao lãi suất dài hạn có thể thấp hơn ngắn hạn? | MACRO-001, MONEY-002 | [Bài học](topics/macroeconomics/fisher-effect-and-yield-curve.md) |
 | MACRO-003 | Cú sốc cung, lạm phát chi phí đẩy và đình lạm: vì sao giá tăng khi kinh tế yếu? | MACRO-001, MONEY-002 | [Bài học](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+| CORP-003 | Đòn bẩy tài chính: vì sao lợi nhuận trên vốn tăng kèm rủi ro mất vốn? | CORP-002, MONEY-002 | [Bài học](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
+| BEHAV-002 | Kế toán tinh thần: vì sao cùng một đồng tiền lại được đối xử khác nhau? | BEHAV-001 | [Bài học](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
 
 ### Cấp 5
 
@@ -140,3 +149,21 @@ Ngày trong bảng là ngày học ban đầu; nội dung tóm tắt được đ
 | Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-10-13 | MACRO-003 | macroeconomics | Cú sốc cung, lạm phát chi phí đẩy và đình lạm: vì sao giá tăng khi kinh tế yếu? | [Bài học](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) | Chi phí tăng được phân bổ giữa giá, số dư đảm phí và lượng sản xuất; tác động trực tiếp, gián tiếp và vòng hai khác nhau. SRAS dịch trái với AD giữ nguyên chỉ là kết quả mô hình có điều kiện. Mức giá 100 → 102 → 102 không tạo lạm phát cao liên tục; đình lạm và phản ứng lãi suất phụ thuộc bối cảnh. |
+
+## Cập nhật ngày 2026-10-15
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-15 | MICRO-002 | microeconomics | Lựa chọn bất lợi: vì sao hàng tốt có thể rời thị trường? | [Bài học](topics/microeconomics/asymmetric-information-and-adverse-selection.md) | Chất lượng ẩn trước hợp đồng có thể khiến giá gộp theo chất lượng kỳ vọng đẩy hàng tốt khỏi thị trường, rồi thành phần hàng còn lại tiếp tục hạ mức sẵn trả. Phân biệt lựa chọn bất lợi với hành vi khó quan sát sau hợp đồng; kiểm định, tín hiệu và cam kết chỉ giúp khi đáng tin và thực thi được. |
+
+## Cập nhật ngày 2026-10-18
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-18 | CORP-003 | corporate-and-markets | Đòn bẩy tài chính: vì sao lợi nhuận trên vốn tăng kèm rủi ro mất vốn? | [Bài học](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) | Trong mô hình bỏ thuế và dùng vốn đầu kỳ, ROE_0 = r_A + (r_A − i)D/E_0; nợ làm tỷ suất của cổ đông nhạy hơn với lợi nhuận hoạt động và chi phí vay. ROE cao không bảo đảm đủ tiền trả gốc và lãi: ví dụ giả định vẫn báo lãi 20 triệu, ICR khoảng 1,33 lần nhưng thiếu 110 triệu để hoàn thành nghĩa vụ cuối năm. |
+
+## Cập nhật ngày 2026-10-24
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-10-24 | BEHAV-002 | behavioral-finance | Kế toán tinh thần: vì sao cùng một đồng tiền lại được đối xử khác nhau? | [Bài học](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Nhãn nguồn tiền và mục đích chi có thể làm thay đổi lựa chọn dù nguồn lực thực không đổi. Ví dụ giả định cho thấy giữ đồng thời tiền gửi 20 triệu lãi đơn 5% và nợ 20 triệu lãi đơn 24% làm tài sản ròng cuối năm thấp hơn 3,8 triệu so với tất toán; kết luận phụ thuộc khả năng sử dụng tiền, phí và nhu cầu thanh khoản. Chia ngăn có thể hỗ trợ kỷ luật nhưng cần đối chiếu toàn bộ tài sản, nợ và dòng tiền. |

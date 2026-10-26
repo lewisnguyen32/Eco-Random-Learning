@@ -106,3 +106,36 @@
 | Mức chuyển chi phí vào giá | Cost pass-through | Phần tăng chi phí được phản ánh trong giá bán; không mặc định doanh nghiệp chuyển hết chi phí hoặc giá tăng cùng tỷ lệ với đầu vào. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
 | Tác động vòng hai | Second-round effects | Theo cách phân loại dùng trong bài, tác động lạm phát ban đầu làm thay đổi thương lượng lương và định giá, tạo thêm áp lực giá; khác tác động gián tiếp do chi phí lan qua chuỗi sản xuất và phân phối. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
 | Số dư đảm phí | Contribution margin | Doanh thu trừ chi phí biến đổi; phần còn lại bù chi phí cố định trước khi hình thành lợi nhuận, không phải lợi nhuận ròng. | [MACRO-003](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
+
+## Cập nhật ngày 2026-10-15
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Bất cân xứng thông tin | Asymmetric information | Các bên giao dịch nắm thông tin khác nhau có liên quan đến quyết định giao dịch; trong bài, người bán biết chất lượng tốt hơn người mua trước hợp đồng. | [MICRO-002](topics/microeconomics/asymmetric-information-and-adverse-selection.md) |
+| Lựa chọn bất lợi | Adverse selection | Thông tin riêng về chất lượng hoặc loại rủi ro trước hợp đồng làm thay đổi thành phần đối tượng tham gia; giá gộp có thể khiến hàng tốt rút lui và giảm lợi ích giao dịch. | [MICRO-002](topics/microeconomics/asymmetric-information-and-adverse-selection.md) |
+| Rủi ro đạo đức | Moral hazard | Vấn đề động cơ khi hành vi khó quan sát hoặc kiểm soát sau hợp đồng ảnh hưởng kết quả và chi phí mà bên khác chịu; khác lựa chọn bất lợi do đặc điểm ẩn trước hợp đồng. | [MICRO-002](topics/microeconomics/asymmetric-information-and-adverse-selection.md) |
+| Phát tín hiệu | Signaling | Bên có thông tin riêng thực hiện hành động quan sát được để truyền tải thông tin; tín hiệu chỉ đáng tin khi có cơ chế kiểm chứng hoặc động cơ khiến loại chất lượng thấp khó bắt chước. | [MICRO-002](topics/microeconomics/asymmetric-information-and-adverse-selection.md) |
+| Sàng lọc | Screening | Bên ít thông tin chủ động dùng kiểm tra, yêu cầu thông tin hoặc thiết kế lựa chọn hợp đồng để phân biệt đối tượng; khác phát tín hiệu do bên có thông tin riêng khởi xướng. | [MICRO-002](topics/microeconomics/asymmetric-information-and-adverse-selection.md) |
+
+## Cập nhật ngày 2026-10-18
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Đòn bẩy tài chính | Financial leverage | Sử dụng nợ để tài trợ tài sản, khiến kết quả dành cho vốn chủ nhạy hơn với biến động lợi nhuận hoạt động và chi phí vay. | [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
+| Tỷ suất lợi nhuận trên vốn chủ sở hữu | Return on equity – ROE | So sánh lợi nhuận thuộc cổ đông với nền vốn chủ tương ứng; mô hình bài dùng ROE_0 = NI/E_0 với vốn chủ đầu kỳ, còn phân tích báo cáo thường dùng vốn chủ bình quân. | [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
+| Lợi nhuận trước lãi vay và thuế | Earnings before interest and taxes – EBIT | Trong mô hình bài, lợi nhuận hoạt động sau chi phí kinh doanh gồm khấu hao nhưng trước lãi vay và thuế; không đồng nghĩa dòng tiền có thể dùng trả nợ. | [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
+| Tỷ lệ nợ vay trên vốn chủ | Debt-to-equity ratio – D/E | Trong bài, nợ vay chia vốn chủ theo cùng cơ sở đo; cần phân biệt với cách tính dùng toàn bộ nợ phải trả và xác định thời điểm, cơ sở sổ sách hay thị trường. | [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
+| Hệ số bảo đảm lãi vay | Interest coverage ratio – ICR | Theo cách tính của bài, EBIT chia chi phí lãi vay dương cùng kỳ; không đo trực tiếp khả năng trả cả gốc lẫn lãi bằng tiền. | [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
+| Rủi ro tái tài trợ | Refinancing risk | Rủi ro không huy động được vốn mới thay nghĩa vụ đến hạn, hoặc chỉ huy động với điều kiện bất lợi; khác công cụ tái cấp vốn của NHTW. | [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
+| Điều khoản ràng buộc khoản vay | Loan covenant | Cam kết trong hợp đồng vay về hành vi hoặc chỉ tiêu tài chính; nghĩa vụ và hậu quả vi phạm phụ thuộc hợp đồng cụ thể. | [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
+| Cấu trúc vốn | Capital structure | Cách kết hợp nợ và vốn chủ để tài trợ doanh nghiệp; tỷ trọng phụ thuộc phạm vi nợ và cơ sở định giá được dùng. | [CORP-003](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
+
+## Cập nhật ngày 2026-10-24
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Tính có thể thay thế của tiền | Fungibility | Trong mô hình bài, các đồng tiền có cùng thời điểm, quyền và điều kiện sử dụng có thể thay nhau tài trợ cùng khoản chi; nhãn nguồn tiền không tự tạo sức mua. | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
+| Ngân sách tinh thần | Mental budgeting | Dành nguồn lực cho từng nhóm chi và ghi nhận khoản chi theo nhóm; là một phần của kế toán tinh thần, có thể hỗ trợ kỷ luật hoặc làm lựa chọn thiếu linh hoạt. | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
+| Khoanh vùng lựa chọn hẹp / rộng | Narrow / broad choice bracketing | Xét từng lựa chọn riêng hoặc xét nhiều lựa chọn cùng hệ quả kết hợp; liên quan nhưng không đồng nghĩa hoàn toàn với việc gắn nhãn tiền. | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
+| Dành riêng tiền cho mục tiêu | Earmarking | Gắn một khoản tiền với mục đích cụ thể; nhãn có thể hỗ trợ tự kiểm soát nhưng không tự tạo ràng buộc hợp đồng hay bảo đảm tiết kiệm tăng. | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
+| Chi phí cơ hội | Opportunity cost | Giá trị của lựa chọn tốt nhất phải từ bỏ khi dùng nguồn lực cho mục đích khác; không chỉ gồm tiền thực chi. | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
