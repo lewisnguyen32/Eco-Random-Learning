@@ -37,6 +37,7 @@ flowchart TB
         MACRO_003["MACRO-003<br/>Cú sốc cung & đình lạm"]
         CORP_003["CORP-003<br/>Đòn bẩy tài chính"]
         BEHAV_002["BEHAV-002<br/>Kế toán tinh thần"]
+        INVEST_002["INVEST-002<br/>Đa dạng hóa & tương quan"]
     end
 
     subgraph LEVEL_5["Cấp 5"]
@@ -64,6 +65,7 @@ flowchart TB
     CORP_002 --> CORP_003
     MONEY_002 --> CORP_003
     BEHAV_001 --> BEHAV_002
+    MONEY_002 --> INVEST_002
     MACRO_003 --> MACRO_004
     MACRO_002 --> MACRO_004
 
@@ -75,7 +77,7 @@ flowchart TB
     class MONEY_001,CORP_001,MICRO_001,MICRO_002 level1
     class MACRO_001,CORP_002 level2
     class MONEY_002,BEHAV_001 level3
-    class MONEY_003,MACRO_002,MACRO_003,CORP_003,BEHAV_002 level4
+    class MONEY_003,MACRO_002,MACRO_003,CORP_003,BEHAV_002,INVEST_002 level4
     class INVEST_001,INDIV_001,MACRO_004 level5
 ```
 
@@ -111,6 +113,7 @@ flowchart TB
 | MACRO-003 | Cú sốc cung, lạm phát chi phí đẩy và đình lạm: vì sao giá tăng khi kinh tế yếu? | MACRO-001, MONEY-002 | [Bài học](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) |
 | CORP-003 | Đòn bẩy tài chính: vì sao lợi nhuận trên vốn tăng kèm rủi ro mất vốn? | CORP-002, MONEY-002 | [Bài học](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
 | BEHAV-002 | Kế toán tinh thần: vì sao cùng một đồng tiền lại được đối xử khác nhau? | BEHAV-001 | [Bài học](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
+| INVEST-002 | Đa dạng hóa và tương quan: vì sao nhiều khoản đầu tư vẫn có thể cùng giảm? | MONEY-002 | [Bài học](topics/investing/diversification-correlation-and-portfolio-risk.md) |
 
 ### Cấp 5
 
@@ -177,3 +180,9 @@ Ngày trong bảng là ngày học ban đầu; nội dung tóm tắt được đ
 | Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-10-26 | MACRO-004 | macroeconomics | Kỳ vọng lạm phát và cơ chế neo kỳ vọng: vì sao dự đoán giá ảnh hưởng quyết định hôm nay? | [Bài học](topics/macroeconomics/inflation-expectations-and-anchoring.md) | Kỳ vọng ảnh hưởng giá qua hợp đồng và hành động có điều kiện; mô hình chi phí đơn vị không dự báo CPI. Kỳ vọng ngắn hạn tăng chưa đủ chứng minh mất neo dài hạn; khảo sát khác breakeven có phần bù. Phân biệt bất đồng với bất định và tương quan với nhân quả; sức mua tiền gửi được tính theo từng kịch bản, không tự là lợi suất thực kỳ vọng. |
+
+## Cập nhật ngày 2026-11-06
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-06 | INVEST-002 | investing | Đa dạng hóa và tương quan: vì sao nhiều khoản đầu tư vẫn có thể cùng giảm? | [Bài học](topics/investing/diversification-correlation-and-portfolio-risk.md) | Rủi ro danh mục phụ thuộc trọng số, biến động và hiệp phương sai giữa các tài sản. Phân tán rủi ro riêng không xóa rủi ro chung; số lượng mã/quỹ có thể che khuất tài sản trùng bên dưới. Ví dụ giả định hai tài sản cùng độ lệch chuẩn 20% với tỷ trọng 50/50 cho độ lệch chuẩn danh mục 20%, khoảng 14,14% và 0% khi tương quan lần lượt là 1, 0 và −1; kết quả mô hình không bảo đảm tránh lỗ thực tế. |

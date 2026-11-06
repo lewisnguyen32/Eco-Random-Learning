@@ -97,3 +97,12 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [MACRO-002](topics/macroeconomics/fisher-effect-and-yield-curve.md) | Lạm phát hòa vốn từ trái phiếu chống lạm phát và sai lệch do phần bù (Breakeven Inflation) — MACRO-004 mới giới thiệu cách đọc chỉ báo, dòng chờ chuyên sâu ở trên vẫn chưa hoàn tất | ⏳ Chưa học | [Phần giới thiệu trong MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
 | [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) | Chỉ số hóa hợp đồng theo lạm phát và độ dai dẳng (Inflation Indexation & Persistence) — phân biệt điều chỉnh theo dữ liệu quá khứ với kỳ vọng tương lai | ⏳ Chưa học | - |
 | [MACRO-004](topics/macroeconomics/inflation-expectations-and-anchoring.md) | Thông tin, mức độ chú ý và cập nhật kỳ vọng (Information, Attention & Expectations Updating) — cần bài chuyên sâu | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-11-06
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) | Phân bổ tài sản theo mục tiêu và thời hạn sử dụng tiền (Goal-based Asset Allocation & Investment Horizon) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) | Ngân sách rủi ro và độ nhạy với thị trường (Risk Budgeting & Beta) — phân biệt tỷ trọng vốn với đóng góp vào rủi ro | ⏳ Chưa học | - |
+| [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) | Rủi ro đuôi và kiểm tra sức chịu đựng của danh mục (Tail Risk & Portfolio Stress Testing) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) | Tái cân bằng danh mục theo tỷ trọng và rủi ro (Portfolio Rebalancing) — nối với hàng chờ BEHAV-001 và BEHAV-002; bài hiện tại chưa hoàn tất chủ đề này | ⏳ Chưa học | - |
