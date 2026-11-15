@@ -164,3 +164,14 @@
 | Rủi ro thị trường chung | Systematic risk | Rủi ro từ các yếu tố chung ảnh hưởng nhiều tài sản, khó loại bỏ chỉ bằng tăng số khoản đầu tư cùng chịu các yếu tố ấy; khác systemic risk nói về sự đổ vỡ và lan truyền trong hệ thống tài chính. | [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) |
 | Rủi ro tập trung | Concentration risk | Rủi ro do tỷ trọng lớn cùng phụ thuộc một tổ chức, ngành hoặc nguồn rủi ro; có thể bị che khuất khi nhiều quỹ nắm trùng tài sản. | [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) |
 | Tài sản nắm giữ bên dưới | Underlying holdings | Các tài sản thực nằm trong quỹ hoặc sản phẩm đầu tư; cần quy đổi theo tỷ trọng để biết toàn danh mục đang phụ thuộc vào những tài sản nào. | [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) |
+
+## Cập nhật ngày 2026-11-15
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Thu nhập lãi thuần | Net interest income (NII) | Thu nhập lãi trừ chi phí lãi trong kỳ, đo bằng tiền. Biên lãi ròng lấy chỉ tiêu này chia cho tài sản sinh lãi bình quân theo cùng cơ sở kỳ đo. | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
+| Tỷ suất chi phí tài trợ tài sản sinh lãi | Cost of funding earning assets | Chi phí lãi chia cho tài sản sinh lãi bình quân, theo cùng cơ sở quy đổi theo năm với lợi suất tài sản sinh lãi khi tính NIM. | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
+| Tái định giá lãi suất | Repricing | Xác lập lại mức lãi áp dụng, chẳng hạn vào ngày điều chỉnh khoản vay thả nổi hoặc khi tái tục tiền gửi. | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
+| Rủi ro tái định giá lãi suất | Repricing risk | Rủi ro do lệch thời điểm hoặc lệch số dư tái định giá giữa tài sản và nguồn vốn, khiến lãi thu và lãi trả phản ứng khác nhau. | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
+| Chênh lệch tái định giá | Repricing gap | Số dư tài sản sinh lãi được tái định giá trừ số dư nợ chịu lãi được tái định giá trong cùng khoảng thời gian. | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
+| Hệ số truyền dẫn vào lãi suất tiền gửi | Deposit beta | Mức thay đổi của lãi suất tiền gửi chia cho mức thay đổi khác 0 của lãi tham chiếu trong cùng khoảng thời gian. Hệ số theo lãi tiền gửi bình quân còn phản ánh sự dịch chuyển cơ cấu tiền gửi. | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |

@@ -44,6 +44,7 @@ flowchart TB
         INVEST_001["INVEST-001<br/>Rủi ro lãi suất trái phiếu"]
         INDIV_001["INDIV-001<br/>Chi phí vay trả góp"]
         MACRO_004["MACRO-004<br/>Kỳ vọng lạm phát & neo kỳ vọng"]
+        MONEY_004["MONEY-004<br/>Tái định giá & biên lãi ròng"]
     end
 
     MONEY_001 --> MACRO_001
@@ -68,6 +69,7 @@ flowchart TB
     MONEY_002 --> INVEST_002
     MACRO_003 --> MACRO_004
     MACRO_002 --> MACRO_004
+    MONEY_003 --> MONEY_004
 
     classDef level1 fill:#eaf2ff,stroke:#4263a8,color:#172b4d
     classDef level2 fill:#e6f6f0,stroke:#25856b,color:#173d32
@@ -79,6 +81,7 @@ flowchart TB
     class MONEY_002,BEHAV_001 level3
     class MONEY_003,MACRO_002,MACRO_003,CORP_003,BEHAV_002,INVEST_002 level4
     class INVEST_001,INDIV_001,MACRO_004 level5
+    class MONEY_004 level5
 ```
 
 ### Cấp 1
@@ -122,6 +125,7 @@ flowchart TB
 | INVEST-001 | Rủi ro lãi suất của trái phiếu: Vì sao giá giảm khi lợi suất tăng? | MACRO-002, MONEY-002 | [Bài học](topics/investing/bond-prices-duration-and-interest-rate-risk.md) |
 | INDIV-001 | Chi phí vay trả góp: vì sao cùng “12%/năm” có thể khác xa nhau? | MONEY-002, MACRO-002 | [Bài học](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
 | MACRO-004 | Kỳ vọng lạm phát và cơ chế neo kỳ vọng: vì sao dự đoán giá ảnh hưởng quyết định hôm nay? | MACRO-003, MACRO-002 | [Bài học](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
+| MONEY-004 | Vì sao biên lãi ròng của ngân hàng có thể thu hẹp khi lãi suất tăng? | MONEY-003 | [Bài học](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
 
 ## Nhật ký theo ngày
 
@@ -186,3 +190,9 @@ Ngày trong bảng là ngày học ban đầu; nội dung tóm tắt được đ
 | Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-11-06 | INVEST-002 | investing | Đa dạng hóa và tương quan: vì sao nhiều khoản đầu tư vẫn có thể cùng giảm? | [Bài học](topics/investing/diversification-correlation-and-portfolio-risk.md) | Rủi ro danh mục phụ thuộc trọng số, biến động và hiệp phương sai giữa các tài sản. Phân tán rủi ro riêng không xóa rủi ro chung; số lượng mã/quỹ có thể che khuất tài sản trùng bên dưới. Ví dụ giả định hai tài sản cùng độ lệch chuẩn 20% với tỷ trọng 50/50 cho độ lệch chuẩn danh mục 20%, khoảng 14,14% và 0% khi tương quan lần lượt là 1, 0 và −1; kết quả mô hình không bảo đảm tránh lỗ thực tế. |
+
+## Cập nhật ngày 2026-11-15
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-15 | MONEY-004 | monetary-and-banking | Vì sao biên lãi ròng của ngân hàng có thể thu hẹp khi lãi suất tăng? | [Bài học](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) | Thu nhập lãi thuần phản ứng theo số dư được tái định giá, mức lãi thay đổi và thời điểm áp dụng. Biên lãi ròng còn phụ thuộc tài sản sinh lãi bình quân. Với cùng cú tăng 2 điểm phần trăm của lãi tham chiếu, NIM trong ví dụ giả định tăng từ 3,40% lên 3,50% hoặc giảm xuống 3,00% tùy lãi tiền gửi tái tục. |

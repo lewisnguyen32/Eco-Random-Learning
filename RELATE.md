@@ -106,3 +106,10 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) | Ngân sách rủi ro và độ nhạy với thị trường (Risk Budgeting & Beta) — phân biệt tỷ trọng vốn với đóng góp vào rủi ro | ⏳ Chưa học | - |
 | [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) | Rủi ro đuôi và kiểm tra sức chịu đựng của danh mục (Tail Risk & Portfolio Stress Testing) — cần bài chuyên sâu | ⏳ Chưa học | - |
 | [INVEST-002](topics/investing/diversification-correlation-and-portfolio-risk.md) | Tái cân bằng danh mục theo tỷ trọng và rủi ro (Portfolio Rebalancing) — nối với hàng chờ BEHAV-001 và BEHAV-002; bài hiện tại chưa hoàn tất chủ đề này | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-11-15
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) | Cạnh tranh huy động, dịch chuyển cơ cấu tiền gửi và cách đo hệ số truyền dẫn (Deposit Beta) — cần bài chuyên sâu | ⏳ Chưa học | - |
+| [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) | Phòng hộ rủi ro tái định giá bằng hoán đổi lãi suất (Interest Rate Swaps) | ⏳ Chưa học | - |

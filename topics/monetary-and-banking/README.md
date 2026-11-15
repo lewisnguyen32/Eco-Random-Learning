@@ -23,3 +23,10 @@ Nhóm bài học nền tảng về tiền, ngân hàng và chính sách tiền t
 - **Điều kiện nền:** MONEY-001, MONEY-002, CORP-001.
 - **Đường dẫn:** [bank-liquidity-and-funding-risk.md](bank-liquidity-and-funding-risk.md).
 - **Tóm tắt cơ chế:** Tiền gửi khách hàng là nợ của ngân hàng, còn số dư dự trữ tại ngân hàng trung ương là tài sản dùng trong quyết toán liên ngân hàng. Một ngân hàng có vốn dương vẫn có thể thiếu phương tiện thanh toán đúng hạn nếu tài sản chưa thu hồi, khó bán hoặc không vay được kịp thời. Ví dụ hai ngân hàng kiểm tra từng bút toán và cho thấy tiền gửi chuyển từ A sang B làm dự trữ dịch chuyển, không tự làm tổng dự trữ biến mất. Bán tài sản dưới giá ghi sổ có thể biến áp lực thanh khoản thành lỗ vốn; khả năng và mức độ tác động tùy điều kiện thị trường.
+
+### MONEY-004 – Vì sao biên lãi ròng của ngân hàng có thể thu hẹp khi lãi suất tăng?
+
+- **Ngày học:** 2026-11-15.
+- **Điều kiện nền:** MONEY-003.
+- **Đường dẫn:** [bank-repricing-risk-and-net-interest-margin.md](bank-repricing-risk-and-net-interest-margin.md).
+- **Tóm tắt cơ chế:** Một cú tăng lãi suất tác động lên phần tài sản và nguồn vốn đến thời điểm đổi lãi trong kỳ. Với số dư cố định, hướng đi của thu nhập lãi thuần phụ thuộc số tiền thu thêm so với số tiền trả thêm. Biên lãi ròng còn phụ thuộc tài sản sinh lãi bình quân. Ví dụ giả định dùng cùng cú sốc và cho thấy NIM tăng từ 3,40% lên 3,50% hoặc giảm xuống 3,00% tùy mức tăng của lãi tiền gửi tái tục.
