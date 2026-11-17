@@ -175,3 +175,13 @@
 | Rủi ro tái định giá lãi suất | Repricing risk | Rủi ro do lệch thời điểm hoặc lệch số dư tái định giá giữa tài sản và nguồn vốn, khiến lãi thu và lãi trả phản ứng khác nhau. | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
 | Chênh lệch tái định giá | Repricing gap | Số dư tài sản sinh lãi được tái định giá trừ số dư nợ chịu lãi được tái định giá trong cùng khoảng thời gian. | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
 | Hệ số truyền dẫn vào lãi suất tiền gửi | Deposit beta | Mức thay đổi của lãi suất tiền gửi chia cho mức thay đổi khác 0 của lãi tham chiếu trong cùng khoảng thời gian. Hệ số theo lãi tiền gửi bình quân còn phản ánh sự dịch chuyển cơ cấu tiền gửi. | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
+
+## Cập nhật ngày 2026-11-18
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Tỷ giá danh nghĩa song phương | Bilateral nominal exchange rate | Giá một đơn vị tiền tệ tính bằng đồng tiền kia. Với quy ước số VND cho một USD, tỷ giá tăng nghĩa là VND mất giá so với USD. | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
+| Truyền dẫn tỷ giá vào giá cả | Exchange rate pass-through (ERPT) | Mức giá phản ứng khi tỷ giá thay đổi. Khi đọc hệ số, cần xác định tỷ giá, chỉ tiêu giá, kỳ phản ứng và phương pháp ước lượng. | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
+| Đồng tiền ghi hóa đơn | Invoicing currency | Đồng tiền mà hợp đồng dùng để ghi giá. Có thể là đồng tiền của bên mua, bên bán hoặc một đồng tiền thứ ba. | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
+| Hợp đồng kỳ hạn ngoại tệ | FX forward | Thỏa thuận ấn định tỷ giá hôm nay để đổi một lượng ngoại tệ xác định vào một ngày trong tương lai. | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
+| Tỷ giá hữu hiệu danh nghĩa | Nominal effective exchange rate (NEER) | Chỉ số tổng hợp tỷ giá của nội tệ với một rổ đồng tiền theo quyền số, thường dựa trên quan hệ thương mại. | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |

@@ -113,3 +113,11 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | :--- | :--- | :--- | :--- |
 | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) | Cạnh tranh huy động, dịch chuyển cơ cấu tiền gửi và cách đo hệ số truyền dẫn (Deposit Beta) — cần bài chuyên sâu | ⏳ Chưa học | - |
 | [MONEY-004](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) | Phòng hộ rủi ro tái định giá bằng hoán đổi lãi suất (Interest Rate Swaps) | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-11-18
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [MONEY-002](topics/monetary-and-banking/policy-rates-and-monetary-transmission.md) | Truyền dẫn tỷ giá vào giá tiêu dùng (Exchange Rate Pass-through to Consumer Prices) | ✅ Đã học | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
+| [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) | Phòng hộ tỷ giá bằng hợp đồng kỳ hạn (FX Hedging with Forwards) | ⏳ Chưa học | - |
+| [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) | Tỷ giá hữu hiệu danh nghĩa và tỷ giá hữu hiệu thực (NEER & REER) | ⏳ Chưa học | - |

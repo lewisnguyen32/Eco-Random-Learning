@@ -38,6 +38,7 @@ flowchart TB
         CORP_003["CORP-003<br/>Đòn bẩy tài chính"]
         BEHAV_002["BEHAV-002<br/>Kế toán tinh thần"]
         INVEST_002["INVEST-002<br/>Đa dạng hóa & tương quan"]
+        VIET_001["VIET-001<br/>Tỷ giá & giá tiêu dùng"]
     end
 
     subgraph LEVEL_5["Cấp 5"]
@@ -70,6 +71,8 @@ flowchart TB
     MACRO_003 --> MACRO_004
     MACRO_002 --> MACRO_004
     MONEY_003 --> MONEY_004
+    MACRO_001 --> VIET_001
+    MONEY_002 --> VIET_001
 
     classDef level1 fill:#eaf2ff,stroke:#4263a8,color:#172b4d
     classDef level2 fill:#e6f6f0,stroke:#25856b,color:#173d32
@@ -79,7 +82,7 @@ flowchart TB
     class MONEY_001,CORP_001,MICRO_001,MICRO_002 level1
     class MACRO_001,CORP_002 level2
     class MONEY_002,BEHAV_001 level3
-    class MONEY_003,MACRO_002,MACRO_003,CORP_003,BEHAV_002,INVEST_002 level4
+    class MONEY_003,MACRO_002,MACRO_003,CORP_003,BEHAV_002,INVEST_002,VIET_001 level4
     class INVEST_001,INDIV_001,MACRO_004 level5
     class MONEY_004 level5
 ```
@@ -117,6 +120,7 @@ flowchart TB
 | CORP-003 | Đòn bẩy tài chính: vì sao lợi nhuận trên vốn tăng kèm rủi ro mất vốn? | CORP-002, MONEY-002 | [Bài học](topics/corporate-and-markets/financial-leverage-and-equity-risk.md) |
 | BEHAV-002 | Kế toán tinh thần: vì sao cùng một đồng tiền lại được đối xử khác nhau? | BEHAV-001 | [Bài học](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) |
 | INVEST-002 | Đa dạng hóa và tương quan: vì sao nhiều khoản đầu tư vẫn có thể cùng giảm? | MONEY-002 | [Bài học](topics/investing/diversification-correlation-and-portfolio-risk.md) |
+| VIET-001 | Tỷ giá và giá tiêu dùng: VND mất giá truyền vào CPI như thế nào? | MACRO-001, MONEY-002 | [Bài học](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
 
 ### Cấp 5
 
@@ -196,3 +200,9 @@ Ngày trong bảng là ngày học ban đầu; nội dung tóm tắt được đ
 | Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-11-15 | MONEY-004 | monetary-and-banking | Vì sao biên lãi ròng của ngân hàng có thể thu hẹp khi lãi suất tăng? | [Bài học](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) | Thu nhập lãi thuần phản ứng theo số dư được tái định giá, mức lãi thay đổi và thời điểm áp dụng. Biên lãi ròng còn phụ thuộc tài sản sinh lãi bình quân. Với cùng cú tăng 2 điểm phần trăm của lãi tham chiếu, NIM trong ví dụ giả định tăng từ 3,40% lên 3,50% hoặc giảm xuống 3,00% tùy lãi tiền gửi tái tục. |
+
+## Cập nhật ngày 2026-11-18
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-18 | VIET-001 | vietnam-economy | Tỷ giá và giá tiêu dùng: VND mất giá truyền vào CPI như thế nào? | [Bài học](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) | Khi đơn giá hàng hóa ghi bằng USD giữ nguyên, hóa đơn quy đổi tăng cùng tỷ lệ với tỷ giá VND trên một USD. Tác động đến giá bán tùy đồng tiền ghi hóa đơn, phòng hộ, chi phí nội địa và sức cầu. CPI còn phụ thuộc quyền số và đầu vào nhập khẩu dùng trong nước. Ước lượng của IMF trên mẫu gộp ASEAN có phạm vi khác với tương quan ở Việt Nam giai đoạn 2010–2011. |
