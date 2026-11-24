@@ -1,6 +1,6 @@
 # Lộ trình đọc Eco Learning
 
-Lộ trình dành cho người đọc Eco Learning lần đầu. Đọc 18 bài theo thứ tự dưới đây để mỗi bài xuất hiện sau các bài tiên quyết của nó. [Bản đồ tiên quyết](LEARNED.md).
+Lộ trình gồm 20 bài dành cho người đọc Eco Learning lần đầu. Thứ tự dưới đây đi theo từng chủ đề và đặt các bài tiên quyết trước bài cần đến chúng. Nếu muốn đọc riêng một chủ đề, tra các bài nền của chủ đề đó trong [bản đồ tiên quyết](LEARNED.md).
 
 ## Chặng 1 · Từ giá cả đến lãi suất điều hành
 
@@ -30,17 +30,19 @@ Hai bài vi mô mở đầu bằng những giao dịch quen thuộc. Ba bài sau
 12. [MONEY-004 · Rủi ro tái định giá và biên lãi ròng ngân hàng](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md)
 13. [INDIV-001 · Chi phí thực của khoản vay trả góp](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md)
 
-## Chặng 4 · Quay lại lạm phát ở mức sâu hơn
+## Chặng 4 · Lạm phát qua chi phí, kỳ vọng và tỷ giá
 
-Đi từ cú sốc chi phí đến cách kỳ vọng về giá tương lai có thể ảnh hưởng quyết định định giá và ký hợp đồng hôm nay.
+Đi từ cú sốc chi phí đến cách kỳ vọng về giá tương lai có thể ảnh hưởng quyết định định giá và ký hợp đồng hôm nay. Bài cuối giúp bạn lần theo tác động từ tỷ giá VND, qua chi phí nhập khẩu, đến giá tiêu dùng ở Việt Nam.
 
 14. [MACRO-003 · Cú sốc cung, lạm phát chi phí đẩy và đình lạm](topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md)
 15. [MACRO-004 · Kỳ vọng lạm phát và cơ chế neo kỳ vọng](topics/macroeconomics/inflation-expectations-and-anchoring.md)
+16. [VIET-001 · Tỷ giá và giá tiêu dùng](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md)
 
 ## Chặng 5 · Từ quyết định cá nhân đến rủi ro danh mục
 
-Hai bài đầu giải thích vì sao giá mua hoặc cách gắn nhãn tiền có thể ảnh hưởng quyết định. Bài cuối mở rộng góc nhìn từ từng khoản đầu tư sang cách cả danh mục biến động.
+Hai bài đầu giải thích vì sao giá mua hoặc cách gắn nhãn tiền có thể ảnh hưởng quyết định. Bài về quỹ dự phòng nối việc dành riêng tiền với khả năng thanh toán đúng hạn. Bài cuối mở rộng góc nhìn từ từng khoản đầu tư sang cách cả danh mục biến động.
 
-16. [BEHAV-001 · Ngại ghi nhận lỗ và hiệu ứng bán lãi sớm, giữ lỗ lâu](topics/behavioral-finance/loss-aversion-and-disposition-effect.md)
-17. [BEHAV-002 · Kế toán tinh thần](topics/behavioral-finance/mental-accounting-and-financial-decisions.md)
-18. [INVEST-002 · Đa dạng hóa, tương quan và rủi ro danh mục](topics/investing/diversification-correlation-and-portfolio-risk.md)
+17. [BEHAV-001 · Ngại ghi nhận lỗ và hiệu ứng bán lãi sớm, giữ lỗ lâu](topics/behavioral-finance/loss-aversion-and-disposition-effect.md)
+18. [BEHAV-002 · Kế toán tinh thần](topics/behavioral-finance/mental-accounting-and-financial-decisions.md)
+19. [INDIV-002 · Quỹ dự phòng và thanh khoản cá nhân](topics/personal-finance/emergency-funds-and-household-liquidity.md)
+20. [INVEST-002 · Đa dạng hóa, tương quan và rủi ro danh mục](topics/investing/diversification-correlation-and-portfolio-risk.md)

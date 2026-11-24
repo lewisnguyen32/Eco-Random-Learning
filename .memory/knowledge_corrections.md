@@ -201,3 +201,15 @@ Tài liệu lưu lịch sử lỗi và quy tắc phòng ngừa. Đợt đối ch
 - **Generalizable Lesson:** Mở rộng G-002: luôn gắn điều kiện bảo toàn số dư với thời điểm, rồi kiểm tra dòng tiền hoàn tất nghĩa vụ đến hạn; số học tài sản ròng đúng chưa bảo đảm mọi mô tả về từng quỹ đều nhất quán.
 - **Trigger Patterns:** “Giữ nguyên quỹ”, “không động đến tiền dự phòng”, tất toán ngay so với giữ nợ, số dư trước/sau trả nợ, nghĩa vụ cuối kỳ.
 - **Verification Source:** Đối chiếu trực tiếp giả định và bảng trong [BEHAV-002](../topics/behavioral-finance/mental-accounting-and-financial-decisions.md): 21 − 24,8 = −3,8; 10 − 3,8 = 6,2. Đây là kiểm tra hạch toán của ví dụ giả định, không phải số liệu thực nghiệm hay quy định ngân hàng.
+
+## Rà soát bài học ngày 24/11/2026
+
+### Entry 014 · Thiếu hụt tại một mốc và mức bổ sung để trả đúng hạn
+
+- **Bài liên quan** INDIV-002. Phát hiện trong audit Astra 2 medium ngày 24/11/2026.
+- **Error** Bản nháp mô tả trị tuyệt đối của số dư dự phóng âm tại một mốc là phần tiền thiếu để hoàn thành lịch đến mốc đó. Cách diễn đạt bỏ sót khả năng số dư dự phóng đã thấp hơn ở hạn trước.
+- **Corrected Understanding** Với 10 triệu đồng đầu kỳ, lịch dự kiến của Lan cho mức thiếu ròng 3 triệu ở ngày 18 và 4 triệu ở ngày 10. Để trả đúng hạn mọi khoản đến hết ngày 18, cần bổ sung 4 triệu từ đầu kỳ.
+- **Root Cause** Diễn giải một số dư tại ngày cuối đang xét như phép kiểm tra khả năng thực hiện toàn bộ lịch thanh toán trước đó.
+- **Generalizable Lesson** G-002. Gắn số dư với từng hạn. Đối với lịch thu chi cố định, lượng tiền khả dụng cần bổ sung đầu kỳ bằng mức thiếu ròng lớn nhất khi đã tính số dư đầu kỳ và rà tất cả các hạn.
+- **Trigger Patterns** Ngân sách dòng tiền, quỹ dự phòng, tiền mặt tối thiểu, khoảng thiếu tài trợ, số dư cuối kỳ, trễ hạn trong kỳ.
+- **Verification Source** Tính trực tiếp từ bảng giả định. Ngày 10 chi lũy kế vượt tiền vào 14 triệu, ngày 18 vượt 13 triệu. Với 10 triệu đầu kỳ, mức thiếu tương ứng là 4 và 3 triệu. [INDIV-002](../topics/personal-finance/emergency-funds-and-household-liquidity.md).

@@ -46,6 +46,7 @@ flowchart TB
         INDIV_001["INDIV-001<br/>Chi phí vay trả góp"]
         MACRO_004["MACRO-004<br/>Kỳ vọng lạm phát & neo kỳ vọng"]
         MONEY_004["MONEY-004<br/>Tái định giá & biên lãi ròng"]
+        INDIV_002["INDIV-002<br/>Quỹ dự phòng & thanh khoản cá nhân"]
     end
 
     MONEY_001 --> MACRO_001
@@ -67,6 +68,7 @@ flowchart TB
     CORP_002 --> CORP_003
     MONEY_002 --> CORP_003
     BEHAV_001 --> BEHAV_002
+    BEHAV_002 --> INDIV_002
     MONEY_002 --> INVEST_002
     MACRO_003 --> MACRO_004
     MACRO_002 --> MACRO_004
@@ -85,6 +87,7 @@ flowchart TB
     class MONEY_003,MACRO_002,MACRO_003,CORP_003,BEHAV_002,INVEST_002,VIET_001 level4
     class INVEST_001,INDIV_001,MACRO_004 level5
     class MONEY_004 level5
+    class INDIV_002 level5
 ```
 
 ### Cấp 1
@@ -130,6 +133,7 @@ flowchart TB
 | INDIV-001 | Chi phí vay trả góp: vì sao cùng “12%/năm” có thể khác xa nhau? | MONEY-002, MACRO-002 | [Bài học](topics/personal-finance/installment-loans-flat-rates-and-effective-cost.md) |
 | MACRO-004 | Kỳ vọng lạm phát và cơ chế neo kỳ vọng: vì sao dự đoán giá ảnh hưởng quyết định hôm nay? | MACRO-003, MACRO-002 | [Bài học](topics/macroeconomics/inflation-expectations-and-anchoring.md) |
 | MONEY-004 | Vì sao biên lãi ròng của ngân hàng có thể thu hẹp khi lãi suất tăng? | MONEY-003 | [Bài học](topics/monetary-and-banking/bank-repricing-risk-and-net-interest-margin.md) |
+| INDIV-002 | Quỹ dự phòng và thanh khoản cá nhân | BEHAV-002 | [Bài học](topics/personal-finance/emergency-funds-and-household-liquidity.md) |
 
 ## Nhật ký theo ngày
 
@@ -206,3 +210,9 @@ Ngày trong bảng là ngày học ban đầu; nội dung tóm tắt được đ
 | Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 2026-11-18 | VIET-001 | vietnam-economy | Tỷ giá và giá tiêu dùng: VND mất giá truyền vào CPI như thế nào? | [Bài học](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) | Khi đơn giá hàng hóa ghi bằng USD giữ nguyên, hóa đơn quy đổi tăng cùng tỷ lệ với tỷ giá VND trên một USD. Tác động đến giá bán tùy đồng tiền ghi hóa đơn, phòng hộ, chi phí nội địa và sức cầu. CPI còn phụ thuộc quyền số và đầu vào nhập khẩu dùng trong nước. Ước lượng của IMF trên mẫu gộp ASEAN có phạm vi khác với tương quan ở Việt Nam giai đoạn 2010–2011. |
+
+## Cập nhật ngày 2026-11-24
+
+| Ngày | ID | Category (Folder B) | Tên bài học (Topic Name) | Đường dẫn (File Path) | Ý chính cốt lõi (Core Takeaway) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-24 | INDIV-002 | personal-finance | Quỹ dự phòng và thanh khoản cá nhân | [Bài học](topics/personal-finance/emergency-funds-and-household-liquidity.md) | Với lịch thu chi cố định và không vay mới, tiền khả dụng đầu kỳ phải bù được mức chi vượt tiền vào lũy kế lớn nhất. Ví dụ giả định cần 9 triệu đồng theo lịch thường, 14 triệu nếu phát sinh chi phí sửa xe và 20 triệu nếu thù lao cũng về muộn. Tính riêng phần dự phòng tăng thêm so với lịch thường. |

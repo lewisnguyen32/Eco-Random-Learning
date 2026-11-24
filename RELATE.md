@@ -121,3 +121,11 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [MONEY-002](topics/monetary-and-banking/policy-rates-and-monetary-transmission.md) | Truyền dẫn tỷ giá vào giá tiêu dùng (Exchange Rate Pass-through to Consumer Prices) | ✅ Đã học | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
 | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) | Phòng hộ tỷ giá bằng hợp đồng kỳ hạn (FX Hedging with Forwards) | ⏳ Chưa học | - |
 | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) | Tỷ giá hữu hiệu danh nghĩa và tỷ giá hữu hiệu thực (NEER & REER) | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-11-24
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Quỹ dự phòng và giá trị của thanh khoản cá nhân (Emergency Funds & Liquidity Value) — cập nhật dòng chờ ngày 2026-10-24 | ✅ Đã học | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) |
+| [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) | Tiết kiệm phòng ngừa trước rủi ro thu nhập (Precautionary Saving) | ⏳ Chưa học | - |
+| [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) | Bảo hiểm và phần chi phí tự trả (Insurance & Out-of-Pocket Costs) | ⏳ Chưa học | - |

@@ -185,3 +185,11 @@
 | Đồng tiền ghi hóa đơn | Invoicing currency | Đồng tiền mà hợp đồng dùng để ghi giá. Có thể là đồng tiền của bên mua, bên bán hoặc một đồng tiền thứ ba. | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
 | Hợp đồng kỳ hạn ngoại tệ | FX forward | Thỏa thuận ấn định tỷ giá hôm nay để đổi một lượng ngoại tệ xác định vào một ngày trong tương lai. | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
 | Tỷ giá hữu hiệu danh nghĩa | Nominal effective exchange rate (NEER) | Chỉ số tổng hợp tỷ giá của nội tệ với một rổ đồng tiền theo quyền số, thường dựa trên quan hệ thương mại. | [VIET-001](topics/vietnam-economy/exchange-rate-pass-through-to-consumer-prices.md) |
+
+## Cập nhật ngày 2026-11-24
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Quỹ dự phòng | Emergency fund | Tiền để dành cho chi bất ngờ hoặc các khoản thiết yếu khi thu nhập gián đoạn, cần có thể sử dụng kịp thời. | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) |
+| Thanh khoản cá nhân | Household liquidity | Khả năng huy động đủ phương tiện thanh toán khi khoản phải trả đến hạn. Khả năng này phụ thuộc vào thời gian và giá trị ròng có thể thu từ tài sản. | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) |
+| Ngân sách dòng tiền | Cash flow budget | Lịch đưa tiền vào khả dụng và tiền phải chi về đúng thời điểm để theo dõi số dư qua các mốc thanh toán. | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) |

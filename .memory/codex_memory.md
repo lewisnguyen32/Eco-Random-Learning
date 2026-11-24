@@ -14,7 +14,7 @@ Lập tài sản, nợ và vốn chủ của từng chủ thể; kiểm tra Asse
 - Với mua đứt tài sản, xác định người bán là ngân hàng hay phi ngân hàng và tiền gửi có thuộc phạm vi cung tiền không.
 - Phân biệt repo/tài trợ có bảo đảm với bán đứt; kiểm tra điều kiện dừng ghi nhận tài sản và nghĩa vụ hoàn trả.
 - Không suy ra xóa nợ xấu, rút tiền mặt, trả gốc cho ngân hàng và trả nợ cho phi ngân hàng có cùng tác động lên tiền gửi.
-- Gắn số dư với thời điểm trước/sau thanh toán. Quỹ không dùng lúc đầu chưa chắc được bảo toàn đến cuối kỳ; kiểm tra nguồn tiền hoàn tất mọi nghĩa vụ, không chỉ tài sản ròng tại một thời điểm.
+- Gắn số dư với từng mốc trước và sau thanh toán, kể cả khi theo dõi phần quỹ còn lại sau khi trả nợ. Với lịch thu chi cố định, tính mức thiếu ròng ở từng hạn sau khi đã tính tiền khả dụng đầu kỳ. Mức phải bổ sung đầu kỳ để thanh toán đúng hạn mọi nghĩa vụ là mức thiếu lớn nhất qua tất cả các hạn.
 
 ## G-003 — Conditional Macro Causality
 
