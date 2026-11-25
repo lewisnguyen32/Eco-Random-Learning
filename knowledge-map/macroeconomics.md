@@ -1,0 +1,52 @@
+# Kinh tế vĩ mô (Macroeconomics)
+
+Đo lường, chu kỳ, ổn định và tăng trưởng của toàn nền kinh tế. Công cụ điều hành nằm ở [Tiền tệ, ngân hàng và tín dụng](money-banking.md) và [Kinh tế công](public-economics.md).
+
+[Bản đồ](../KNOWLEDGE_MAP.md) · [Các quan hệ](relationships.md) · Nguồn đối chiếu [ECO](sources.md#source-eco) · [CORE](sources.md#source-core) · [SNA](sources.md#source-sna) · [TIPS](sources.md#source-tips)
+
+## Đo lường nền kinh tế
+
+| ID | Khái niệm (VI / EN) | Phạm vi | Phân loại | Trạng thái và bằng chứng |
+| --- | --- | --- | --- | --- |
+| <a name="km-mac-national-accounts"></a>`KM-MAC-national-accounts` | **Hệ thống tài khoản quốc gia** (National accounts) | Khung ghi sản xuất, thu nhập, chi tiêu và tích lũy theo các khu vực thể chế. | CORE | NOT_LEARNED |
+| <a name="km-mac-sector-accounts"></a>`KM-MAC-sector-accounts` | **Tài khoản và bảng cân đối theo khu vực** (Institutional sector accounts and balance sheets) | Theo dõi tiết kiệm, vay ròng và thay đổi tài sản qua giao dịch, định giá lại và thay đổi khác. | IMPORTANT | NOT_LEARNED |
+| <a name="km-mac-gdp"></a>`KM-MAC-gdp` | **Tổng sản phẩm trong nước** (Gross domestic product) | Giá trị sản xuất cuối cùng trong phạm vi lãnh thổ và kỳ đo xác định. | CORE | NOT_LEARNED |
+| <a name="km-mac-real-gdp"></a>`KM-MAC-real-gdp` | **GDP thực** (Real GDP) | Chỉ tiêu khối lượng sản xuất sau khi loại ảnh hưởng của thay đổi giá theo phương pháp thống kê. | CORE | NOT_LEARNED |
+| <a name="km-mac-gdp-deflator"></a>`KM-MAC-gdp-deflator` | **Chỉ số giảm phát GDP** (GDP deflator) | Chỉ số giá ngầm định của sản lượng trong nước từ GDP danh nghĩa và GDP thực tương ứng. | IMPORTANT | PARTIALLY_LEARNED · [MACRO-001](../topics/macroeconomics/inflation-cpi-and-macro-transmission.md) — Phân biệt với CPI và dùng trong phương trình trao đổi, chưa đi sâu cách lập chỉ số giảm phát. |
+| <a name="km-mac-cpi"></a>`KM-MAC-cpi` | **Chỉ số giá tiêu dùng** (Consumer price index) | Theo dõi biến động giá của rổ chi tiêu tiêu dùng có trọng số và phạm vi xác định. | CORE | LEARNED · [MACRO-001](../topics/macroeconomics/inflation-cpi-and-macro-transmission.md) — Rổ có trọng số, chỉ số theo kỳ, thay thế hàng và giới hạn đại diện. |
+| <a name="km-mac-core-inflation"></a>`KM-MAC-core-inflation` | **Lạm phát cơ bản** (Core inflation) | Chỉ báo dùng phương pháp loại trừ hoặc lọc biến động để theo dõi xu hướng giá, với phạm vi tùy thước đo. | IMPORTANT | PARTIALLY_LEARNED · [MACRO-001](../topics/macroeconomics/inflation-cpi-and-macro-transmission.md) — Giới thiệu phân biệt toàn phần và cơ bản, chưa đi sâu cách lọc và diễn giải chỉ báo. |
+| <a name="km-mac-inflation"></a>`KM-MAC-inflation` | **Lạm phát** (Inflation) | Mức giá chung tăng theo thời gian với tốc độ đo bằng chỉ số phù hợp. | CORE | LEARNED · [MACRO-001](../topics/macroeconomics/inflation-cpi-and-macro-transmission.md), [MACRO-003](../topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) — Mức giá chung, tốc độ thay đổi và các kênh cầu, cung, kỳ vọng. |
+| <a name="km-mac-deflation"></a>`KM-MAC-deflation` | **Giảm phát và giảm tốc lạm phát** (Deflation and disinflation) | Phân biệt mức giá chung đi xuống với việc mức giá vẫn tăng nhưng chậm hơn. | IMPORTANT | LEARNED · [MACRO-001](../topics/macroeconomics/inflation-cpi-and-macro-transmission.md) — Phân biệt giảm giá với tăng giá chậm hơn, kể cả qua kỳ so sánh. |
+| <a name="km-mac-unemployment"></a>`KM-MAC-unemployment` | **Thất nghiệp và lực lượng lao động** (Unemployment and labor force) | Xác định tử số, mẫu số, mức tham gia và các dạng thất nghiệp. | CORE | NOT_LEARNED |
+
+## Chu kỳ, tổng cầu và tổng cung
+
+| ID | Khái niệm (VI / EN) | Phạm vi | Phân loại | Trạng thái và bằng chứng |
+| --- | --- | --- | --- | --- |
+| <a name="km-mac-business-cycle"></a>`KM-MAC-business-cycle` | **Chu kỳ kinh doanh** (Business cycle) | Dao động mở rộng, chậm lại và phục hồi của hoạt động kinh tế theo thời gian. | CORE | NOT_LEARNED |
+| <a name="km-mac-potential-output"></a>`KM-MAC-potential-output` | **Sản lượng tiềm năng và khoảng cách sản lượng** (Potential output and output gap) | So sản lượng thực với mức ước tính có thể duy trì trong điều kiện thông thường. | IMPORTANT | NOT_LEARNED |
+| <a name="km-mac-adas"></a>`KM-MAC-adas` | **Tổng cầu và tổng cung** (Aggregate demand and aggregate supply) | Khung mô hình phân tích đồng thời sản lượng và mức giá với cú sốc cầu hoặc cung. | CORE | PARTIALLY_LEARNED · [MACRO-003](../topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) — Dùng tổng cầu và cung ngắn hạn cho cú sốc cung, chưa bao quát điều chỉnh chung và dài hạn. |
+| <a name="km-mac-household-consumption"></a>`KM-MAC-household-consumption` | **Tiêu dùng và tiết kiệm hộ gia đình** (Household consumption and saving) | Thu nhập, tài sản, tín dụng và kỳ vọng định hình phân bổ chi tiêu qua thời gian. | IMPORTANT | NOT_LEARNED |
+| <a name="km-mac-aggregate-investment"></a>`KM-MAC-aggregate-investment` | **Đầu tư vĩ mô** (Aggregate investment) | Chi tiêu tạo vốn và thay đổi tồn kho, với động lực từ nhu cầu kỳ vọng và chi phí vốn. | IMPORTANT | NOT_LEARNED |
+| <a name="km-mac-saving-investment"></a>`KM-MAC-saving-investment` | **Đồng nhất thức tiết kiệm và đầu tư** (Saving–investment identities) | Liên hệ tiết kiệm, đầu tư và giao dịch với bên ngoài theo định nghĩa tài khoản quốc gia. | IMPORTANT | NOT_LEARNED |
+| <a name="km-mac-supply-shock"></a>`KM-MAC-supply-shock` | **Cú sốc cung** (Supply shock) | Thay đổi chi phí, năng lực hoặc gián đoạn đầu vào làm dịch chuyển điều kiện sản xuất. | CORE | LEARNED · [MACRO-003](../topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) — Nối gián đoạn đầu vào với sản lượng, mức giá và mức truyền khác nhau. |
+| <a name="km-mac-cost-push"></a>`KM-MAC-cost-push` | **Lạm phát chi phí đẩy** (Cost-push inflation) | Mức giá chung có thể tăng khi cú sốc chi phí truyền qua định giá và kỳ vọng. | IMPORTANT | LEARNED · [MACRO-003](../topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) — Tách vòng tác động trực tiếp và tác động tiếp theo qua kỳ vọng, lương, giá. |
+| <a name="km-mac-demand-pull"></a>`KM-MAC-demand-pull` | **Lạm phát do cầu kéo** (Demand-pull inflation) | Sức ép giá khi cầu danh nghĩa tăng nhanh so với khả năng đáp ứng của sản xuất. | IMPORTANT | LEARNED · [MACRO-001](../topics/macroeconomics/inflation-cpi-and-macro-transmission.md) — Nối chi tiêu danh nghĩa, khả năng đáp ứng sản lượng và áp lực giá. |
+| <a name="km-mac-stagflation"></a>`KM-MAC-stagflation` | **Đình lạm** (Stagflation) | Lạm phát cao đi cùng hoạt động kinh tế trì trệ hoặc suy yếu. | IMPORTANT | LEARNED · [MACRO-003](../topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md) — Cơ chế giá tăng trong khi sản lượng yếu và đánh đổi điều hành. |
+| <a name="km-mac-inflation-expectations"></a>`KM-MAC-inflation-expectations` | **Kỳ vọng lạm phát** (Inflation expectations) | Dự kiến về giá tương lai ảnh hưởng hợp đồng, định giá và quyết định chi tiêu hiện tại. | CORE | LEARNED · [MACRO-004](../topics/macroeconomics/inflation-expectations-and-anchoring.md) — Phạm vi chủ thể, kỳ hạn, thước đo và kênh giá, lương, chi tiêu. |
+| <a name="km-mac-expectations-anchoring"></a>`KM-MAC-expectations-anchoring` | **Neo kỳ vọng lạm phát** (Anchoring of inflation expectations) | Kỳ vọng ở kỳ hạn thích hợp tương đối vững trước biến động lạm phát ngắn hạn. | IMPORTANT | LEARNED · [MACRO-004](../topics/macroeconomics/inflation-expectations-and-anchoring.md) — Độ nhạy của kỳ vọng dài hạn, vai trò tín nhiệm và cách đọc dấu hiệu mất neo. |
+| <a name="km-mac-breakeven-inflation"></a>`KM-MAC-breakeven-inflation` | **Lạm phát hòa vốn** (Breakeven inflation) | Chênh lệch lợi suất danh nghĩa và lợi suất trái phiếu điều chỉnh theo lạm phát có thể phản ánh kỳ vọng, phần bù và thanh khoản. | SPECIALIZED | PARTIALLY_LEARNED · [MACRO-004](../topics/macroeconomics/inflation-expectations-and-anchoring.md) — Có cách đọc chênh lệch và giới hạn, chưa phân rã các phần bù hoặc cách so hai đường cong. |
+| <a name="km-mac-phillips-curve"></a>`KM-MAC-phillips-curve` | **Đường Phillips** (Phillips curve) | Quan hệ có điều kiện giữa áp lực lạm phát, mức độ sử dụng nguồn lực và kỳ vọng. | IMPORTANT | NOT_LEARNED |
+
+## Chính sách và tăng trưởng
+
+| ID | Khái niệm (VI / EN) | Phạm vi | Phân loại | Trạng thái và bằng chứng |
+| --- | --- | --- | --- | --- |
+| <a name="km-mac-stabilization"></a>`KM-MAC-stabilization` | **Ổn định kinh tế vĩ mô** (Macroeconomic stabilization) | Mục tiêu, độ trễ và đánh đổi khi ứng phó cú sốc để hạn chế dao động giá và sản lượng. | IMPORTANT | PARTIALLY_LEARNED · [MACRO-003](../topics/macroeconomics/supply-shocks-cost-push-inflation-and-stagflation.md), [MONEY-002](../topics/monetary-and-banking/policy-rates-and-monetary-transmission.md) — Có đánh đổi và độ trễ tiền tệ, chưa đối chiếu công cụ tài khóa và nhiều dạng cú sốc. |
+| <a name="km-mac-fiscal-multiplier"></a>`KM-MAC-fiscal-multiplier` | **Số nhân tài khóa** (Fiscal multiplier) | Mức sản lượng phản ứng với thay đổi tài khóa, tùy công cụ, bối cảnh và giả định. | IMPORTANT | NOT_LEARNED |
+| <a name="km-mac-keynesian-classical"></a>`KM-MAC-keynesian-classical` | **Khung Keynes và khung tân cổ điển** (Keynesian and neoclassical perspectives) | Đối chiếu giả định về điều chỉnh giá, cầu và năng lực trong các chân trời khác nhau. | SPECIALIZED | NOT_LEARNED |
+| <a name="km-mac-growth"></a>`KM-MAC-growth` | **Tăng trưởng kinh tế dài hạn** (Long-run economic growth) | Sự tăng lên bền vững của sản lượng hoặc thu nhập thực, thường xét theo đầu người. | CORE | NOT_LEARNED |
+| <a name="km-mac-productivity"></a>`KM-MAC-productivity` | **Năng suất** (Productivity) | Sản lượng trên một đầu vào hoặc một nhóm đầu vào theo kỳ và phương pháp đo. | CORE | NOT_LEARNED |
+| <a name="km-mac-growth-accounting"></a>`KM-MAC-growth-accounting` | **Hạch toán tăng trưởng** (Growth accounting) | Phân rã tăng trưởng theo đầu vào vốn, lao động và phần dư năng suất dưới giả định cụ thể. | SPECIALIZED | NOT_LEARNED |
+| <a name="km-mac-capital-accumulation"></a>`KM-MAC-capital-accumulation` | **Tích lũy vốn và hội tụ** (Capital accumulation and convergence) | Xem điều kiện đầu tư và năng suất khiến nền kinh tế bắt kịp hoặc tiếp tục phân kỳ. | IMPORTANT | NOT_LEARNED |
+| <a name="km-mac-recession-recovery"></a>`KM-MAC-recession-recovery` | **Suy thoái và phục hồi** (Recession and recovery) | Theo dõi độ rộng, độ sâu và đường phục hồi của suy giảm kinh tế. | IMPORTANT | NOT_LEARNED |

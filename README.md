@@ -4,7 +4,7 @@
 
 Kho tự học kinh tế, tài chính, ngân hàng và đầu tư bằng tiếng Việt.
 
-[Nhật ký bài học](LEARNED.md) · [Khái niệm liên quan](RELATE.md) · [Thuật ngữ](GLOSSARY.md) · [Ghi chú cá nhân](NOTES.md) · [Quy định biên soạn](AGENTS.md)
+[Nhật ký bài học](LEARNED.md) · [Khái niệm liên quan](RELATE.md) · [Thuật ngữ](GLOSSARY.md) · [Ghi chú cá nhân](NOTES.md) · [Quy định biên soạn](AGENTS.md) · [Bản đồ kiến thức](KNOWLEDGE_MAP.md)
 
 ## Bạn sẽ học gì?
 
@@ -31,11 +31,13 @@ Nhật ký dùng mã như `CORP-001` hay `MACRO-001` để theo dõi các bài �
 Eco Learning/
 ├── README.md                   # Tổng quan dự án
 ├── READING-ORDER.md            # Lộ trình cho người đọc lần đầu
+├── KNOWLEDGE_MAP.md            # Bản đồ lĩnh vực và độ bao phủ
 ├── LEARNED.md                  # Nhật ký, mã bài và thứ tự theo điều kiện tiên quyết
 ├── RELATE.md                   # Hàng chờ các khái niệm để củng cố định kỳ
 ├── GLOSSARY.md                 # Chỉ mục thuật ngữ A–Z
 ├── NOTES.md                    # Ghi chú kiểm chứng và các việc cần làm
 ├── AGENTS.md                   # Quy định biên soạn
+├── knowledge-map/              # Danh mục concept, quan hệ và nguồn đối chiếu
 ├── .memory/                    # Bộ nhớ phục vụ biên soạn
 │   ├── README.md               # Quy trình và vai trò của ba tầng bộ nhớ
 │   ├── knowledge_corrections.md # Nhật ký đính chính và bài học tổng quát
