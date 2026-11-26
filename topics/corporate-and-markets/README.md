@@ -21,3 +21,9 @@ Nhóm bài học về dòng tiền, vốn lưu động và hoạt động doanh 
 - **Ngày học:** 2026-10-18.
 - **Đường dẫn:** [financial-leverage-and-equity-risk.md](financial-leverage-and-equity-risk.md).
 - **Tóm tắt cơ chế:** Nợ vay tạo nghĩa vụ trả lãi và hoàn gốc, còn vốn chủ nhận phần kết quả còn lại sau các nghĩa vụ liên quan. Trong mô hình bỏ thuế và dùng vốn đầu kỳ, chênh lệch giữa tỷ suất hoạt động trên tài sản và lãi vay được nhân với tỷ lệ nợ vay/vốn chủ, làm ROE nhạy hơn khi kinh doanh thay đổi. Lợi nhuận kế toán không tự bảo đảm có tiền đúng ngày trả nợ: ví dụ giả định có lãi 20 triệu nhưng thiếu 110 triệu để trả đủ gốc và lãi cuối năm. Lãi suất thả nổi, nhu cầu tái tài trợ và các điều khoản hợp đồng tạo thêm ràng buộc so với mô hình.
+
+### CORP-004 – Đọc liên kết ba báo cáo tài chính: Thực hành với Vinamilk
+
+- **Ngày học** 2026-11-26.
+- **Đường dẫn** [reading-the-three-financial-statements.md](reading-the-three-financial-statements.md).
+- **Tóm tắt cơ chế** Bán chịu có thể tạo doanh thu và khoản phải thu trước khi tiền về, còn đi vay làm tăng tiền và nợ. Báo cáo của Vinamilk năm 2025 minh họa cách lần từ lợi nhuận sang OCF, đối chiếu tiền cuối năm với bảng cân đối và tra thuyết minh tồn kho, tiền gửi và nợ vay. Cần kiểm tra phạm vi hợp nhất, kỳ báo cáo và ý kiến kiểm toán trước khi so sánh.

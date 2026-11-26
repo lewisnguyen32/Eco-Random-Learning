@@ -129,3 +129,10 @@ Tài liệu này ghi lại các khái niệm kinh tế được gợi mở từ 
 | [BEHAV-002](topics/behavioral-finance/mental-accounting-and-financial-decisions.md) | Quỹ dự phòng và giá trị của thanh khoản cá nhân (Emergency Funds & Liquidity Value) — cập nhật dòng chờ ngày 2026-10-24 | ✅ Đã học | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) |
 | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) | Tiết kiệm phòng ngừa trước rủi ro thu nhập (Precautionary Saving) | ⏳ Chưa học | - |
 | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) | Bảo hiểm và phần chi phí tự trả (Insurance & Out-of-Pocket Costs) | ⏳ Chưa học | - |
+
+## Cập nhật ngày 2026-11-26
+
+| Bài học gốc (Source Lesson) | Khái niệm liên quan (Related Concept) | Trạng thái | Bài học tương ứng (Target Lesson Path) |
+| :--- | :--- | :--- | :--- |
+| [CORP-002](topics/corporate-and-markets/cash-flow-statement-and-operating-cash-flow.md) | Đọc liên kết ba báo cáo tài chính, thuyết minh và ý kiến kiểm toán qua một doanh nghiệp thực tế | ✅ Đã học | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
+| [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) | Chất lượng lợi nhuận (Quality of Earnings) — phân tích tính lặp lại, các khoản dồn tích và mức độ nhạy với các ước tính kế toán, nối với hàng chờ CORP-002 | ⏳ Chưa học | - |

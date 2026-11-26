@@ -193,3 +193,17 @@
 | Quỹ dự phòng | Emergency fund | Tiền để dành cho chi bất ngờ hoặc các khoản thiết yếu khi thu nhập gián đoạn, cần có thể sử dụng kịp thời. | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) |
 | Thanh khoản cá nhân | Household liquidity | Khả năng huy động đủ phương tiện thanh toán khi khoản phải trả đến hạn. Khả năng này phụ thuộc vào thời gian và giá trị ròng có thể thu từ tài sản. | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) |
 | Ngân sách dòng tiền | Cash flow budget | Lịch đưa tiền vào khả dụng và tiền phải chi về đúng thời điểm để theo dõi số dư qua các mốc thanh toán. | [INDIV-002](topics/personal-finance/emergency-funds-and-household-liquidity.md) |
+
+## Cập nhật ngày 2026-11-26
+
+| Thuật ngữ tiếng Việt | Thuật ngữ tiếng Anh | Định nghĩa theo ngữ cảnh | Bài học liên quan |
+| :--- | :--- | :--- | :--- |
+| Báo cáo tình hình tài chính | Statement of financial position / balance sheet | Trình bày tài sản, nợ phải trả và vốn chủ sở hữu tại một thời điểm. | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
+| Báo cáo kết quả hoạt động kinh doanh | Income statement | Trình bày doanh thu, chi phí và lợi nhuận ghi nhận trong kỳ theo cơ sở kế toán áp dụng. | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
+| Báo cáo tài chính hợp nhất | Consolidated financial statements | Trình bày công ty mẹ và các công ty con thuộc phạm vi kiểm soát như một tập đoàn, sau khi loại trừ các số dư và giao dịch nội bộ. | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
+| Lợi ích cổ đông không kiểm soát | Non-controlling interests | Phần vốn chủ sở hữu của công ty con không thuộc về công ty mẹ, dù trực tiếp hay gián tiếp. Khi đọc kết quả kinh doanh, xem phần lợi nhuận được phân bổ cho các cổ đông này. | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
+| Doanh thu thuần | Net revenue | Doanh thu sau khi trừ các khoản giảm trừ được trình bày, như chiết khấu thương mại và hàng bán bị trả lại. | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
+| Giá vốn hàng bán | Cost of sales | Chi phí được ghi nhận cho hàng hóa và dịch vụ đã bán trong kỳ. | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
+| Biên lợi nhuận gộp | Gross margin | Lợi nhuận gộp chia cho doanh thu thuần, cho biết phần doanh thu còn lại sau giá vốn. | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
+| Thuyết minh báo cáo tài chính | Notes to the financial statements | Phần trình bày chính sách kế toán, chi tiết các khoản mục và các thông tin bổ sung như cam kết. | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
+| Ý kiến kiểm toán chấp nhận toàn phần | Unmodified audit opinion | Ý kiến rằng báo cáo tài chính được trình bày phù hợp với khuôn khổ áp dụng trên các khía cạnh trọng yếu. | [CORP-004](topics/corporate-and-markets/reading-the-three-financial-statements.md) |
